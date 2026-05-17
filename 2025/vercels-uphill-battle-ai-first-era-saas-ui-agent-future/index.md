@@ -15,8 +15,6 @@ tags:
 canonical: https://www.linkedin.com/pulse/vercels-uphill-battle-ai-first-era-when-saas-uis-meet-benjamin-maggi-0v7of/
 ---
 
-![Vercel’s Uphill Battle in an AI-First Era](assets/cover.jpg)
-
 *DALL-E*
 
 ---
