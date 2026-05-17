@@ -1,8 +1,10 @@
 ---
 title: "I Built a C11 Compiler in TypeScript to Understand Compilers for Real"
+subtitle: NodeC
 description: "NodeC is a learning project—a C11-oriented compiler written in TypeScript that emits JavaScript and runs on Node.js with a linear memory model."
 date: 2026-04-26
 published: true
+coverImage: assets/cover.png
 tags:
   - compilers
   - typescript
@@ -11,6 +13,12 @@ tags:
   - learning
 canonical: https://www.linkedin.com/pulse/i-built-c11-compiler-typescript-understand-compilers-real-maggi-viujf/
 repo: https://github.com/maggiben/nodec
+---
+
+![I Built a C11 Compiler in TypeScript to Understand Compilers for Real](assets/cover.png)
+
+**NodeC**
+
 ---
 
 For a long time, I used compilers every day without really feeling how they worked.
