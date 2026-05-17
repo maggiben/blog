@@ -4,7 +4,7 @@ subtitle: NodeC
 description: "NodeC is a learning project—a C11-oriented compiler written in TypeScript that emits JavaScript and runs on Node.js with a linear memory model."
 date: 2026-04-26
 published: true
-coverImage: assets/cover.png
+coverImage: assets/cover.jpg
 tags:
   - compilers
   - typescript
@@ -15,7 +15,7 @@ canonical: https://www.linkedin.com/pulse/i-built-c11-compiler-typescript-unders
 repo: https://github.com/maggiben/nodec
 ---
 
-![I Built a C11 Compiler in TypeScript to Understand Compilers for Real](assets/cover.png)
+![I Built a C11 Compiler in TypeScript to Understand Compilers for Real](assets/cover.jpg)
 
 **NodeC**
 
