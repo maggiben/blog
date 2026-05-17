@@ -36,6 +36,12 @@
     "published": true
   },
   {
+    "slug": "2025/raspberry-pi-gitlab-runner-arm64-ci-mitad-tiempo",
+    "title": "Cómo bajé mis pipelines a la mitad con un runner ARM64 nativo en Raspberry Pi",
+    "date": "2025-05-09",
+    "published": true
+  },
+  {
     "slug": "2025/en-la-guerra-de-las-sbc-prefiero-raspberry-pi-zero-2w",
     "title": "En la guerra de las SBC, prefiero la Raspberry Pi Zero 2 W",
     "date": "2025-04-24",
