@@ -5,8 +5,7 @@ description: "Latencia, WiFi flojo y una antena que se calienta sola: el calenta
 date: 2025-04-02
 published: true
 coverImage: assets/cover.jpg
-coverPoster: assets/poster.jpg
-coverVideo: assets/starlink-ants.mp4
+hideCoverInPost: true
 tags:
   - starlink
   - internet
@@ -29,9 +28,15 @@ Lo único que aplaudo sin reservas: el **diseño**. La limpié, siguió andando.
 
 ## El video (sí, hay hormigas)
 
-*El reproductor está arriba en el artículo. Si no carga, [descargá el clip](assets/starlink-ants.mp4) o mirá el [post original en LinkedIn](https://www.linkedin.com/posts/maggiben_starlink-nunca-fuiste-lo-que-esperaba-mucha-activity-7313264469566996480-oPBr).*
+<div class="blog-video">
+  <video controls playsinline preload="metadata" poster="assets/poster.jpg" width="404">
+    <source src="assets/starlink-ants.mp4" type="video/mp4" />
+  </video>
+</div>
 
-*Antena Starlink en modo calentamiento: las invitadas no pagan alquiler.*
+<p><em>Antena Starlink en modo calentamiento: las invitadas no pagan alquiler.</em></p>
+
+<p>Si el reproductor no carga, <a href="assets/starlink-ants.mp4">descargá el clip</a> o mirá el <a href="https://www.linkedin.com/posts/maggiben_starlink-nunca-fuiste-lo-que-esperaba-mucha-activity-7313264469566996480-oPBr">post original en LinkedIn</a>.</p>
 
 En nueve segundos se entiende el plot twist: la placa se calienta, la nieve (o la lluvia fría) se va… y el ecosistema local interpreta **“spa gratuito”**.
 
