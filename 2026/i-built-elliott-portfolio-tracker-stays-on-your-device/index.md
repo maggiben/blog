@@ -2,7 +2,7 @@
 title: "I Built Elliott: A Portfolio Tracker That Stays on Your Device"
 subtitle: Elliott
 description: "Elliott is a privacy-first portfolio tracker for stocks, crypto, and fixed income—built with Next.js, Jotai, and IndexedDB, with no backend holding your positions."
-date: 2026-05-17
+date: 2026-04-16
 published: true
 coverImage: assets/cover.png
 tags:

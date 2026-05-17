@@ -1,32 +1,32 @@
 [
   {
-    "slug": "2026/gpt-noise-semantic-preserving-adversarial-attacks-llms",
-    "title": "gpt_noise: Semantic-Preserving Adversarial Attacks on LLMs, in Code",
-    "date": "2026-05-17",
-    "published": true
-  },
-  {
-    "slug": "2026/i-built-explorer-for-s3-desktop-gui-feels-like-file-manager",
-    "title": "I Built Explorer for S3: A Desktop GUI That Feels Like a File Manager",
-    "date": "2026-05-17",
-    "published": true
-  },
-  {
-    "slug": "2026/i-built-elliott-portfolio-tracker-stays-on-your-device",
-    "title": "I Built Elliott: A Portfolio Tracker That Stays on Your Device",
-    "date": "2026-05-17",
-    "published": true
-  },
-  {
     "slug": "2026/i-built-c11-compiler-typescript-understand-compilers-real",
     "title": "I Built a C11 Compiler in TypeScript to Understand Compilers for Real",
     "date": "2026-04-26",
     "published": true
   },
   {
+    "slug": "2026/i-built-elliott-portfolio-tracker-stays-on-your-device",
+    "title": "I Built Elliott: A Portfolio Tracker That Stays on Your Device",
+    "date": "2026-04-16",
+    "published": true
+  },
+  {
+    "slug": "2026/i-built-explorer-for-s3-desktop-gui-feels-like-file-manager",
+    "title": "I Built Explorer for S3: A Desktop GUI That Feels Like a File Manager",
+    "date": "2026-03-15",
+    "published": true
+  },
+  {
     "slug": "2026/tesis-sobre-la-amplificacion-inteligencia-y-el-error-contemporaneo",
     "title": "Tesis sobre la amplificación, la inteligencia y el error contemporáneo",
     "date": "2026-01-28",
+    "published": true
+  },
+  {
+    "slug": "2026/gpt-noise-semantic-preserving-adversarial-attacks-llms",
+    "title": "gpt_noise: Semantic-Preserving Adversarial Attacks on LLMs, in Code",
+    "date": "2026-01-26",
     "published": true
   },
   {
