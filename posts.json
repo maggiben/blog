@@ -36,6 +36,12 @@
     "published": true
   },
   {
+    "slug": "2025/the-lab-home-server-setup-learning-homelab",
+    "title": "The Lab: Why a Home Server Is the Best Place to Learn Infrastructure for Free",
+    "date": "2025-05-22",
+    "published": true
+  },
+  {
     "slug": "2025/raspberry-pi-gitlab-runner-arm64-ci-mitad-tiempo",
     "title": "Cómo bajé mis pipelines a la mitad con un runner ARM64 nativo en Raspberry Pi",
     "date": "2025-05-09",
