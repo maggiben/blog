@@ -1,0 +1,59 @@
+# OS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Editors & IDEs
+.idea/
+*.swp
+*.swo
+*~
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+
+# Cursor
+.cursor/
+
+# Logs & temp
+*.log
+*.tmp
+*.temp
+.cache/
+
+# Local env (if you add tooling later)
+.env
+.env.*
+!.env.example
+
+# Node / JS tooling (static site generators, scripts)
+node_modules/
+.npm
+.pnpm-store/
+dist/
+build/
+.next/
+.vercel/
+.turbo/
+*.tsbuildinfo
+
+# Python (if you add publish scripts)
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Hugo / Eleventy / Astro (common static blog stacks)
+public/
+.hugo_build.lock
+_site/
+.astro/
+
+# Drafts you may not want committed (optional — remove if you prefer tracking drafts)
+# **/drafts/
