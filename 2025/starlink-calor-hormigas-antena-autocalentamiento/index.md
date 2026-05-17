@@ -5,6 +5,7 @@ description: "Latencia, WiFi flojo y una antena que se calienta sola: el calenta
 date: 2025-04-02
 published: true
 coverImage: assets/cover.jpg
+coverPoster: assets/poster.jpg
 coverVideo: assets/starlink-ants.mp4
 tags:
   - starlink
@@ -15,8 +16,6 @@ tags:
 canonical: https://www.linkedin.com/posts/maggiben_starlink-nunca-fuiste-lo-que-esperaba-mucha-activity-7313264469566996480-oPBr
 lang: es
 ---
-
-![Vista previa del video: hormigas en la antena Starlink](assets/cover.jpg)
 
 **Starlink**
 
@@ -30,10 +29,7 @@ Lo único que aplaudo sin reservas: el **diseño**. La limpié, siguió andando.
 
 ## El video (sí, hay hormigas)
 
-<video controls playsinline preload="metadata" poster="assets/poster.jpg" style="max-width: 100%; border-radius: 8px;">
-  <source src="assets/starlink-ants.mp4" type="video/mp4" />
-  Tu navegador no reproduce video HTML5. <a href="assets/starlink-ants.mp4">Descargar el clip</a> o ver el <a href="https://www.linkedin.com/posts/maggiben_starlink-nunca-fuiste-lo-que-esperaba-mucha-activity-7313264469566996480-oPBr">post original en LinkedIn</a>.
-</video>
+*El reproductor está arriba en el artículo. Si no carga, [descargá el clip](assets/starlink-ants.mp4) o mirá el [post original en LinkedIn](https://www.linkedin.com/posts/maggiben_starlink-nunca-fuiste-lo-que-esperaba-mucha-activity-7313264469566996480-oPBr).*
 
 *Antena Starlink en modo calentamiento: las invitadas no pagan alquiler.*
 
