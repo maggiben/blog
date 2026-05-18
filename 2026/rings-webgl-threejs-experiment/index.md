@@ -5,7 +5,7 @@ description: "Rings is a browser WebGL experiment—reflective sphere, procedura
 date: 2026-05-18
 published: true
 language: en
-coverImage: assets/cover.png
+coverImage: assets/cover.webp
 tags:
   - webgl
   - threejs

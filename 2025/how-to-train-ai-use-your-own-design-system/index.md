@@ -5,7 +5,7 @@ description: "A practical guide to fine-tuning an LLM on Storybook-style compone
 date: 2025-02-22
 published: true
 language: en
-coverImage: assets/cover.jpg
+coverImage: assets/cover.webp
 tags:
   - llm
   - fine-tuning
