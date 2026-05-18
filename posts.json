@@ -1,5 +1,11 @@
 [
   {
+    "slug": "2026/process-queue-unified-concurrency-live-bench",
+    "title": "process-queue: One Million Operations, Full Control While It Runs",
+    "date": "2026-05-18",
+    "published": true
+  },
+  {
     "slug": "2026/rings-webgl-threejs-experiment",
     "title": "Rings: A WebGL Playground and Why Three.js Is Magic—and Merciless",
     "date": "2026-05-18",
