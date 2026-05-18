@@ -4,6 +4,7 @@ subtitle: Explorer for S3
 description: "Explorer for S3 is a cross-platform Electron desktop app that browses, uploads, and manages S3 buckets with a familiar file-manager UI—multipart uploads, drag-and-drop, and encrypted credentials included."
 date: 2026-03-15
 published: true
+language: en
 coverImage: assets/cover.png
 tags:
   - s3

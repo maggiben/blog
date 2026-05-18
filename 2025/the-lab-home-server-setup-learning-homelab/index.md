@@ -4,6 +4,7 @@ subtitle: Homelab
 description: "A walkthrough of my Proxmox homelab—AdGuard, NPM, K3s, GitLab, Grafana, n8n, LiteLLM, and more—and why running your own stack beats cloud sandboxes for learning."
 date: 2025-05-22
 published: true
+language: en
 coverImage: assets/cover.jpg
 tags:
   - homelab

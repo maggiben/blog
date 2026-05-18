@@ -4,6 +4,7 @@ subtitle: La Esquina · Abasto
 description: "Armé un ERP sencillo para el almacén La Esquina—punto de venta, catálogo, stock e impresora térmica—con Python, PostgreSQL y Next.js. No es un unicornio; es una changa con alma."
 date: 2026-04-02
 published: true
+language: es
 coverImage: assets/materiales-y-fachada.png
 tags:
   - erp
@@ -14,7 +15,6 @@ tags:
   - open-source
   - español
 canonical: https://www.linkedin.com/posts/maggiben_estoy-armando-un-erp-muy-b%C3%A1sico-para-un-almac%C3%A9n-share-7445611132058386432-Fhm4
-lang: es
 repo: https://github.com/maggiben/abasto
 ---
 

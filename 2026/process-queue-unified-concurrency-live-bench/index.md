@@ -4,6 +4,7 @@ subtitle: process-queue
 description: "I built process-queue to merge promise concurrency limiting with queue lifecycle controls—and a live bench that enqueues a million tasks in the browser. Strengths, honest limits, and a demo you can poke."
 date: 2026-05-18
 published: true
+language: en
 coverImage: assets/cover.png
 tags:
   - typescript

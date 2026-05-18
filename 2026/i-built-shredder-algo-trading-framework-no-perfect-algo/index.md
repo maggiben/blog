@@ -4,6 +4,7 @@ subtitle: Shredder
 description: "Shredder is my open-source trading framework for researching strategies, backtesting with fees, and running paper bots—built around a simple truth: there is no perfect algorithm, only disciplined uncertainty."
 date: 2026-03-27
 published: true
+language: en
 coverImage: assets/cover.png
 tags:
   - trading

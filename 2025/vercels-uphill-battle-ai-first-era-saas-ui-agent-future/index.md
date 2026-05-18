@@ -5,6 +5,7 @@ description: "A 2025 thesis on whether agent-first software threatens Vercel’s
 date: 2025-02-11
 updated: 2026-05-17
 published: true
+language: en
 coverImage: assets/cover.jpg
 tags:
   - vercel

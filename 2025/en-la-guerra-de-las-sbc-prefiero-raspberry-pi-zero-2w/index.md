@@ -4,6 +4,7 @@ subtitle: Hardware
 description: "Por qué elijo la Pi Zero 2 W pese a specs modestos, y qué me gustaría ver en la próxima versión: más RAM, AV1, USB-C y una NPU—al mismo precio."
 date: 2025-04-24
 published: true
+language: es
 coverImage: assets/cover.jpg
 tags:
   - raspberry-pi
@@ -12,7 +13,6 @@ tags:
   - edge-ai
   - español
 canonical: https://www.linkedin.com/posts/maggiben_en-la-guerra-de-las-sbc-yo-prefiero-a-la-activity-7321184372487794691-AHTY
-lang: es
 ---
 
 ![Placas de desarrollo SBC](assets/cover.jpg)

@@ -4,6 +4,7 @@ subtitle: G-Shock
 description: "Dos G-Shock 5600, mismo ADN: uno clásico y uno Tough Solar con Multi Band 6. Veinte años después, el diseño sigue intacto—y eso no es nostalgia, es ingeniería bien hecha."
 date: 2025-06-27
 published: true
+language: es
 coverImage: assets/cover.jpg
 tags:
   - g-shock
@@ -12,7 +13,6 @@ tags:
   - legado
   - español
 canonical: https://www.linkedin.com/posts/maggiben_20-a%C3%B1os-mas-tarde-si-no-esta-roto-no-lo-activity-7344432780086259715-_k0m
-lang: es
 ---
 
 ![Dos Casio G-Shock 5600: modelo clásico y Tough Solar con Multi Band 6](assets/cover.jpg)

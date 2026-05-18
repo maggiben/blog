@@ -4,6 +4,7 @@ subtitle: Deep learning in the wild
 description: "AI has moved from lab breakthroughs to everyday deployment. A map of the implementation phase—new roles, industry impact, historical cycles, and why hybrid intelligence may be the path forward."
 date: 2025-02-07
 published: true
+language: en
 coverImage: assets/cover.jpg
 tags:
   - artificial-intelligence

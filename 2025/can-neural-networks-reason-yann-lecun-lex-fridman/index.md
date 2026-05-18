@@ -4,6 +4,7 @@ subtitle: AI history
 description: "Five years ago Yann LeCun told Lex Fridman we could make neural networks reason like humans. I clipped the moment—before ChatGPT, before the great prompt-engineering wars."
 date: 2025-02-14
 published: true
+language: en
 coverImage: assets/cover.jpg
 hideCoverInPost: true
 tags:

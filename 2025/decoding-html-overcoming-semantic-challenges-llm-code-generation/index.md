@@ -4,6 +4,7 @@ subtitle: LLMs & the web
 description: "Why state-of-the-art LLMs lag on HTML compared to Python or JavaScript—and what syntactic, structural, and semantic constraints mean for benchmarks, design systems, and better generation strategies."
 date: 2025-03-01
 published: true
+language: en
 coverImage: assets/cover.jpg
 tags:
   - llm

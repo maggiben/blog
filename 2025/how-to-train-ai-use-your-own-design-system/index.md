@@ -4,6 +4,7 @@ subtitle: Fine-tuning for frontend
 description: "A practical guide to fine-tuning an LLM on Storybook-style component examples so it generates frontend code that matches your design system—with Colab, Hugging Face, Weights & Biases, and LM Studio."
 date: 2025-02-22
 published: true
+language: en
 coverImage: assets/cover.jpg
 tags:
   - llm

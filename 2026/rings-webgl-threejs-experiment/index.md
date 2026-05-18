@@ -4,6 +4,7 @@ subtitle: WebGL · Three.js
 description: "Rings is a browser WebGL experiment—reflective sphere, procedural donuts, Preetham sky, and tiling for video walls. What I learned playing with Three.js: stunning power, steep learning curve."
 date: 2026-05-18
 published: true
+language: en
 coverImage: assets/cover.png
 tags:
   - webgl

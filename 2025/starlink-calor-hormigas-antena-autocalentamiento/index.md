@@ -4,6 +4,7 @@ subtitle: Starlink
 description: "Latencia, WiFi flojo y una antena que se calienta sola: el calentamiento anti-nieve de Starlink también funciona como Airbnb para insectos. Video incluido."
 date: 2025-04-02
 published: true
+language: es
 coverImage: assets/cover.jpg
 hideCoverInPost: true
 tags:
@@ -13,7 +14,6 @@ tags:
   - humor
   - español
 canonical: https://www.linkedin.com/posts/maggiben_starlink-nunca-fuiste-lo-que-esperaba-mucha-activity-7313264469566996480-oPBr
-lang: es
 ---
 
 **Starlink**

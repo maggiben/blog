@@ -4,6 +4,7 @@ subtitle: CI/CD
 description: "Dejar de emular arm64 en amd64 y ejecutar builds en una Raspberry Pi con GitLab Runner: menos tiempo de pipeline, misma plataforma que producción."
 date: 2025-05-09
 published: true
+language: es
 coverImage: assets/cover.jpg
 tags:
   - gitlab
@@ -13,7 +14,6 @@ tags:
   - devops
   - español
 canonical: https://www.linkedin.com/posts/maggiben_use-una-raspberry-pi-para-bajar-los-tiempos-activity-7326638941367922690-oPUC
-lang: es
 ---
 
 ![Pipelines de GitLab con jobs en runners nativos arm64 y amd64](assets/cover.jpg)

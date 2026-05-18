@@ -4,6 +4,7 @@ subtitle: Doce tesis
 description: "Doce tesis sobre la diferencia entre amplificar potencia y amplificar sentido, y sobre el error simbólico en la era de la inteligencia artificial."
 date: 2026-01-28
 published: true
+language: es
 coverImage: assets/cover.png
 tags:
   - filosofía
@@ -12,7 +13,6 @@ tags:
   - ensayo
   - español
 canonical: https://www.linkedin.com/pulse/tesis-sobre-la-amplificaci%C3%B3n-inteligencia-y-el-error-benjamin-maggi-gz74f/
-lang: es
 ---
 
 ![Tesis sobre la amplificación, la inteligencia y el error contemporáneo](assets/cover.png)

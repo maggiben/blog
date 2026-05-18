@@ -4,6 +4,7 @@ subtitle: gpt_noise
 description: "An open-source experiment that targets influential words in a prompt with human-plausible typos—keyboard proximity, omissions, double-typing—and measures reasoning collapse on GSM8K via Ollama."
 date: 2026-01-26
 published: true
+language: en
 coverImage: assets/cover.png
 tags:
   - llm
