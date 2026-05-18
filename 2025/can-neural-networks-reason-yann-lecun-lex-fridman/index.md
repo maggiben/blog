@@ -30,7 +30,7 @@ I was scrolling with that mix of curiosity and side-eye when I found **Yann LeCu
 
 <div class="blog-embed">
   <iframe
-    src="https://www.youtube.com/embed/UgkxEaL5mKGBRjgI0Yt2KZT_9Bv0vFl3VVal"
+    src="https://www.youtube.com/embed/SGSOCuByo24?start=663&end=675"
     title="Can neural networks reason? — Yann LeCun on Lex Fridman"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
     allowfullscreen
