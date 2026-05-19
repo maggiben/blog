@@ -30,22 +30,20 @@ Years later, computer vision moved on—bigger models, WASM bundles, hand landma
 
 ## Try it live
 
-Allow webcam access when your browser prompts you (inside the embed). Use the panel on the left—**Selfie Mode**, camera picker, hand count, model complexity, confidence sliders. Chrome desktop is what I originally targeted.
+Allow webcam access when prompted. The demo below is the same code as the [CodePen](https://codepen.io/maggiben/pen/MWvVYqy), hosted on this post so the camera can run on your domain—not inside CodePen’s nested iframe.
 
-<iframe
-  height="520"
-  style="width: 100%; min-height: 520px; border: 0;"
-  scrolling="no"
-  title="MediaPipe - Hands"
-  src="https://codepen.io/maggiben/embed/MWvVYqy?default-tab=result"
-  loading="lazy"
-  allow="accelerometer; autoplay; camera *; clipboard-read; clipboard-write; display-capture *; encrypted-media; gyroscope; microphone *; picture-in-picture; web-share"
-  allowfullscreen
->
-  See the Pen <a href="https://codepen.io/maggiben/pen/MWvVYqy">MediaPipe - Hands</a> by Benjamin (<a href="https://codepen.io/maggiben">@maggiben</a>) on <a href="https://codepen.io">CodePen</a>.
-</iframe>
+<div class="blog-embed">
+  <iframe
+    height="520"
+    style="width: 100%; min-height: 520px; border: 0;"
+    title="MediaPipe - Hands"
+    src="assets/demo/index.html"
+    loading="lazy"
+    allow="accelerometer; autoplay; camera *; clipboard-read; clipboard-write; display-capture *; encrypted-media; gyroscope; microphone *; picture-in-picture; web-share"
+  ></iframe>
+</div>
 
-<p><em>Camera blocked in the frame? <a href="https://codepen.io/maggiben/pen/MWvVYqy" target="_blank" rel="noopener noreferrer">Open the pen on CodePen</a>—browsers often only grant webcam access on the top-level tab.</em></p>
+<p><em>Camera still blocked? Use <strong>Open in new tab</strong> inside the demo, or open <a href="assets/demo/index.html" target="_blank" rel="noopener noreferrer">assets/demo/index.html</a> directly. Archive: <a href="https://codepen.io/maggiben/pen/MWvVYqy" target="_blank" rel="noopener noreferrer">CodePen</a>.</em></p>
 
 **What you should see:** your video feed with 21 landmarks per hand, connectors between joints, an FPS counter, and the 3D grid in the corner—like the capture above.
 
@@ -113,7 +111,7 @@ The pen's parent on CodePen is Google's reference; mine kept the spirit and the 
 If I refreshed the project now:
 
 - **Hand Landmarker** — MediaPipe's newer Tasks API is the maintained path; the classic `Hands` solution still works but is legacy territory.
-- **HTTPS and permissions** — embeds need `allow="camera"` (included above); some readers will still need a top-level tab on CodePen.
+- **HTTPS and permissions** — the post embeds `assets/demo/` on your origin with `allow="camera *"`; your site’s `MarkdownContent` must forward that attribute on `<iframe>` (rehype-raw alone is not enough).
 - **Mobile** — thermal throttling and smaller GPUs hurt; default `modelComplexity` to Lite on narrow viewports.
 - **Privacy copy** — one line: frames stay local, nothing is uploaded. Obvious to us; not to every visitor.
 
@@ -129,4 +127,4 @@ If you build something similar, fork the pen, break the sliders, and see how fra
 
 ---
 
-*CodePen: [codepen.io/maggiben/pen/MWvVYqy](https://codepen.io/maggiben/pen/MWvVYqy) · Published November 2021*
+*CodePen: [codepen.io/maggiben/pen/MWvVYqy](https://codepen.io/maggiben/pen/MWvVYqy) · Demo source: [assets/demo/](assets/demo/) · Published November 2021*

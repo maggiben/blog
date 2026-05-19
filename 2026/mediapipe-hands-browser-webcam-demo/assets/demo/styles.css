@@ -1,0 +1,178 @@
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+.abs {
+  position: absolute;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: lightblue;
+}
+
+body {
+  font-family: 'Titillium Web', sans-serif;
+  color: white;
+  background-color: #596e73;
+}
+
+.container {
+  position: absolute;
+  inset: 0;
+  background-color: #596e73;
+}
+
+.input_video {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.input_video.selfie {
+  transform: scale(-1, 1);
+}
+
+.input_image {
+  position: absolute;
+}
+
+.canvas-container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.output_canvas {
+  width: 100%;
+  display: block;
+  position: relative;
+  left: 0;
+  top: 0;
+}
+
+.logo {
+  bottom: 10px;
+  right: 20px;
+}
+
+.logo .title {
+  color: white;
+  font-size: 28px;
+}
+
+.logo .subtitle {
+  position: relative;
+  color: white;
+  font-size: 10px;
+  left: -30px;
+  top: 20px;
+}
+
+.control-panel {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  z-index: 4;
+  max-width: min(320px, calc(100% - 140px));
+  max-height: calc(100% - 20px);
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.loading {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  align-items: center;
+  backface-visibility: hidden;
+  justify-content: center;
+  opacity: 1;
+  transition: opacity 1s;
+  z-index: 3;
+}
+
+.loading .message {
+  font-size: x-large;
+}
+
+.loading .spinner {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  animation: spin 1s linear infinite;
+  border: 32px solid #bebebe;
+  border-top: 32px solid #3498db;
+  border-radius: 50%;
+}
+
+.loaded .loading {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.shoutout {
+  left: 0;
+  right: 0;
+  bottom: 40px;
+  text-align: center;
+  font-size: clamp(14px, 2.5vw, 24px);
+  position: absolute;
+  z-index: 2;
+}
+
+.square-box {
+  width: 33%;
+  height: 0;
+  padding-top: 33%;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  z-index: 2;
+}
+
+.landmark-grid-container {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #99999999;
+}
+
+.open-tab {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  z-index: 5;
+  font-size: 13px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MediaPipe Hands</title>
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils/control_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils/controls_3d.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <video class="input_video"></video>
+    <canvas class="output_canvas" width="1280" height="720"></canvas>
+    <div class="loading">
+      <div class="spinner"></div>
+      <div class="message">Loading</div>
+    </div>
+    <a class="abs logo" href="https://developers.google.com/mediapipe" target="_blank" rel="noopener noreferrer">
+      <span class="title">MediaPipe</span>
+    </a>
+    <div class="shoutout">
+      <div>
+        <a href="https://developers.google.com/mediapipe/solutions/vision/hand_landmarker" target="_blank" rel="noopener noreferrer">
+          Click here for more info
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="control-panel"></div>
+  <div class="square-box">
+    <div class="landmark-grid-container"></div>
+  </div>
+  <a class="open-tab" href="." target="_blank" rel="noopener noreferrer">Open in new tab</a>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
