@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Event-density calendar</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      html,
+      body {
+        margin: 0;
+        min-height: 100%;
+        background: linear-gradient(160deg, #eef4f9 0%, #f7f9fb 45%, #eceff3 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .calendar-demo--fullscreen {
+        padding: 2rem 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="calendar-event-demo" class="calendar-demo calendar-demo--fullscreen">
+      <div class="calendar" id="calendar"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.29.4/moment.min.js"></script>
+    <script src="calendar.js"></script>
+  </body>
+</html>
