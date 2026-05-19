@@ -1,5 +1,11 @@
 [
   {
+    "slug": "2026/mediapipe-hands-browser-webcam-demo",
+    "title": "MediaPipe Hands: When Your Webcam Became a Skeleton Tracker",
+    "date": "2026-05-19",
+    "published": true
+  },
+  {
     "slug": "2026/ng-peity-angular-mini-charts-without-jquery",
     "title": "ng-peity: Tiny SVG Charts for Angular—No jQuery Required",
     "date": "2026-05-19",
