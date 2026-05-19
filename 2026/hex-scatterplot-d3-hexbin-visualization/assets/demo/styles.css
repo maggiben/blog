@@ -1,0 +1,14 @@
+/* CodePen iframe — hex scatterplot (~960px wide) */
+.blog-embed.blog-embed--codepen {
+  max-width: 960px;
+  margin: 1.5rem auto;
+  padding: 0;
+  background: transparent;
+  border: 0;
+}
+.blog-embed.blog-embed--codepen iframe {
+  display: block;
+  width: 100%;
+  border: 0;
+  background: transparent;
+}

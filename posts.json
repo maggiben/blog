@@ -1,5 +1,11 @@
 [
   {
+    "slug": "2026/hex-scatterplot-d3-hexbin-visualization",
+    "title": "Hex Scatterplots: When a Thousand Points Need a Honeycomb",
+    "date": "2026-05-19",
+    "published": true
+  },
+  {
     "slug": "2026/punch-card-d3-overtime-visualization",
     "title": "Punch Cards: When the Week Becomes a Grid of Hours",
     "date": "2026-05-19",
