@@ -30,15 +30,24 @@ Years later, computer vision moved on—bigger models, WASM bundles, hand landma
 
 ## Try it live
 
-Allow webcam access when prompted, then use the panel on the left—**Selfie Mode**, camera picker, hand count, model complexity, confidence sliders. Chrome desktop is what I originally targeted.
+Allow webcam access when your browser prompts you (inside the embed). Use the panel on the left—**Selfie Mode**, camera picker, hand count, model complexity, confidence sliders. Chrome desktop is what I originally targeted.
 
-<iframe height="300" style="width: 100%;" scrolling="no" title="MediaPipe - Hands" src="https://codepen.io/maggiben/embed/MWvVYqy?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allow="camera; microphone; autoplay">
-  See the Pen <a href="https://codepen.io/maggiben/pen/MWvVYqy">
-  MediaPipe - Hands</a> by Benjamin (<a href="https://codepen.io/maggiben">@maggiben</a>)
-  on <a href="https://codepen.io">CodePen</a>.
+<iframe
+  height="520"
+  style="width: 100%; min-height: 520px; border: 0;"
+  scrolling="no"
+  title="MediaPipe - Hands"
+  src="https://codepen.io/maggiben/embed/MWvVYqy?default-tab=result"
+  frameborder="no"
+  loading="lazy"
+  allowtransparency="true"
+  allow="accelerometer; autoplay; camera *; clipboard-read; clipboard-write; display-capture *; encrypted-media; gyroscope; microphone *; picture-in-picture; web-share"
+  allowfullscreen
+>
+  See the Pen <a href="https://codepen.io/maggiben/pen/MWvVYqy">MediaPipe - Hands</a> by Benjamin (<a href="https://codepen.io/maggiben">@maggiben</a>) on <a href="https://codepen.io">CodePen</a>.
 </iframe>
 
-<p><em>If the embed is blank or the camera does not start, <a href="https://codepen.io/maggiben/pen/MWvVYqy">open the pen on CodePen</a> in a new tab.</em></p>
+<p><em>Camera blocked in the frame? <a href="https://codepen.io/maggiben/pen/MWvVYqy" target="_blank" rel="noopener noreferrer">Open the pen on CodePen</a>—browsers often only grant webcam access on the top-level tab.</em></p>
 
 **What you should see:** your video feed with 21 landmarks per hand, connectors between joints, an FPS counter, and the 3D grid in the corner—like the capture above.
 
