@@ -1,4 +1,5 @@
-/* CodePen iframe — MediaPipe Hands (~1280px wide) */
+/* MediaPipe Hands demo iframe */
+.blog-embed.blog-embed--mediapipe,
 .blog-embed.blog-embed--codepen {
   max-width: 1280px;
   margin: 1.5rem auto;
@@ -6,9 +7,11 @@
   background: transparent;
   border: 0;
 }
+.blog-embed.blog-embed--mediapipe iframe,
 .blog-embed.blog-embed--codepen iframe {
   display: block;
   width: 100%;
+  min-height: 687px;
   border: 0;
-  background: transparent;
+  background: #596e73;
 }

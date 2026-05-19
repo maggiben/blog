@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MediaPipe Hands</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils@0.6.1675466023/control_utils.css" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils_3d@0.3.1675466062/control_utils_3d.css" crossorigin="anonymous" />
+  <link rel="stylesheet" href="demo.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils@0.3.1675466862/camera_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils@0.6.1675466023/control_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils_3d@0.3.1675466062/control_utils_3d.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils@0.3.1675466124/drawing_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands@0.4.1675469240/hands.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <video class="input_video" playsinline></video>
+    <canvas class="output_canvas" width="1280" height="720"></canvas>
+    <div class="loading">
+      <div class="spinner"></div>
+      <div class="message">Loading</div>
+    </div>
+    <a class="abs logo" href="https://developers.google.com/mediapipe" target="_blank" rel="noopener noreferrer">
+      <span class="title">MediaPipe</span>
+    </a>
+    <div class="shoutout">
+      <a href="https://codepen.io/maggiben/pen/MWvVYqy" target="_blank" rel="noopener noreferrer">Fork on CodePen</a>
+    </div>
+  </div>
+  <div class="control-panel"></div>
+  <div class="square-box">
+    <div class="landmark-grid-container"></div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

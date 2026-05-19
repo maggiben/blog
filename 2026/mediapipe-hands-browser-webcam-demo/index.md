@@ -29,30 +29,31 @@ That is what this [CodePen](https://codepen.io/maggiben/pen/MWvVYqy) is for: [**
 
 No install. No Python server. Just models pulled from a CDN, a control panel, and the quiet thrill of **pose estimation at desk scale**.
 
-## Try it live — CodePen embed
+## Try it live
 
-Allow the camera when prompted. Wave one hand, then two. Toggle **Selfie Mode** so the mirror feels natural. Watch the FPS counter settle once the WASM graph warms up.
+Allow the camera when prompted (the embed must request camera access—your browser will ask). Wave one hand, then two. Toggle **Selfie Mode** so the mirror feels natural. Watch the FPS counter settle once the WASM graph warms up.
 
 <link rel="stylesheet" href="assets/demo/styles.css" />
 
-<div class="blog-embed blog-embed--codepen">
+<div class="blog-embed blog-embed--mediapipe">
   <iframe
     height="687"
     style="width: 100%;"
     scrolling="no"
     title="MediaPipe - Hands"
-    src="https://codepen.io/maggiben/embed/MWvVYqy?default-tab=result"
+    src="assets/demo/index.html"
     frameborder="no"
     loading="lazy"
-    allowtransparency="true"
+    allow="camera; microphone"
+    allowfullscreen
   >
-    See the Pen <a href="https://codepen.io/maggiben/pen/MWvVYqy">MediaPipe - Hands</a> by Benjamin (<a href="https://codepen.io/maggiben">@maggiben</a>) on <a href="https://codepen.io">CodePen</a>.
+    MediaPipe Hands demo — <a href="assets/demo/index.html" target="_blank" rel="noopener noreferrer">open in a new tab</a>
   </iframe>
 </div>
 
-<p><em>Blank iframe? <a href="https://codepen.io/maggiben/pen/MWvVYqy" target="_blank" rel="noopener noreferrer">Open the pen on CodePen</a>.</em></p>
+<p><em>Camera blocked or blank embed? <a href="assets/demo/index.html" target="_blank" rel="noopener noreferrer">Open the demo in a new tab</a> or try the <a href="https://codepen.io/maggiben/pen/MWvVYqy" target="_blank" rel="noopener noreferrer">CodePen fork</a>.</em></p>
 
-The pen ships with Google's official **Hands** demo wiring—control panel, loading spinner, landmark grid—forked and kept alive because it is still one of the clearest introductions to **in-browser perception**.
+This page hosts a **blog-side copy** in [assets/demo/](assets/demo/) so MediaPipe scripts load from jsDelivr directly—no CodePen embed wrapper. The [CodePen](https://codepen.io/maggiben/pen/MWvVYqy) is still the forkable source; the local copy is what runs in the iframe above.
 
 ## Two views of the same hands
 
@@ -193,4 +194,4 @@ Fork it, log the landmarks to the console, map a pinch to play/pause on your fav
 
 ---
 
-*CodePen: [codepen.io/maggiben/pen/MWvVYqy](https://codepen.io/maggiben/pen/MWvVYqy) · MediaPipe: [developers.google.com/mediapipe](https://developers.google.com/mediapipe)*
+*Demo: [assets/demo/](assets/demo/) · CodePen: [codepen.io/maggiben/pen/MWvVYqy](https://codepen.io/maggiben/pen/MWvVYqy) · MediaPipe: [developers.google.com/mediapipe](https://developers.google.com/mediapipe)*
