@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap');
+
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
@@ -18,7 +20,7 @@ a:hover {
 
 body {
   bottom: 0;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'Titillium Web', 'Google Sans', sans-serif;
   color: white;
   left: 0;
   margin: 0;
@@ -27,6 +29,7 @@ body {
   top: 0;
   transform-origin: 0 0;
   overflow: hidden;
+  background-color: #596e73;
 }
 
 .container {
@@ -49,6 +52,18 @@ body {
   transform: scale(-1, 1);
 }
 
+.input_image {
+  position: absolute;
+}
+
+.canvas-container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
 .output_canvas {
   width: 100%;
   display: block;
@@ -57,21 +72,42 @@ body {
   top: 0;
 }
 
+.control-panel-mount {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  z-index: 10;
+}
+
 .logo {
   bottom: 10px;
   right: 20px;
+  z-index: 5;
+}
+
+.logo .brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo img {
+  height: 50px;
+  width: auto;
 }
 
 .logo .title {
   color: white;
   font-size: 28px;
+  font-weight: 600;
 }
 
-.control-panel {
-  position: absolute;
-  left: 10px;
-  top: 10px;
-  z-index: 2;
+.logo .subtitle {
+  position: relative;
+  color: white;
+  font-size: 10px;
+  left: -30px;
+  top: 20px;
 }
 
 .loading {
@@ -86,7 +122,7 @@ body {
   justify-content: center;
   opacity: 1;
   transition: opacity 1s;
-  z-index: 3;
+  z-index: 20;
 }
 
 .loading .message {
@@ -115,6 +151,7 @@ body {
   text-align: center;
   font-size: 24px;
   position: absolute;
+  z-index: 5;
 }
 
 .square-box {
@@ -124,7 +161,7 @@ body {
   position: absolute;
   right: 20px;
   top: 20px;
-  z-index: 2;
+  z-index: 8;
 }
 
 .landmark-grid-container {
@@ -134,4 +171,24 @@ body {
   top: 0;
   left: 0;
   background-color: rgba(153, 153, 153, 0.6);
+}
+
+.demo-error {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 90%;
+  padding: 1rem 1.25rem;
+  background: rgba(0, 0, 0, 0.85);
+  border-radius: 8px;
+  color: #f19e9e;
+  font-size: 14px;
+  line-height: 1.4;
+  z-index: 30;
+  display: none;
+}
+
+.demo-error.visible {
+  display: block;
 }

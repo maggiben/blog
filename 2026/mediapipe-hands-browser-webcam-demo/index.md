@@ -37,7 +37,7 @@ Allow the camera when prompted (the embed must request camera access—your brow
 
 <div class="blog-embed blog-embed--mediapipe">
   <iframe
-    height="687"
+    height="780"
     style="width: 100%;"
     scrolling="no"
     title="MediaPipe - Hands"
@@ -53,7 +53,7 @@ Allow the camera when prompted (the embed must request camera access—your brow
 
 <p><em>Camera blocked or blank embed? <a href="assets/demo/index.html" target="_blank" rel="noopener noreferrer">Open the demo in a new tab</a> or try the <a href="https://codepen.io/maggiben/pen/MWvVYqy" target="_blank" rel="noopener noreferrer">CodePen fork</a>.</em></p>
 
-This page hosts a **blog-side copy** in [assets/demo/](assets/demo/) so MediaPipe scripts load from jsDelivr directly—no CodePen embed wrapper. The [CodePen](https://codepen.io/maggiben/pen/MWvVYqy) is still the forkable source; the local copy is what runs in the iframe above.
+This page hosts a **blog-side copy** in [assets/demo/](assets/demo/) with the same UI as the CodePen: collapsible control panel (hamburger), live FPS graph, selfie toggle, camera picker, hand-count and confidence sliders, loading spinner, 3D landmark grid, and MediaPipe branding. The [CodePen](https://codepen.io/maggiben/pen/MWvVYqy) is still the forkable source; the local copy is what runs in the iframe above.
 
 ## Two views of the same hands
 
