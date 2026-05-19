@@ -14,6 +14,8 @@ tags:
   - creative-coding
   - punch-card
 codepen: https://codepen.io/maggiben/pen/jOWoPx
+---
+
 ![Overtime punch card — days of the week by hour, orange circles sized by intensity](assets/cover.jpg)
 
 **Punch card**
