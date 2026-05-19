@@ -35,17 +35,11 @@ I bought into the dream hard: fresh beans go in, the machine **grinds, tamps, pu
 
 ## Watch the bean-to-cup in action
 
-This is the machine I used every day—grinding, tamping, pulling—until I swapped it for a V60. Hit play; the choreography is half the story.
+This is the machine I used every day—grinding, tamping, pulling—until I swapped it for a V60.
 
 <div class="blog-video">
-  <video controls playsinline preload="metadata" poster="assets/bean-to-cup-poster.jpg" width="720">
-    <source src="assets/bean-to-cup.mp4" type="video/mp4" />
-  </video>
+<video controls playsinline preload="metadata" poster="assets/bean-to-cup-poster.jpg" src="assets/bean-to-cup.mp4"></video>
 </div>
-
-<p><em>Bean-to-cup at work: impressive motion, underwhelming cup (for my taste).</em></p>
-
-<p>Video not playing in the embed? <a href="assets/bean-to-cup.mp4">Open or download the clip</a> (~50 seconds).</p>
 
 The problem wasn’t that it failed loudly. It failed **almost** well enough to keep you hooked. Some mornings the espresso was passable. Some afternoons it was thin and sour. I could never quite trust it—and trust is everything when coffee is supposed to be the calm before the storm of your day.
 
