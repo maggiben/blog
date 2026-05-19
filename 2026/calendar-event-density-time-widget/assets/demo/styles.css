@@ -1,47 +1,39 @@
-/* Scoped from CodePen dist/style.css for blog embed */
+/* Scoped from CodePen dist/style.css — inline blog embed only */
 .blog-embed.calendar-event-demo {
+  position: relative;
   display: flex;
   justify-content: center;
   padding: 1.5rem 1rem;
   background: linear-gradient(160deg, #eef4f9 0%, #f7f9fb 45%, #eceff3 100%);
   border-radius: 8px;
   margin: 1.5rem 0;
-}
-.calendar-demo {
+  overflow: visible;
   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
   font-weight: 100;
-  width: 100%;
-  max-width: 480px;
-  margin: 0 auto;
 }
-.calendar-demo a.open-tab {
-  display: block;
-  text-align: center;
-  margin-top: 0.75rem;
-  font-size: 0.9rem;
-  color: #2066a3;
-}
-.calendar-demo,
-.calendar-demo *,
-.calendar-demo *:before,
-.calendar-demo *:after {
+.blog-embed.calendar-event-demo,
+.blog-embed.calendar-event-demo *,
+.blog-embed.calendar-event-demo *:before,
+.blog-embed.calendar-event-demo *:after {
   box-sizing: border-box;
 }
-.calendar-demo .calendar {
+.blog-embed.calendar-event-demo .calendar {
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
   width: 100%;
+  max-width: 480px;
   margin: 0 auto;
   display: block;
-  overflow: hidden;}
-.calendar-demo .calendar .circle {
+  overflow: visible;
+}
+.blog-embed.calendar-event-demo .calendar .circle {
   width: 24px;
   height: 24px;
   background-color: #428bca;
   display: inline-block;
   border-radius: 50%;}
-.calendar-demo .calendar .header {
+.blog-embed.calendar-event-demo .calendar .header {
   height: 50px;
   width: 100%;
   background-color: #428bca;
@@ -52,40 +44,40 @@
   border-top-right-radius: 6px;
   padding-top: 10px;
   height: 100px;}
-.calendar-demo .calendar .header .month {
+.blog-embed.calendar-event-demo .calendar .header .month {
   opacity: 1;
   text-align: center;
   padding: 0px 40px;
   font-size: 2.5em;
   margin-bottom: 0px;
   font-weight: normal;}
-.calendar-demo .calendar .header .year {
+.blog-embed.calendar-event-demo .calendar .header .year {
   text-align: center;
   padding: 0px 40px;
   font-size: 1.5em;}
-.calendar-demo .calendar .header h1 {
+.blog-embed.calendar-event-demo .calendar .header h1 {
   margin: 0;
   padding: 0;
   font-size: 20px;
   line-height: 50px;
   font-weight: 100;
   letter-spacing: 1px;}
-.calendar-demo .calendar .legend {
+.blog-embed.calendar-event-demo .calendar .legend {
   position: absolute;
   bottom: 0;
   width: 100%;
   background: #fff;
   border: 1px solid #E9E9E9;
   line-height: 30px;}
-.calendar-demo .ring-left {
+.blog-embed.calendar-event-demo .ring-left {
   left: 2em;
   position: absolute;
   margin-top: -8px;}
-.calendar-demo .ring-right {
+.blog-embed.calendar-event-demo .ring-right {
   right: 2em;
   position: absolute;
   margin-top: -8px;}
-.calendar-demo .ring-left:after, .calendar-demo .ring-right:after, .calendar-demo .ring-left:before, .calendar-demo .ring-right:before {
+.blog-embed.calendar-event-demo .ring-left:after, .blog-embed.calendar-event-demo .ring-right:after, .blog-embed.calendar-event-demo .ring-left:before, .blog-embed.calendar-event-demo .ring-right:before {
   background: #fff;
   border-radius: 4px;
   box-shadow: 0 2px 1px rgba(0, 0, 0, 0.25), 0 -1px 1px rgba(0, 0, 0, 0.2);
@@ -94,7 +86,7 @@
   margin: 8px;
   height: 32px;
   width: 8px;}
-.calendar-demo .left, .calendar-demo .right {
+.blog-embed.calendar-event-demo .left, .blog-embed.calendar-event-demo .right {
   position: absolute;
   width: 0px;
   height: 0px;
@@ -102,52 +94,52 @@
   top: 50%;
   margin-top: -7.5px;
   cursor: pointer;}
-.calendar-demo .left {
+.blog-embed.calendar-event-demo .left {
   border-width: 7.5px 10px 7.5px 0;
   border-color: transparent #FFF transparent transparent;
   left: 20px;}
-.calendar-demo .right {
+.blog-embed.calendar-event-demo .right {
   border-width: 7.5px 0 7.5px 10px;
   border-color: transparent transparent transparent #FFF;
   right: 20px;}
-.calendar-demo .month {
+.blog-embed.calendar-event-demo .month {
   /*overflow: hidden;*/
   opacity: 0;
   margin-bottom: 40px;
   transition: all 0.7s ease;}
-.calendar-demo .month.new {
+.blog-embed.calendar-event-demo .month.new {
   -webkit-animation: fadeIn 1s ease-out;
   opacity: 1;}
-.calendar-demo .month.in.next {
+.blog-embed.calendar-event-demo .month.in.next {
   -webkit-animation: moveFromLeftFadeMonth 0.4s ease-out;
   -moz-animation: moveFromLeftFadeMonth 0.4s ease-out;
   animation: moveFromLeftFadeMonth 0.4s ease-out;
   opacity: 1;}
-.calendar-demo .month.in.prev {
+.blog-embed.calendar-event-demo .month.in.prev {
   -webkit-animation: moveFromRightFadeMonth 0.4s ease-out;
   -moz-animation: moveFromRightFadeMonth 0.4s ease-out;
   animation: moveFromRightFadeMonth 0.4s ease-out;
   opacity: 1;}
-.calendar-demo .month.out.next {
+.blog-embed.calendar-event-demo .month.out.next {
   -webkit-animation: moveToRightFadeMonth 0.4s ease-in;
   -moz-animation: moveToRightFadeMonth 0.4s ease-in;
   animation: moveToRightFadeMonth 0.4s ease-in;
   opacity: 1;}
-.calendar-demo .month.out.prev {
+.blog-embed.calendar-event-demo .month.out.prev {
   -webkit-animation: moveToLeftFadeMonth 0.4s ease-in;
   -moz-animation: moveToLeftFadeMonth 0.4s ease-in;
   animation: moveToLeftFadeMonth 0.4s ease-in;
   opacity: 1;}
-.calendar-demo .week-days {
+.blog-embed.calendar-event-demo .week-days {
   padding: 8px 0px;
   background-color: #efefef;
   border-top: 4px solid #2066A3;}
-.calendar-demo .week-days .day {
+.blog-embed.calendar-event-demo .week-days .day {
   cursor: default;}
-.calendar-demo .week {
+.blog-embed.calendar-event-demo .week {
   background-color: #fff;
   /* background: #4A4A4A; */}
-.calendar-demo .day {
+.blog-embed.calendar-event-demo .day {
   display: inline-block;
   width: -webkit-calc(14.28571429%);
   padding: 10px;
@@ -157,21 +149,21 @@
   /* background: #4A4A4A; */
   position: relative;
   z-index: 100;}
-.calendar-demo .day.other {
+.blog-embed.calendar-event-demo .day.other {
   color: #E9E9E9;}
-.calendar-demo .day.other .circle {
+.blog-embed.calendar-event-demo .day.other .circle {
   background-color: #E9E9E9;}
-.calendar-demo .day.today {
+.blog-embed.calendar-event-demo .day.today {
   color: #428bca;
   font-weight: normal;}
-.calendar-demo .day .day-events {
+.blog-embed.calendar-event-demo .day .day-events {
   list-style: none;
   margin-top: 3px;
   text-align: center;
   height: 12px;
   line-height: 6px;
   overflow: hidden;}
-.calendar-demo .day .day-events span {
+.blog-embed.calendar-event-demo .day .day-events span {
   vertical-align: top;
   display: inline-block;
   padding: 0;
@@ -180,39 +172,39 @@
   height: 5px;
   line-height: 5px;
   margin: 0 1px;}
-.calendar-demo .day-name {
+.blog-embed.calendar-event-demo .day-name {
   font-size: 9px;
   text-transform: uppercase;
   margin-bottom: 5px;
   color: rgba(255, 255, 255, 0.5);
   letter-spacing: 0.7px;}
-.calendar-demo .day-number {
+.blog-embed.calendar-event-demo .day-number {
   font-size: 1em;
   letter-spacing: 1.5px;}
-.calendar-demo .blue {
+.blog-embed.calendar-event-demo .blue {
   background: #9ccaeb;}
-.calendar-demo .orange {
+.blog-embed.calendar-event-demo .orange {
   background: #f7a700;}
-.calendar-demo .green {
+.blog-embed.calendar-event-demo .green {
   background: #99c66d;}
-.calendar-demo .yellow {
+.blog-embed.calendar-event-demo .yellow {
   background: #f9e900;}
-.calendar-demo .pink {
+.blog-embed.calendar-event-demo .pink {
   background: #FF009B;}
-.calendar-demo .details {
+.blog-embed.calendar-event-demo .details {
   position: relative;
   border: 1px solid #e9e9e9;
   margin-top: 5px;
   border-radius: 2px;}
-.calendar-demo .details.in {
+.blog-embed.calendar-event-demo .details.in {
   -webkit-animation: moveFromTopFade 0.5s ease both;
   -moz-animation: moveFromTopFade 0.5s ease both;
   animation: moveFromTopFade 0.5s ease both;}
-.calendar-demo .details.out {
+.blog-embed.calendar-event-demo .details.out {
   -webkit-animation: moveToTopFade 0.5s ease both;
   -moz-animation: moveToTopFade 0.5s ease both;
   animation: moveToTopFade 0.5s ease both;}
-.calendar-demo .arrow {
+.blog-embed.calendar-event-demo .arrow {
   position: absolute;
   top: -5px;
   left: 50%;
@@ -223,7 +215,7 @@
   border-width: 0 5px 5px 5px;
   border-color: transparent transparent #e9e9e9 transparent;
   transition: all 0.7s ease;}
-.calendar-demo .arrow:before {
+.blog-embed.calendar-event-demo .arrow:before {
   content: "";
   position: absolute;
   top: 2px;
@@ -234,71 +226,71 @@
   border-style: solid;
   border-width: 0 5px 5px 5px;
   border-color: transparent transparent #fff transparent;}
-.calendar-demo .events {
+.blog-embed.calendar-event-demo .events {
   padding: 7px 0;
   overflow-y: auto;
   overflow-x: hidden;}
-.calendar-demo .events.in {
+.blog-embed.calendar-event-demo .events.in {
   -webkit-animation: fadeIn 0.3s ease both;
   -moz-animation: fadeIn 0.3s ease both;
   animation: fadeIn 0.3s ease both;
   -webkit-animation-delay: 0.3s;
   -moz-animation-delay: 0.3s;
   animation-delay: 0.3s;}
-.calendar-demo .details.out .events {
+.blog-embed.calendar-event-demo .details.out .events {
   -webkit-animation: fadeOutShrink 0.4s ease both;
   -moz-animation: fadeOutShink 0.4s ease both;
   animation: fadeOutShink 0.4s ease both;}
-.calendar-demo .events.out {
+.blog-embed.calendar-event-demo .events.out {
   -webkit-animation: fadeOut 0.3s ease both;
   -moz-animation: fadeOut 0.3s ease both;
   animation: fadeOut 0.3s ease both;}
-.calendar-demo .event {
+.blog-embed.calendar-event-demo .event {
   font-size: 16px;
   line-height: 22px;
   letter-spacing: 0.5px;
   padding: 2px 16px;
   vertical-align: top;}
-.calendar-demo .event.empty {
+.blog-embed.calendar-event-demo .event.empty {
   color: #eee;}
-.calendar-demo .event span {
+.blog-embed.calendar-event-demo .event span {
   display: inline-block;
   padding: 0 0 0 7px;}
-.calendar-demo .event-category {
+.blog-embed.calendar-event-demo .event-category {
   height: 10px;
   width: 10px;
   display: inline-block;
   margin: 8px 0 0;
   vertical-align: top;}
-.calendar-demo .legend {
+.blog-embed.calendar-event-demo .legend {
   bottom: 0;
   width: 100%;
   background: #fff;
   border: 1px solid #E9E9E9;
   line-height: 30px;}
-.calendar-demo .entry {
+.blog-embed.calendar-event-demo .entry {
   position: relative;
   padding: 0 0 0 25px;
   font-size: 13px;
   display: inline-block;
   line-height: 30px;
   background: transparent;}
-.calendar-demo .entry:after {
+.blog-embed.calendar-event-demo .entry:after {
   position: absolute;
   content: '';
   height: 5px;
   width: 5px;
   top: 12px;
   left: 14px;}
-.calendar-demo .entry.blue:after {
+.blog-embed.calendar-event-demo .entry.blue:after {
   background: #9ccaeb;}
-.calendar-demo .entry.orange:after {
+.blog-embed.calendar-event-demo .entry.orange:after {
   background: #f7a700;}
-.calendar-demo .entry.green:after {
+.blog-embed.calendar-event-demo .entry.green:after {
   background: #99c66d;}
-.calendar-demo .entry.yellow:after {
+.blog-embed.calendar-event-demo .entry.yellow:after {
   background: #f9e900;}
-.calendar-demo /* slide out to the left */
+.blog-embed.calendar-event-demo /* slide out to the left */
 @keyframes slideOutLeft {
   to {
     transform: translateX(-200%);}
@@ -308,23 +300,23 @@
 @-webkit-keyframes slideOutLeft {
   to {
     -webkit-transform: translateX(-200%);}
-.calendar-demo /* slide in from the right */
+.blog-embed.calendar-event-demo /* slide in from the right */
 @keyframes slideInRight {
   from {
     transform: translateX(200%);}
-.calendar-demo to {
+.blog-embed.calendar-event-demo to {
     transform: translateX(0);}
 @-moz-keyframes slideInRight {
   from {
     -moz-transform: translateX(200%);}
-.calendar-demo to {
+.blog-embed.calendar-event-demo to {
     -moz-transform: translateX(0);}
 @-webkit-keyframes slideInRight {
   from {
     -webkit-transform: translateX(200%);}
-.calendar-demo to {
+.blog-embed.calendar-event-demo to {
     -webkit-transform: translateX(0);}
-.calendar-demo /* Animations are cool!  */
+.blog-embed.calendar-event-demo /* Animations are cool!  */
 @-webkit-keyframes moveFromTopFade {
   from {
     opacity: 0.3;
@@ -435,7 +427,7 @@
   from {
     opacity: 0;
     -webkit-transform: translateX(200%);}
-.calendar-demo to {
+.blog-embed.calendar-event-demo to {
     opacity: 1;
     -webkit-transform: translateX(0%);}
 @-webkit-keyframes moveToRightFadeMonth {

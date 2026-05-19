@@ -30,21 +30,18 @@ The original demo mapped **malware and bot names** onto January 2017 (a threat-i
 
 ## Try it live
 
-Click any day with a visible blue circle. Use the arrows in the header to change months—the outgoing month slides away while the next one fades in. Today’s date is highlighted; if it has events, the detail panel opens automatically after a short delay.
+The widget below runs **inline in this post**—same markup and scripts as the [CodePen](https://codepen.io/maggiben/pen/OPmLBW), not an iframe or a separate fullscreen page. Click any day with a visible blue circle. Use the header arrows to change months. Today’s date is highlighted; if it has events, the detail panel opens after a short delay.
 
 <link rel="stylesheet" href="assets/demo/styles.css" />
 
-<div class="blog-embed calendar-event-demo" id="calendar-event-demo">
-  <div class="calendar-demo">
-    <div class="calendar" id="calendar"></div>
-    <a class="open-tab" href="assets/demo/index.html" target="_blank" rel="noopener noreferrer">Open fullscreen</a>
-  </div>
+<div class="blog-embed calendar-event-demo">
+  <div class="calendar" id="calendar"></div>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/moment@2.29.4/moment.min.js"></script>
 <script src="assets/demo/calendar.js"></script>
 
-<p><em>Animations feel sluggish? <a href="assets/demo/index.html" target="_blank" rel="noopener noreferrer">Open the fullscreen demo</a> or the <a href="https://codepen.io/maggiben/pen/OPmLBW" target="_blank" rel="noopener noreferrer">CodePen archive</a>.</em></p>
+<p><em>Not interactive? Your build must allow <code>&lt;script&gt;</code> and <code>&lt;link&gt;</code> in markdown (e.g. rehype-raw). Fallback: <a href="https://codepen.io/maggiben/pen/OPmLBW" target="_blank" rel="noopener noreferrer">open the CodePen</a>.</em></p>
 
 **What you should see:** a compact month view, circles sized by event count, and an expandable detail strip anchored under the week—like the capture above.
 

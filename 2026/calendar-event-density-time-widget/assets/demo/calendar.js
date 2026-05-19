@@ -283,9 +283,9 @@
   }
 
   function init() {
-    var root = document.getElementById('calendar-event-demo');
+    var root = document.querySelector('.blog-embed.calendar-event-demo .calendar');
     if (!root || !window.moment) return;
-    new Calendar('#calendar-event-demo #calendar', demoEvents());
+    new Calendar('.blog-embed.calendar-event-demo .calendar', demoEvents());
   }
 
   if (document.readyState === 'loading') {
