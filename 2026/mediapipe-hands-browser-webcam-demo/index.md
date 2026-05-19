@@ -38,9 +38,7 @@ Allow webcam access when your browser prompts you (inside the embed). Use the pa
   scrolling="no"
   title="MediaPipe - Hands"
   src="https://codepen.io/maggiben/embed/MWvVYqy?default-tab=result"
-  frameborder="no"
   loading="lazy"
-  allowtransparency="true"
   allow="accelerometer; autoplay; camera *; clipboard-read; clipboard-write; display-capture *; encrypted-media; gyroscope; microphone *; picture-in-picture; web-share"
   allowfullscreen
 >
