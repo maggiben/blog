@@ -94,7 +94,7 @@ const offsetConnections = mpHands.HAND_CONNECTIONS.map((connection) => [
 
 That is the kind of glue code tutorials skip and demos need.
 
-**5. UX polish.** A spinner fades when the first frame lands (`body.loaded`). `device-detector-js` warns if you are not on Chrome—MediaPipe was picky in 2021 and honesty beat silent failure. Selfie mode mirrors the hidden `<video>` with `transform: scale(-1, 1)` so movement matches intuition.
+**5. UX polish.** A spinner fades when the first frame lands (`body.loaded`). The blog build logs a console warning on non-Chrome browsers—MediaPipe was picky in 2021 and honesty beat silent failure. Selfie mode mirrors the hidden `<video>` with `transform: scale(-1, 1)` so movement matches intuition.
 
 ## The stack (2021 edition)
 
@@ -102,7 +102,7 @@ That is the kind of glue code tutorials skip and demos need.
 - **control_utils** — FPS readout, sliders, camera / image source picker
 - **controls_3d** — `LandmarkGrid` for world coordinates
 - **drawing_utils** — connectors and landmark circles on Canvas2D
-- **device-detector-js** (ESM from esm.sh) — lightweight UA gate
+- **User-agent check** — lightweight console warning for non-Chrome browsers
 
 The pen's parent on CodePen is Google's reference; mine kept the spirit and the **interactive panel** front and center.
 
