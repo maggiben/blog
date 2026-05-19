@@ -1,16 +1,23 @@
-/* Event-density calendar — vanilla JS from CodePen OPmLBW (blog embed, no Angular). */
+/* Event-density calendar — vanilla JS from CodePen OPmLBW (blog embed). */
 (function () {
-  var today = moment();
+  var MOMENT_URL = 'https://cdn.jsdelivr.net/npm/moment@2.29.4/moment.min.js';
+
+  function moment() {
+    return window.moment.apply(null, arguments);
+  }
 
   function Calendar(selector, events) {
     this.el = document.querySelector(selector);
+    if (!this.el) {
+      throw new Error('Calendar root not found: ' + selector);
+    }
     this.events = events;
     this.maxEvents = this.events.reduce(function (p, c) {
       return c.events.length > p ? c.events.length : p;
-    }, 0);
+    }, 1);
     this.current = moment().date(1);
     this.draw();
-    var current = this.el.querySelector('.today');
+    var current = this.el.querySelector('.day.today');
     if (current) {
       var self = this;
       window.setTimeout(function () {
@@ -28,9 +35,8 @@
     var self = this;
     if (!this.header) {
       this.header = createElement('div', 'header');
-      this.header.className = 'header';
       this.title = {
-        month: createElement('div', 'month', this.current.format('MMMM')),
+        month: createElement('div', 'month-label', this.current.format('MMMM')),
         year: createElement('div', 'year', this.current.format('YYYY')),
       };
       var right = createElement('div', 'right');
@@ -149,7 +155,7 @@
     var classes = ['day'];
     if (day.month() !== this.current.month()) {
       classes.push('other');
-    } else if (today.isSame(day, 'day')) {
+    } else if (moment().isSame(day, 'day')) {
       classes.push('today');
     }
     return classes.join(' ');
@@ -282,15 +288,57 @@
     ];
   }
 
+  function showError(message) {
+    var embed = document.querySelector('.blog-embed.calendar-event-demo');
+    if (!embed || embed.querySelector('.calendar-error')) return;
+    var p = document.createElement('p');
+    p.className = 'calendar-error';
+    p.textContent = message;
+    embed.appendChild(p);
+  }
+
+  function loadMoment() {
+    if (window.moment) return Promise.resolve();
+    var existing = document.querySelector('script[data-calendar-moment]');
+    if (existing) {
+      return new Promise(function (resolve, reject) {
+        existing.addEventListener('load', resolve, { once: true });
+        existing.addEventListener('error', reject, { once: true });
+      });
+    }
+    return new Promise(function (resolve, reject) {
+      var s = document.createElement('script');
+      s.src = MOMENT_URL;
+      s.crossOrigin = 'anonymous';
+      s.dataset.calendarMoment = '1';
+      s.onload = resolve;
+      s.onerror = function () {
+        reject(new Error('Failed to load Moment.js'));
+      };
+      document.head.appendChild(s);
+    });
+  }
+
   function init() {
-    var root = document.querySelector('.blog-embed.calendar-event-demo .calendar');
-    if (!root || !window.moment) return;
+    var el = document.querySelector('.blog-embed.calendar-event-demo .calendar');
+    if (!el || el.dataset.calendarReady) return;
+    el.dataset.calendarReady = '1';
     new Calendar('.blog-embed.calendar-event-demo .calendar', demoEvents());
+    var embed = el.closest('.blog-embed');
+    if (embed) embed.classList.add('calendar-event-demo--ready');
+  }
+
+  function start() {
+    loadMoment()
+      .then(init)
+      .catch(function () {
+        showError('Calendar could not load Moment.js. Try the CodePen link below.');
+      });
   }
 
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', init);
+    document.addEventListener('DOMContentLoaded', start);
   } else {
-    init();
+    start();
   }
 })();

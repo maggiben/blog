@@ -10,6 +10,13 @@
   overflow: visible;
   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
   font-weight: 100;
+  min-height: 420px;
+}
+.blog-embed.calendar-event-demo .calendar-error {
+  margin: 1rem 0 0;
+  text-align: center;
+  color: #8a3b12;
+  font-size: 0.95rem;
 }
 .blog-embed.calendar-event-demo,
 .blog-embed.calendar-event-demo *,
@@ -44,7 +51,7 @@
   border-top-right-radius: 6px;
   padding-top: 10px;
   height: 100px;}
-.blog-embed.calendar-event-demo .calendar .header .month {
+.blog-embed.calendar-event-demo .calendar .header .month-label {
   opacity: 1;
   text-align: center;
   padding: 0px 40px;
@@ -102,30 +109,30 @@
   border-width: 7.5px 0 7.5px 10px;
   border-color: transparent transparent transparent #FFF;
   right: 20px;}
-.blog-embed.calendar-event-demo .month {
-  /*overflow: hidden;*/
-  opacity: 0;
+.blog-embed.calendar-event-demo .calendar > .month {
+  opacity: 1;
   margin-bottom: 40px;
-  transition: all 0.7s ease;}
-.blog-embed.calendar-event-demo .month.new {
+  transition: opacity 0.7s ease;}
+.blog-embed.calendar-event-demo .calendar > .month.new {
   -webkit-animation: fadeIn 1s ease-out;
+  animation: fadeIn 1s ease-out;
   opacity: 1;}
-.blog-embed.calendar-event-demo .month.in.next {
+.blog-embed.calendar-event-demo .calendar > .month.in.next {
   -webkit-animation: moveFromLeftFadeMonth 0.4s ease-out;
   -moz-animation: moveFromLeftFadeMonth 0.4s ease-out;
   animation: moveFromLeftFadeMonth 0.4s ease-out;
   opacity: 1;}
-.blog-embed.calendar-event-demo .month.in.prev {
+.blog-embed.calendar-event-demo .calendar > .month.in.prev {
   -webkit-animation: moveFromRightFadeMonth 0.4s ease-out;
   -moz-animation: moveFromRightFadeMonth 0.4s ease-out;
   animation: moveFromRightFadeMonth 0.4s ease-out;
   opacity: 1;}
-.blog-embed.calendar-event-demo .month.out.next {
+.blog-embed.calendar-event-demo .calendar > .month.out.next {
   -webkit-animation: moveToRightFadeMonth 0.4s ease-in;
   -moz-animation: moveToRightFadeMonth 0.4s ease-in;
   animation: moveToRightFadeMonth 0.4s ease-in;
   opacity: 1;}
-.blog-embed.calendar-event-demo .month.out.prev {
+.blog-embed.calendar-event-demo .calendar > .month.out.prev {
   -webkit-animation: moveToLeftFadeMonth 0.4s ease-in;
   -moz-animation: moveToLeftFadeMonth 0.4s ease-in;
   animation: moveToLeftFadeMonth 0.4s ease-in;

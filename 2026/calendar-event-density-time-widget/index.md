@@ -38,7 +38,6 @@ The widget below runs **inline in this post**—same markup and scripts as the [
   <div class="calendar" id="calendar"></div>
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/moment@2.29.4/moment.min.js"></script>
 <script src="assets/demo/calendar.js"></script>
 
 <p><em>Not interactive? Your build must allow <code>&lt;script&gt;</code> and <code>&lt;link&gt;</code> in markdown (e.g. rehype-raw). Fallback: <a href="https://codepen.io/maggiben/pen/OPmLBW" target="_blank" rel="noopener noreferrer">open the CodePen</a>.</em></p>
