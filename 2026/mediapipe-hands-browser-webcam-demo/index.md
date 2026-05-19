@@ -32,15 +32,11 @@ Years later, computer vision moved on—bigger models, WASM bundles, hand landma
 
 Allow webcam access when prompted, then use the panel on the left—**Selfie Mode**, camera picker, hand count, model complexity, confidence sliders. Chrome desktop is what I originally targeted.
 
-<div class="blog-embed">
-  <iframe
-    src="https://codepen.io/maggiben/embed/MWvVYqy?default-tab=result"
-    title="MediaPipe Hands — CodePen by maggiben"
-    loading="lazy"
-    allow="camera; microphone; autoplay"
-    allowfullscreen
-  ></iframe>
-</div>
+<iframe height="300" style="width: 100%;" scrolling="no" title="MediaPipe - Hands" src="https://codepen.io/maggiben/embed/MWvVYqy?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allow="camera; microphone; autoplay">
+  See the Pen <a href="https://codepen.io/maggiben/pen/MWvVYqy">
+  MediaPipe - Hands</a> by Benjamin (<a href="https://codepen.io/maggiben">@maggiben</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
 
 <p><em>If the embed is blank or the camera does not start, <a href="https://codepen.io/maggiben/pen/MWvVYqy">open the pen on CodePen</a> in a new tab.</em></p>
 
