@@ -26,21 +26,28 @@ Most calendars show you **what** is scheduled. A smaller, sharper class of widge
 
 Years ago I published one on CodePen: [**Event-density calendar**](https://codepen.io/maggiben/pen/OPmLBW). Blue header, binder rings, month navigation with a slide animation. Each day is a number and a circle; the circle **grows** when that day carried more events. Click a busy day and a panel unfolds beneath the week row, listing what happened. No backend, no framework ceremony—**Moment.js**, vanilla DOM, and CSS animations that aged surprisingly well.
 
-The original demo mapped **malware and bot names** onto January 2017 (a threat-intel calendar for a security context). The live embed below uses friendlier sample data for the current month, but the mechanic is the same: **density as UI**.
+The original demo mapped **malware and bot names** onto January 2017 (a threat-intel calendar for a security context). The mechanic is the same either way: **density as UI**.
 
 ## Try it live
 
-The widget below runs **inline in this post**—same markup and scripts as the [CodePen](https://codepen.io/maggiben/pen/OPmLBW), not an iframe or a separate fullscreen page. Click any day with a visible blue circle. Use the header arrows to change months. Today’s date is highlighted in blue. Click a day with a circle to expand its events.
+The widget below is the [CodePen](https://codepen.io/maggiben/pen/OPmLBW) embedded in this post. Click any day with a visible blue circle, use the header arrows to change months, and watch the detail panel open under the week row. The pen opens on **January 2017** with the original sample data—navigate to the current month or fork the pen to plug in your own events.
 
-<link rel="stylesheet" href="assets/demo/styles.css" />
-
-<div class="blog-embed calendar-event-demo">
-  <div class="calendar" id="calendar"></div>
+<div class="blog-embed">
+  <p
+    class="codepen"
+    data-height="620"
+    data-pen-title="Calendar"
+    data-default-tab="result"
+    data-slug-hash="OPmLBW"
+    data-user="maggiben"
+    style="height: 620px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; margin: 0; padding: 0; border: 0;"
+  >
+    <span>See the Pen <a href="https://codepen.io/maggiben/pen/OPmLBW">Calendar</a> by Benjamin (<a href="https://codepen.io/maggiben">@maggiben</a>) on <a href="https://codepen.io">CodePen</a>.</span>
+  </p>
+  <script async src="https://public.codepenassets.com/embed/index.js"></script>
 </div>
 
-<script src="assets/demo/calendar.js"></script>
-
-<p><em>Not interactive? Your build must allow <code>&lt;script&gt;</code> and <code>&lt;link&gt;</code> in markdown (e.g. rehype-raw). Fallback: <a href="https://codepen.io/maggiben/pen/OPmLBW" target="_blank" rel="noopener noreferrer">open the CodePen</a>.</em></p>
+<p><em>Embed blocked or blank? <a href="https://codepen.io/maggiben/pen/OPmLBW" target="_blank" rel="noopener noreferrer">Open the pen on CodePen</a>.</em></p>
 
 **What you should see:** a compact month view, circles sized by event count, and an expandable detail strip anchored under the week—like the capture above.
 
@@ -84,7 +91,7 @@ Quiet days keep a zero-scale circle (invisible). Busy days approach full size. I
 
 **5. Month transitions.** Changing month sets `next` or `prev`, re-draws, and applies CSS classes `month out` / `month in` with keyframed slides—old-school `-webkit-animation` era, still charming.
 
-**6. Angular wrapper (original).** The CodePen shipped an `ng-app` directive that passed sample data into `new Calendar('#calendar', data)`. The blog embed drops Angular entirely and inlines demo events for the current month—same engine, fewer dependencies.
+**6. Angular wrapper (original).** The CodePen shipped an `ng-app` directive that passed sample data into `new Calendar('#calendar', data)`. The calendar engine itself is plain DOM; Angular was only the glue.
 
 ## The stack (CodePen era)
 
@@ -101,7 +108,7 @@ If I refreshed the project now:
 
 - **Temporal or Luxon** — Moment is in maintenance mode; modern codebases should start elsewhere.
 - **Accessibility** — keyboard focus per day, `aria-expanded` on the detail panel, `aria-label` that reads “3 events” not only a bigger circle.
-- **Responsive width** — the original fixed ~480px layout; embeds should breathe on wide posts (`max-width` + centered, which this blog version does).
+- **Responsive width** — the original fixed ~480px layout; a wider embed or fluid `max-width` would help on large screens.
 - **Data API** — accept `events: { date, items[] }[]` from JSON fetch instead of hard-coded arrays; keep the renderer dumb.
 - **Reduced motion** — respect `prefers-reduced-motion` and skip month slides for users who need it.
 
@@ -117,4 +124,4 @@ Fork it, swap malware names for deploys, or pipe CI failures into the array and 
 
 ---
 
-*CodePen: [codepen.io/maggiben/pen/OPmLBW](https://codepen.io/maggiben/pen/OPmLBW) · Demo source: [assets/demo/](assets/demo/) · Original sample data: January 2017 threat-intel theme*
+*CodePen: [codepen.io/maggiben/pen/OPmLBW](https://codepen.io/maggiben/pen/OPmLBW) · Blog copy of source: [assets/demo/](assets/demo/) · Sample data: January 2017 threat-intel theme*
