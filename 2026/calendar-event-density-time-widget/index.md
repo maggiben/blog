@@ -36,7 +36,7 @@ The iframe keeps the pen’s own styles isolated from this site’s dark theme. 
 
 <div class="blog-embed blog-embed--codepen">
   <iframe
-    height="560"
+    height="760"
     style="width: 100%;"
     scrolling="no"
     title="Calendar"
