@@ -30,20 +30,47 @@ Years later, computer vision moved on—bigger models, WASM bundles, hand landma
 
 ## Try it live
 
-Allow webcam access when prompted. The demo below is the same code as the [CodePen](https://codepen.io/maggiben/pen/MWvVYqy), hosted on this post so the camera can run on your domain—not inside CodePen’s nested iframe.
+Allow webcam access when the browser prompts you. The demo below is the same code as the [CodePen](https://codepen.io/maggiben/pen/MWvVYqy), embedded directly in this page—no iframe—so `getUserMedia` runs on this post’s origin. In the control panel, choose **Webcam** (or upload an image) to start; that click is the user gesture the browser needs before showing the permission dialog.
 
-<div class="blog-embed">
-  <iframe
-    height="520"
-    style="width: 100%; min-height: 520px; border: 0;"
-    title="MediaPipe - Hands"
-    src="assets/demo/index.html"
-    loading="lazy"
-    allow="accelerometer; autoplay; camera *; clipboard-read; clipboard-write; display-capture *; encrypted-media; gyroscope; microphone *; picture-in-picture; web-share"
-  ></iframe>
+<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils_3d@0.3/control_utils_3d.css" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils@0.6/control_utils.css" crossorigin="anonymous" />
+<link rel="stylesheet" href="assets/demo/styles.css" />
+
+<div class="blog-embed mediapipe-hands-demo" id="mediapipe-hands-demo">
+  <div class="container">
+    <video class="input_video" playsinline></video>
+    <canvas class="output_canvas" width="1280" height="720"></canvas>
+    <div class="loading">
+      <div class="spinner"></div>
+      <div class="message">Loading</div>
+    </div>
+    <a class="abs logo" href="https://developers.google.com/mediapipe" target="_blank" rel="noopener noreferrer">
+      <span class="title">MediaPipe</span>
+    </a>
+    <div class="shoutout">
+      <div>
+        <a href="https://developers.google.com/mediapipe/solutions/vision/hand_landmarker" target="_blank" rel="noopener noreferrer">
+          Click here for more info
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="control-panel"></div>
+  <div class="square-box">
+    <div class="landmark-grid-container"></div>
+  </div>
+  <a class="open-tab" href="assets/demo/index.html" target="_blank" rel="noopener noreferrer">Open fullscreen</a>
 </div>
 
-<p><em>Camera still blocked? Use <strong>Open in new tab</strong> inside the demo, or open <a href="assets/demo/index.html" target="_blank" rel="noopener noreferrer">assets/demo/index.html</a> directly. Archive: <a href="https://codepen.io/maggiben/pen/MWvVYqy" target="_blank" rel="noopener noreferrer">CodePen</a>.</em></p>
+<script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils@0.3/camera_utils.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils@0.6/control_utils.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils_3d@0.3/control_utils_3d.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils@0.3/drawing_utils.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands@0.4/hands.js" crossorigin="anonymous"></script>
+<script type="module" src="assets/demo/app.js"></script>
+
+<p><em>Camera still blocked? Open <a href="assets/demo/index.html" target="_blank" rel="noopener noreferrer">the fullscreen demo</a> or the <a href="https://codepen.io/maggiben/pen/MWvVYqy" target="_blank" rel="noopener noreferrer">CodePen archive</a>. Requires HTTPS (or localhost).</em></p>
 
 **What you should see:** your video feed with 21 landmarks per hand, connectors between joints, an FPS counter, and the 3D grid in the corner—like the capture above.
 
@@ -111,7 +138,7 @@ The pen's parent on CodePen is Google's reference; mine kept the spirit and the 
 If I refreshed the project now:
 
 - **Hand Landmarker** — MediaPipe's newer Tasks API is the maintained path; the classic `Hands` solution still works but is legacy territory.
-- **HTTPS and permissions** — the post embeds `assets/demo/` on your origin with `allow="camera *"`; your site’s `MarkdownContent` must forward that attribute on `<iframe>` (rehype-raw alone is not enough).
+- **HTTPS and permissions** — the demo is inline HTML on the post page; your markdown pipeline must allow `<script>` and `<link>` (rehype-raw or equivalent). Camera access needs HTTPS and a user gesture (pick **Webcam** in the panel).
 - **Mobile** — thermal throttling and smaller GPUs hurt; default `modelComplexity` to Lite on narrow viewports.
 - **Privacy copy** — one line: frames stay local, nothing is uploaded. Obvious to us; not to every visitor.
 

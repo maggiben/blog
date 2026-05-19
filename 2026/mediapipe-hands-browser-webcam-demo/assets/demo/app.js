@@ -1,41 +1,54 @@
-if (typeof Hands !== "function" || typeof ControlPanel !== "function") {
-  throw new Error(
-    "MediaPipe scripts did not load. Check the network and that this page is served over HTTPS or localhost.",
-  );
-}
+import DeviceDetector from "https://esm.sh/device-detector-js@2.2.10";
 
 const mpHands = window;
 const drawingUtils = window;
 const controls = window;
 const controls3d = window;
 
+const demoRoot = document.querySelector(".mediapipe-hands-demo");
+if (!demoRoot) {
+  throw new Error("MediaPipe Hands demo root (.mediapipe-hands-demo) not found.");
+}
+
+if (typeof mpHands.Hands !== "function" || typeof controls.ControlPanel !== "function") {
+  throw new Error(
+    "MediaPipe scripts did not load. Check the network and that this page is served over HTTPS or localhost.",
+  );
+}
+
+// Usage: testSupport({client?: string, os?: string}[])
+testSupport([{ client: "Chrome" }]);
+
 function testSupport(supportedDevices) {
-  const clientName =
-    navigator.userAgentData?.brands?.[0]?.brand ?? navigator.userAgent;
-  const osName = navigator.platform ?? "unknown";
+  const deviceDetector = new DeviceDetector();
+  const detectedDevice = deviceDetector.parse(navigator.userAgent);
   let isSupported = false;
   for (const device of supportedDevices) {
-    if (device.client !== undefined && !new RegExp(device.client, "i").test(clientName)) {
-      continue;
+    if (device.client !== undefined) {
+      const re = new RegExp(`^${device.client}$`);
+      if (!re.test(detectedDevice.client?.name ?? "")) {
+        continue;
+      }
     }
-    if (device.os !== undefined && !new RegExp(device.os, "i").test(osName)) {
-      continue;
+    if (device.os !== undefined) {
+      const re = new RegExp(`^${device.os}$`);
+      if (!re.test(detectedDevice.os?.name ?? "")) {
+        continue;
+      }
     }
     isSupported = true;
     break;
   }
   if (!isSupported) {
     console.warn(
-      `MediaPipe Hands: ${clientName}/${osName} may be unsupported. Chrome desktop is recommended.`,
+      `MediaPipe Hands: ${detectedDevice.client?.name ?? "unknown"}/${detectedDevice.os?.name ?? "unknown"} may be unsupported. Chrome desktop is recommended.`,
     );
   }
 }
 
-testSupport([{ client: "Chrome" }]);
-
-const videoElement = document.querySelector(".input_video");
-const canvasElement = document.querySelector(".output_canvas");
-const controlsElement = document.querySelector(".control-panel");
+const videoElement = demoRoot.querySelector(".input_video");
+const canvasElement = demoRoot.querySelector(".output_canvas");
+const controlsElement = demoRoot.querySelector(".control-panel");
 const canvasCtx = canvasElement.getContext("2d");
 
 const config = {
@@ -45,12 +58,12 @@ const config = {
 
 const fpsControl = new controls.FPS();
 
-const spinner = document.querySelector(".loading");
+const spinner = demoRoot.querySelector(".loading");
 spinner.ontransitionend = () => {
   spinner.style.display = "none";
 };
 
-const landmarkContainer = document.querySelector(".landmark-grid-container");
+const landmarkContainer = demoRoot.querySelector(".landmark-grid-container");
 const grid = new controls3d.LandmarkGrid(landmarkContainer, {
   connectionColor: 0xcccccc,
   definedColors: [
@@ -66,8 +79,16 @@ const grid = new controls3d.LandmarkGrid(landmarkContainer, {
   centered: false,
 });
 
+function demoSize() {
+  const rect = demoRoot.getBoundingClientRect();
+  return {
+    width: rect.width || demoRoot.clientWidth,
+    height: rect.height || demoRoot.clientHeight,
+  };
+}
+
 function onResults(results) {
-  document.body.classList.add("loaded");
+  demoRoot.classList.add("loaded");
   fpsControl.tick();
 
   canvasCtx.save();
@@ -85,15 +106,15 @@ function onResults(results) {
       drawingUtils.drawLandmarks(canvasCtx, landmarks, {
         color: isRightHand ? "#00FF00" : "#FF0000",
         fillColor: isRightHand ? "#FF0000" : "#00FF00",
-        radius: (data) => drawingUtils.lerp(data.from?.z ?? 0, -0.15, 0.1, 10, 1),
+        radius: (data) => drawingUtils.lerp(data.from.z, -0.15, 0.1, 10, 1),
       });
     }
   }
   canvasCtx.restore();
 
-  if (results.multiHandWorldLandmarks && results.multiHandedness) {
+  if (results.multiHandWorldLandmarks) {
     const landmarks = results.multiHandWorldLandmarks.reduce(
-      (prev, current) => prev.concat(current),
+      (prev, current) => [...prev, ...current],
       [],
     );
     const colors = [];
@@ -107,7 +128,7 @@ function onResults(results) {
       connections = connections.concat(offsetConnections);
       const classification = results.multiHandedness[loop];
       colors.push({
-        list: offsetConnections.map((_, i) => i + offset),
+        list: offsetConnections.map((unused, i) => i + offset),
         color: classification.label,
       });
     }
@@ -135,13 +156,14 @@ new controls
     new controls.SourcePicker({
       onFrame: async (input, size) => {
         const aspect = size.height / size.width;
+        const { width: maxWidth, height: maxHeight } = demoSize();
         let width;
         let height;
-        if (window.innerWidth > window.innerHeight) {
-          height = window.innerHeight;
+        if (maxWidth > maxHeight) {
+          height = maxHeight;
           width = height / aspect;
         } else {
-          width = window.innerWidth;
+          width = maxWidth;
           height = width * aspect;
         }
         canvasElement.width = width;
