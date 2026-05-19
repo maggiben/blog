@@ -1,16 +1,28 @@
-/* Event-density calendar — blog embed */
+/* Event-density calendar — blog embed (isolated from site theme) */
 .blog-embed.calendar-event-demo {
   position: relative;
   display: block;
   width: 100%;
-  max-width: 520px;
+  max-width: 480px;
   margin: 1.5rem auto;
-  padding: 1.25rem 1rem 1.5rem;
-  background: linear-gradient(160deg, #eef4f9 0%, #f7f9fb 45%, #eceff3 100%);
-  border-radius: 8px;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
   overflow: visible;
   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
   font-weight: 100;
+  color: #4a4a4a;
+}
+.blog-embed.calendar-event-demo .calendar,
+.blog-embed.calendar-event-demo .calendar .month,
+.blog-embed.calendar-event-demo .week,
+.blog-embed.calendar-event-demo .day,
+.blog-embed.calendar-event-demo .day-number,
+.blog-embed.calendar-event-demo .event,
+.blog-embed.calendar-event-demo .event span,
+.blog-embed.calendar-event-demo .entry {
+  color: #4a4a4a;
 }
 .blog-embed.calendar-event-demo .calendar-error {
   margin: 1rem 0 0;
@@ -39,6 +51,19 @@
   background-color: #428bca;
   display: inline-block;
   border-radius: 50%;}
+.blog-embed.blog-embed--codepen {
+  max-width: 480px;
+  margin: 1.5rem auto;
+  padding: 0;
+  background: transparent;
+  border: 0;
+}
+.blog-embed.blog-embed--codepen iframe {
+  display: block;
+  width: 100%;
+  border: 0;
+  background: transparent;
+}
 .blog-embed.calendar-event-demo .calendar .header {
   height: 50px;
   width: 100%;
@@ -56,11 +81,13 @@
   padding: 0px 40px;
   font-size: 2.5em;
   margin-bottom: 0px;
-  font-weight: normal;}
+  font-weight: normal;
+  color: #fff;}
 .blog-embed.calendar-event-demo .calendar .header .year {
   text-align: center;
   padding: 0px 40px;
-  font-size: 1.5em;}
+  font-size: 1.5em;
+  color: #fff;}
 .blog-embed.calendar-event-demo .calendar .header h1 {
   margin: 0;
   padding: 0;
@@ -131,11 +158,13 @@
   /* background: #4A4A4A; */
   position: relative;
   z-index: 100;}
-.blog-embed.calendar-event-demo .day.other {
-  color: #E9E9E9;}
+.blog-embed.calendar-event-demo .day.other,
+.blog-embed.calendar-event-demo .day.other .day-number {
+  color: #c8c8c8;}
 .blog-embed.calendar-event-demo .day.other .circle {
   background-color: #E9E9E9;}
-.blog-embed.calendar-event-demo .day.today {
+.blog-embed.calendar-event-demo .day.today,
+.blog-embed.calendar-event-demo .day.today .day-number {
   color: #428bca;
   font-weight: normal;}
 .blog-embed.calendar-event-demo .day .day-events {
@@ -158,11 +187,12 @@
   font-size: 9px;
   text-transform: uppercase;
   margin-bottom: 5px;
-  color: rgba(255, 255, 255, 0.5);
+  color: #5c6b7a;
   letter-spacing: 0.7px;}
 .blog-embed.calendar-event-demo .day-number {
   font-size: 1em;
-  letter-spacing: 1.5px;}
+  letter-spacing: 1.5px;
+  color: inherit;}
 .blog-embed.calendar-event-demo .blue {
   background: #9ccaeb;}
 .blog-embed.calendar-event-demo .orange {
@@ -232,7 +262,8 @@
   line-height: 22px;
   letter-spacing: 0.5px;
   padding: 2px 16px;
-  vertical-align: top;}
+  vertical-align: top;
+  color: #333;}
 .blog-embed.calendar-event-demo .event.empty {
   color: #eee;}
 .blog-embed.calendar-event-demo .event span {

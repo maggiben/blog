@@ -28,11 +28,32 @@ So I built a small **flip-calendar** widget on [CodePen](https://codepen.io/magg
 
 No backend, no build step—**Moment.js**, vanilla DOM, and CSS that still holds up years later.
 
-## Try it live
+## Try it live — CodePen embed
 
-The widget below runs **inline in this post**—same markup and scripts as the [CodePen](https://codepen.io/maggiben/pen/OPmLBW), not an iframe. Use the header arrows to change months, click any day with a visible circle, and watch the detail strip unfold under that week.
+The iframe keeps the pen’s own styles isolated from this site’s dark theme. Use the header arrows, click a day with a blue circle, and open the detail strip under that week.
 
 <link rel="stylesheet" href="assets/demo/styles.css" />
+
+<div class="blog-embed blog-embed--codepen">
+  <iframe
+    height="560"
+    style="width: 100%;"
+    scrolling="no"
+    title="Calendar"
+    src="https://codepen.io/maggiben/embed/OPmLBW?default-tab=result"
+    frameborder="no"
+    loading="lazy"
+    allowtransparency="true"
+  >
+    See the Pen <a href="https://codepen.io/maggiben/pen/OPmLBW">Calendar</a> by Benjamin (<a href="https://codepen.io/maggiben">@maggiben</a>) on <a href="https://codepen.io">CodePen</a>.
+  </iframe>
+</div>
+
+<p><em>Blank iframe? <a href="https://codepen.io/maggiben/pen/OPmLBW" target="_blank" rel="noopener noreferrer">Open the pen on CodePen</a>.</em></p>
+
+## Also on this page — inline (fixed for dark theme)
+
+Same widget rendered here with blog-local CSS: explicit text colors so day labels and event titles stay readable, no extra white card around the widget.
 
 <div class="blog-embed calendar-event-demo">
   <div class="calendar" id="calendar"></div>
@@ -40,7 +61,7 @@ The widget below runs **inline in this post**—same markup and scripts as the [
 
 <script src="assets/demo/calendar.js"></script>
 
-<p><em>Having trouble? <a href="https://codepen.io/maggiben/pen/OPmLBW" target="_blank" rel="noopener noreferrer">Open the pen on CodePen</a>.</em></p>
+<p><em>Having trouble with the inline version? Use the CodePen embed above.</em></p>
 
 The pen ships with **January 2017** sample data (originally a threat-intel calendar—malware and bot names on busy days). Fork it and swap in deploys, habits, or incidents; the mechanic stays the same.
 
