@@ -37,7 +37,7 @@ The iframe keeps the pen’s own styles isolated from this site’s dark theme. 
 <div class="blog-embed blog-embed--codepen">
   <iframe
     height="760"
-    style="width: 100%;"
+    style="width: 100%;height:760px"
     scrolling="no"
     title="Calendar"
     src="https://codepen.io/maggiben/embed/OPmLBW?default-tab=result"
