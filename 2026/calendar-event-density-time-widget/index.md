@@ -1,7 +1,7 @@
 ---
 title: "Event-Density Calendar: When Time Becomes a Visual Widget"
 subtitle: Calendar · Moment.js · CodePen
-description: "A month grid where each day's circle scales with how busy you were—not a list, a heat map you can click. I built this on CodePen years ago; here's why time widgets still matter and how event density works."
+description: "A flip-calendar month grid where blue circles scale with how busy each day was—click to expand details. Vanilla JS and Moment on CodePen; here's the design and how event density works."
 date: 2026-05-19
 published: true
 language: en
@@ -16,21 +16,21 @@ tags:
 codepen: https://codepen.io/maggiben/pen/OPmLBW
 ---
 
-![Event-density calendar — month grid with scaled circles and expanded day details](assets/cover.png)
+![Flip-calendar widget — April 2026 month grid with binder rings and minimal typography](assets/cover.png)
 
 **Event-density calendar**
 
 ---
 
-Most calendars show you **what** is scheduled. A smaller, sharper class of widgets shows you **how much** happened—at a glance, on a grid you already understand.
+I wanted a calendar that felt like something on a desk—not a spreadsheet, not a dense agenda list.
 
-Years ago I published one on CodePen: [**Event-density calendar**](https://codepen.io/maggiben/pen/OPmLBW). Blue header, binder rings, month navigation with a slide animation. Each day is a number and a circle; the circle **grows** when that day carried more events. Click a busy day and a panel unfolds beneath the week row, listing what happened. No backend, no framework ceremony—**Moment.js**, vanilla DOM, and CSS animations that aged surprisingly well.
+So I built a small **flip-calendar** widget on [CodePen](https://codepen.io/maggiben/pen/OPmLBW): a blue header with month and year, white “binder” rings bridging into the grid, thin sans-serif day numbers, and ghosted leading/trailing dates so the current month stays in focus. Arrow controls slide the month in and out. Under that calm surface, each day can carry a **blue circle** whose size encodes **how many events** landed that day; tap a busy day and a detail panel opens in the week row below.
 
-The original demo mapped **malware and bot names** onto January 2017 (a threat-intel calendar for a security context). The mechanic is the same either way: **density as UI**.
+No backend, no build step—**Moment.js**, vanilla DOM, and CSS that still holds up years later.
 
 ## Try it live
 
-The widget below is the [CodePen](https://codepen.io/maggiben/pen/OPmLBW) embedded in this post. Click any day with a visible blue circle, use the header arrows to change months, and watch the detail panel open under the week row. The pen opens on **January 2017** with the original sample data—navigate to the current month or fork the pen to plug in your own events.
+The embed below is the pen running inside this post. Use the header arrows to change months, click any day with a visible circle, and watch the detail strip unfold under that week.
 
 <div class="blog-embed">
   <p
@@ -49,11 +49,26 @@ The widget below is the [CodePen](https://codepen.io/maggiben/pen/OPmLBW) embedd
 
 <p><em>Embed blocked or blank? <a href="https://codepen.io/maggiben/pen/OPmLBW" target="_blank" rel="noopener noreferrer">Open the pen on CodePen</a>.</em></p>
 
-**What you should see:** a compact month view, circles sized by event count, and an expandable detail strip anchored under the week—like the capture above.
+The pen ships with **January 2017** sample data (originally a threat-intel calendar—malware and bot names on busy days). Fork it and swap in deploys, habits, or incidents; the mechanic stays the same.
+
+## The look: flip calendar, flat UI
+
+The cover is the quiet state: **minimal grid, tactile header**.
+
+| Element | Role |
+|---------|------|
+| **Blue header** | Month in large white type, year beneath, prev/next triangles |
+| **Binder rings** | Four white bars overlapping the header edge—desk-calendar affordance |
+| **Weekday bar** | Light gray band, uppercase SUN–SAT |
+| **Grid** | Centered day numbers; adjacent-month dates faded |
+| **Circles** | Hidden when empty; scaled blue dots when events exist |
+| **Detail panel** | Expands under the week row with colored event rows and a pointer arrow |
+
+That hierarchy matters: you read the month first, then **volume** (circle size), then **titles** (only after a click). It is intentional progressive disclosure—not everything shouting at once.
 
 ## Why time widgets are still worth building
 
-Dates are the one coordinate system every user already knows. That makes the calendar grid a **universal canvas** for data:
+Dates are the one coordinate system every user already knows. That makes the month grid a **universal canvas** for data:
 
 | Pattern | What the user reads instantly |
 |---------|-------------------------------|
@@ -64,7 +79,7 @@ Dates are the one coordinate system every user already knows. That makes the cal
 
 The density approach trades all-day precision for **pattern recognition**. You are not answering “What time is my dentist?” You are answering “Which week in Q1 looked like a dumpster fire?” or “When did incidents cluster?”
 
-That is why security dashboards, habit trackers, and release calendars all flirt with the same idea: **encode volume in the cell before you encode detail in a tooltip**.
+Security dashboards, habit trackers, and release calendars all flirt with the same idea: **encode volume in the cell before you encode detail in a tooltip**.
 
 ## What is running under the hood
 
@@ -89,14 +104,16 @@ Quiet days keep a zero-scale circle (invisible). Busy days approach full size. I
 
 **4. Interaction model.** Only days with events are clickable. `openDay` injects a `.details` block as a sibling inside the **week row**, positions a triangular `.arrow` under the clicked cell, and lists colored event rows. Switching days in the same week reuses the container and animates the list out/in.
 
-**5. Month transitions.** Changing month sets `next` or `prev`, re-draws, and applies CSS classes `month out` / `month in` with keyframed slides—old-school `-webkit-animation` era, still charming.
+**5. Month transitions.** Changing month sets `next` or `prev`, re-draws, and applies CSS classes `month out` / `month in` with keyframed slides.
 
 **6. Angular wrapper (original).** The CodePen shipped an `ng-app` directive that passed sample data into `new Calendar('#calendar', data)`. The calendar engine itself is plain DOM; Angular was only the glue.
 
+A blog-side copy of the vanilla engine lives in [assets/demo/](assets/demo/) if you want to read or fork without CodePen’s iframe.
+
 ## The stack (CodePen era)
 
-- **[Moment.js](https://momentjs.com/)** — month boundaries, `isSame`, add/subtract months (the API we had before Temporal won the long game)
-- **Vanilla `Calendar` constructor** — no virtual DOM; explicit `createElement` and class toggles
+- **[Moment.js](https://momentjs.com/)** — month boundaries, `isSame`, add/subtract months
+- **Vanilla `Calendar` constructor** — explicit `createElement` and class toggles
 - **LESS → CSS** — binder rings, header typography, month slide animations
 - **CodePen** — instant share link, zero build step
 
@@ -108,7 +125,7 @@ If I refreshed the project now:
 
 - **Temporal or Luxon** — Moment is in maintenance mode; modern codebases should start elsewhere.
 - **Accessibility** — keyboard focus per day, `aria-expanded` on the detail panel, `aria-label` that reads “3 events” not only a bigger circle.
-- **Responsive width** — the original fixed ~480px layout; a wider embed or fluid `max-width` would help on large screens.
+- **Responsive width** — the original fixed ~480px layout; fluid `max-width` would help on large screens.
 - **Data API** — accept `events: { date, items[] }[]` from JSON fetch instead of hard-coded arrays; keep the renderer dumb.
 - **Reduced motion** — respect `prefers-reduced-motion` and skip month slides for users who need it.
 
@@ -120,8 +137,8 @@ The best widgets do not add a new metaphor. They **bend one you already know**�
 
 This pen was never a SaaS. It was a **visual argument**: you can see busy season without reading every title. In a world of infinite agenda scroll, that is still a gift.
 
-Fork it, swap malware names for deploys, or pipe CI failures into the array and watch release week swell. You will learn more about your timeline from the circles than from another notification badge.
+Fork it, pipe CI failures into the array, and watch release week swell. You will learn more about your timeline from the circles than from another notification badge.
 
 ---
 
-*CodePen: [codepen.io/maggiben/pen/OPmLBW](https://codepen.io/maggiben/pen/OPmLBW) · Blog copy of source: [assets/demo/](assets/demo/) · Sample data: January 2017 threat-intel theme*
+*CodePen: [codepen.io/maggiben/pen/OPmLBW](https://codepen.io/maggiben/pen/OPmLBW) · Source copy: [assets/demo/](assets/demo/) · Sample data: January 2017 threat-intel theme*
