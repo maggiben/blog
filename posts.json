@@ -1,5 +1,11 @@
 [
   {
+    "slug": "2026/freertos-esp32-nixie-clock-one-loop-is-not-enough",
+    "title": "When One loop() Is Not Enough: FreeRTOS on the ESP32 for a Nixie Clock",
+    "date": "2026-05-19",
+    "published": true
+  },
+  {
     "slug": "2026/nixie-clock-multiplexing-experiment",
     "title": "Nixie Clock: Digits That Glow, Software That Keeps Them Alive",
     "date": "2026-05-19",
