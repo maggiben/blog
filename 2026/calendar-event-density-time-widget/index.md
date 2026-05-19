@@ -30,24 +30,17 @@ No backend, no build step—**Moment.js**, vanilla DOM, and CSS that still holds
 
 ## Try it live
 
-The embed below is the pen running inside this post. Use the header arrows to change months, click any day with a visible circle, and watch the detail strip unfold under that week.
+The widget below runs **inline in this post**—same markup and scripts as the [CodePen](https://codepen.io/maggiben/pen/OPmLBW), not an iframe. Use the header arrows to change months, click any day with a visible circle, and watch the detail strip unfold under that week.
 
-<div class="blog-embed">
-  <p
-    class="codepen"
-    data-height="620"
-    data-pen-title="Calendar"
-    data-default-tab="result"
-    data-slug-hash="OPmLBW"
-    data-user="maggiben"
-    style="height: 620px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; margin: 0; padding: 0; border: 0;"
-  >
-    <span>See the Pen <a href="https://codepen.io/maggiben/pen/OPmLBW">Calendar</a> by Benjamin (<a href="https://codepen.io/maggiben">@maggiben</a>) on <a href="https://codepen.io">CodePen</a>.</span>
-  </p>
-  <script async src="https://public.codepenassets.com/embed/index.js"></script>
+<link rel="stylesheet" href="assets/demo/styles.css" />
+
+<div class="blog-embed calendar-event-demo">
+  <div class="calendar" id="calendar"></div>
 </div>
 
-<p><em>Embed blocked or blank? <a href="https://codepen.io/maggiben/pen/OPmLBW" target="_blank" rel="noopener noreferrer">Open the pen on CodePen</a>.</em></p>
+<script src="assets/demo/calendar.js"></script>
+
+<p><em>Having trouble? <a href="https://codepen.io/maggiben/pen/OPmLBW" target="_blank" rel="noopener noreferrer">Open the pen on CodePen</a>.</em></p>
 
 The pen ships with **January 2017** sample data (originally a threat-intel calendar—malware and bot names on busy days). Fork it and swap in deploys, habits, or incidents; the mechanic stays the same.
 
