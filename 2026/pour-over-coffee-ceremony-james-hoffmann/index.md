@@ -27,39 +27,59 @@ I make pour-over coffee **once, maybe twice a day**. Not because I am precious a
 
 For four-ish minutes the world shrinks to: hot water, wet paper, the smell of fresh grounds, and a scale that displays my life choices in grams. That window is my **meditation**—breathe in the aroma, watch the bloom rise like a tiny brown soufflé, and mentally line up whatever chaos the day plans to throw at me. By the time the drawdown finishes, I am calmer. Caffeinated, yes. But calmer.
 
-I did not always brew this way. I spent a long chapter chasing the **perfect espresso** on a bean-to-cup machine—and learned that, for me, the chase was the wrong sport.
+I did not always brew this way. For years my holy grail was the **perfect espresso**—and I bet everything on a **bean-to-cup** machine to get me there. That machine is the reason I pour over now. The full story matters, because the V60 only makes sense once you’ve heard what the button machine couldn’t do.
 
-## The bean-to-cup chapter (and why it ended)
+## My bean-to-cup journey (and why I walked away)
 
-For a while I was convinced that **real coffee** meant espresso: crema, pressure, the satisfying thunk of a portafilter—or, in my case, the seductive promise of a **bean-to-cup** machine that would grind, tamp, extract, and deliver café vibes at the press of a button. I tuned recipes. I cleaned screens. I waited for that shot that would taste like the posters.
+I bought into the dream hard: fresh beans go in, the machine **grinds, tamps, pulls**, and out comes something that *looks* like the café menu photos. I adjusted strength sliders. I played with bean origins. I ran cleaning cycles like religion—**descaling**, rinsing the brew unit, emptying drip trays, chasing clogs, wiping grinds out of corners that should not exist. I told myself that if I just dialed in one more variable, I’d nail that shot.
 
-Here is that machine doing its thing—one last appearance before it lost the countertop war:
+## Watch the bean-to-cup in action
+
+This is the machine I used every day—grinding, tamping, pulling—until I swapped it for a V60. Hit play; the choreography is half the story.
 
 <div class="blog-video">
-  <video controls playsinline preload="metadata" poster="assets/cover.png" width="720">
+  <video controls playsinline preload="metadata" poster="assets/bean-to-cup-poster.jpg" width="720">
     <source src="assets/bean-to-cup.mp4" type="video/mp4" />
   </video>
 </div>
 
-<p><em>Bean-to-cup in action: impressive choreography, underwhelming cup—for my taste and my patience.</em></p>
+<p><em>Bean-to-cup at work: impressive motion, underwhelming cup (for my taste).</em></p>
 
-<p>Player not loading? <a href="assets/bean-to-cup.mp4">Download the clip</a>.</p>
+<p>Video not playing in the embed? <a href="assets/bean-to-cup.mp4">Open or download the clip</a> (~50 seconds).</p>
 
-The video looks like success. The cup often did not. Slowly—shot after shot, descale after descale—I admitted what my palate and my calendar were already screaming:
+The problem wasn’t that it failed loudly. It failed **almost** well enough to keep you hooked. Some mornings the espresso was passable. Some afternoons it was thin and sour. I could never quite trust it—and trust is everything when coffee is supposed to be the calm before the storm of your day.
 
-| What I wanted | What I got |
-|---------------|------------|
-| Café-quality espresso | **Inconsistent** shots—good day, meh day, why day |
-| Set-and-forget luxury | **Thorough maintenance**: descaling, brew unit cleaning, grinder burrs, drip trays, guilt |
-| A grinder I could trust | **Lots of fines**—dusty particles that over-extract and muddy the cup |
-| Stable extraction | **Irregular temperature**—home thermoblocks and shortcuts are not the steady 93 °C fairy tale |
-| A morning ritual | **A button**—beans in, beverage out, soul still in airplane mode |
+### These machines don’t make the coffee I thought they would
 
-The taste never quite got there. Not terrible. Not *worth* the machine footprint, the noise, the vinegar smell of descaling day, or the mental load of keeping another appliance happy. And underneath all of that: **it was not a ritual**. It was automation wearing a barista costume. I was not breathing with the coffee—I was waiting for a beep.
+I’m not saying *all* bean-to-cup machines are scams. I’m saying **mine**—and others in the same class—have limits that marketing glosses over:
 
-Pour-over gave me the opposite trade. Slower. Hands-on. Repeatable. The grinder I use now is **my choice**, not a sealed chamber I cannot tune. The water is **my kettle**, not a mystery curve inside plastic. The time is **mine**—four minutes where the only notification is the scale timer. That is when I actually smell the beans, actually pause, actually show up for the day.
+**The built-in grinder throws fines everywhere.** Along with usable particles you get a cloud of **dusty fines**. They over-extract and leave the cup **muddy and bitter** no matter how “medium” you think the setting is. You can’t see the grind bed. You can’t sweep fines out. You’re locked into whatever particle chaos lives inside the housing.
 
-So the bean-to-cup went quiet. The V60 stayed. No hard feelings; we had a phase. I just prefer to **take my time** and make the cup I want, not the cup a button guesses I want.
+**Temperature is a moving target.** Real espresso wants stability around **93 °C**. Home bean-to-cup boxes lean on **thermoblocks and shortcuts**: heat, cool slightly, push water through, hope. The result is **irregular extraction**—sometimes sharp, sometimes flat, rarely the same twice in a row.
+
+**Maintenance is a part-time job.** “Automatic” does not mean “hands-off.” Descaling cycles smell like vinegar confessionals. The brew group needs **thorough cleaning** or oils turn rancid. Grinder channels cake up. Drip trays overflow when you forget them once. The machine demands care; it just doesn’t reward you with a cup that justifies the labor.
+
+**And the taste? It never got there.** Not undrinkable. Not *good* in the way a careful pour-over is good—bright, clean, intentional. I was chasing **perfect espresso** and landing in the land of **“fine, I guess.”** That gap wore me down more than any single bad shot.
+
+| What I chased | What the bean-to-cup delivered |
+|---------------|--------------------------------|
+| Café-quality espresso at home | **Inconsistent** shots—good day, meh day, why-is-it-sour day |
+| “It grinds for you” convenience | A grinder I **couldn’t tune**, spewing **fines** I couldn’t fix |
+| Reliable extraction | **Irregular temperature** and mystery hydraulics inside plastic |
+| Low daily effort | **Thorough maintenance** either way—just hidden behind a touchscreen |
+| A morning ritual | **One button**—beans in, beverage out, brain still on standby |
+
+### The deal-breaker wasn’t taste alone—it was the missing ceremony
+
+I could have lived with “pretty good” coffee if the process had grounded me. It didn’t. **There is no ritual in a button.** You don’t rinse paper and smell the bloom. You don’t stand at the counter breathing in fresh grounds while water spirals over the bed. You don’t watch four minutes tick by on a scale and feel your shoulders drop. You press **start**, listen to the grinder scream, and wait for a beep like it’s a microwave.
+
+That’s not meditation. That’s vending.
+
+What I wanted—and what I have now with pour-over—was the opposite: **take my time**, control the variables, and make **the cup I actually want**, not the cup an algorithm guesses I want. Grind on a burr mill I chose. Water from a kettle I trust. Bloom, pour, drawdown—each step a small gate I walk through on purpose. The smell of fresh coffee hits before the first sip. By then I’ve already started **breathing**, **slowing down**, and preparing mentally for whatever challenges the day has queued up.
+
+The bean-to-cup went quiet. The V60 took its place on the counter. No drama—just clarity: **I’d rather spend four minutes in a ceremony than four seconds pretending one.**
+
+Everything below is that ceremony—the pour-over life, with a nod to **[James Hoffmann](https://www.youtube.com/@jameshoffmann)** for the technique that finally made the cup match the intention.
 
 ## Why ceremony beats "just hit brew"
 
