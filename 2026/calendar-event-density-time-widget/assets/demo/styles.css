@@ -1,16 +1,16 @@
-/* Scoped from CodePen dist/style.css — inline blog embed only */
+/* Event-density calendar — blog embed */
 .blog-embed.calendar-event-demo {
   position: relative;
-  display: flex;
-  justify-content: center;
-  padding: 1.5rem 1rem;
+  display: block;
+  width: 100%;
+  max-width: 520px;
+  margin: 1.5rem auto;
+  padding: 1.25rem 1rem 1.5rem;
   background: linear-gradient(160deg, #eef4f9 0%, #f7f9fb 45%, #eceff3 100%);
   border-radius: 8px;
-  margin: 1.5rem 0;
   overflow: visible;
   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
   font-weight: 100;
-  min-height: 420px;
 }
 .blog-embed.calendar-event-demo .calendar-error {
   margin: 1rem 0 0;
@@ -20,19 +20,18 @@
 }
 .blog-embed.calendar-event-demo,
 .blog-embed.calendar-event-demo *,
-.blog-embed.calendar-event-demo *:before,
-.blog-embed.calendar-event-demo *:after {
+.blog-embed.calendar-event-demo *::before,
+.blog-embed.calendar-event-demo *::after {
   box-sizing: border-box;
 }
 .blog-embed.calendar-event-demo .calendar {
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
   width: 100%;
   max-width: 480px;
   margin: 0 auto;
   display: block;
   overflow: visible;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 .blog-embed.calendar-event-demo .calendar .circle {
   width: 24px;
@@ -111,32 +110,8 @@
   right: 20px;}
 .blog-embed.calendar-event-demo .calendar > .month {
   opacity: 1;
-  margin-bottom: 40px;
-  transition: opacity 0.7s ease;}
-.blog-embed.calendar-event-demo .calendar > .month.new {
-  -webkit-animation: fadeIn 1s ease-out;
-  animation: fadeIn 1s ease-out;
-  opacity: 1;}
-.blog-embed.calendar-event-demo .calendar > .month.in.next {
-  -webkit-animation: moveFromLeftFadeMonth 0.4s ease-out;
-  -moz-animation: moveFromLeftFadeMonth 0.4s ease-out;
-  animation: moveFromLeftFadeMonth 0.4s ease-out;
-  opacity: 1;}
-.blog-embed.calendar-event-demo .calendar > .month.in.prev {
-  -webkit-animation: moveFromRightFadeMonth 0.4s ease-out;
-  -moz-animation: moveFromRightFadeMonth 0.4s ease-out;
-  animation: moveFromRightFadeMonth 0.4s ease-out;
-  opacity: 1;}
-.blog-embed.calendar-event-demo .calendar > .month.out.next {
-  -webkit-animation: moveToRightFadeMonth 0.4s ease-in;
-  -moz-animation: moveToRightFadeMonth 0.4s ease-in;
-  animation: moveToRightFadeMonth 0.4s ease-in;
-  opacity: 1;}
-.blog-embed.calendar-event-demo .calendar > .month.out.prev {
-  -webkit-animation: moveToLeftFadeMonth 0.4s ease-in;
-  -moz-animation: moveToLeftFadeMonth 0.4s ease-in;
-  animation: moveToLeftFadeMonth 0.4s ease-in;
-  opacity: 1;}
+  margin-bottom: 0;
+}
 .blog-embed.calendar-event-demo .week-days {
   padding: 8px 0px;
   background-color: #efefef;
@@ -297,180 +272,236 @@
   background: #99c66d;}
 .blog-embed.calendar-event-demo .entry.yellow:after {
   background: #f9e900;}
-.blog-embed.calendar-event-demo /* slide out to the left */
 @keyframes slideOutLeft {
   to {
-    transform: translateX(-200%);}
+    transform: translateX(-200%);
+  }
 @-moz-keyframes slideOutLeft {
   to {
-    -moz-transform: translateX(-200%);}
+    -moz-transform: translateX(-200%);
+  }
 @-webkit-keyframes slideOutLeft {
   to {
-    -webkit-transform: translateX(-200%);}
-.blog-embed.calendar-event-demo /* slide in from the right */
+    -webkit-transform: translateX(-200%);
+  }
 @keyframes slideInRight {
   from {
-    transform: translateX(200%);}
-.blog-embed.calendar-event-demo to {
-    transform: translateX(0);}
+    transform: translateX(200%);
+  }
 @-moz-keyframes slideInRight {
   from {
-    -moz-transform: translateX(200%);}
-.blog-embed.calendar-event-demo to {
-    -moz-transform: translateX(0);}
+    -moz-transform: translateX(200%);
+  }
 @-webkit-keyframes slideInRight {
   from {
-    -webkit-transform: translateX(200%);}
-.blog-embed.calendar-event-demo to {
-    -webkit-transform: translateX(0);}
-.blog-embed.calendar-event-demo /* Animations are cool!  */
+    -webkit-transform: translateX(200%);
+  }
 @-webkit-keyframes moveFromTopFade {
   from {
     opacity: 0.3;
     height: 0px;
     margin-top: 0px;
-    -webkit-transform: translateY(-100%);}
+    -webkit-transform: translateY(-100%);
+  }
 @-moz-keyframes moveFromTopFade {
   from {
     height: 0px;
     margin-top: 0px;
-    -moz-transform: translateY(-100%);}
+    -moz-transform: translateY(-100%);
+  }
 @keyframes moveFromTopFade {
   from {
     height: 0px;
     margin-top: 0px;
-    transform: translateY(-100%);}
+    transform: translateY(-100%);
+  }
 @-webkit-keyframes moveToTopFade {
   to {
     height: 0px;
     margin-top: 0px;
     opacity: 0.3;
-    -webkit-transform: translateY(-100%);}
+    -webkit-transform: translateY(-100%);
+  }
 @-moz-keyframes moveToTopFade {
   to {
     height: 0px;
-    -moz-transform: translateY(-100%);}
+    -moz-transform: translateY(-100%);
+  }
 @keyframes moveToTopFade {
   to {
     height: 0px;
-    transform: translateY(-100%);}
+    transform: translateY(-100%);
+  }
 @-webkit-keyframes moveToTopFadeMonth {
   to {
     opacity: 0;
-    -webkit-transform: translateY(-30%) scale(0.95);}
+    -webkit-transform: translateY(-30%) scale(0.95);
+  }
 @-moz-keyframes moveToTopFadeMonth {
   to {
     opacity: 0;
-    -moz-transform: translateY(-30%);}
+    -moz-transform: translateY(-30%);
+  }
 @keyframes moveToTopFadeMonth {
   to {
     opacity: 0;
-    -moz-transform: translateY(-30%);}
+    -moz-transform: translateY(-30%);
+  }
 @-webkit-keyframes moveFromTopFadeMonth {
   from {
     opacity: 0;
-    -webkit-transform: translateY(30%) scale(0.95);}
+    -webkit-transform: translateY(30%) scale(0.95);
+  }
 @-moz-keyframes moveFromTopFadeMonth {
   from {
     opacity: 0;
-    -moz-transform: translateY(30%);}
+    -moz-transform: translateY(30%);
+  }
 @keyframes moveFromTopFadeMonth {
   from {
     opacity: 0;
-    -moz-transform: translateY(30%);}
+    -moz-transform: translateY(30%);
+  }
 @-webkit-keyframes moveToBottomFadeMonth {
   to {
     opacity: 0;
-    -webkit-transform: translateY(30%) scale(0.95);}
+    -webkit-transform: translateY(30%) scale(0.95);
+  }
 @-moz-keyframes moveToBottomFadeMonth {
   to {
     opacity: 0;
-    -webkit-transform: translateY(30%);}
+    -webkit-transform: translateY(30%);
+  }
 @keyframes moveToBottomFadeMonth {
   to {
     opacity: 0;
-    -webkit-transform: translateY(30%);}
+    -webkit-transform: translateY(30%);
+  }
 @-webkit-keyframes moveToLeftFadeMonth {
   to {
     opacity: 0;
-    -webkit-transform: translateX(-200%) scale(0.95);}
+    -webkit-transform: translateX(-200%) scale(0.95);
+  }
 @-moz-keyframes moveToLeftFadeMonth {
   to {
     opacity: 0;
-    -webkit-transform: translateX(-200%);}
+    -webkit-transform: translateX(-200%);
+  }
 @keyframes moveToLeftFadeMonth {
   to {
     opacity: 0;
-    -webkit-transform: translateX(-200%);}
+    -webkit-transform: translateX(-200%);
+  }
 @-webkit-keyframes moveToRightFadeMonth {
   to {
     opacity: 0;
-    -webkit-transform: translateX(200%) scale(0.95);}
+    -webkit-transform: translateX(200%) scale(0.95);
+  }
 @-moz-keyframes moveToRightFadeMonth {
   to {
     opacity: 0;
-    -webkit-transform: translateX(200%);}
+    -webkit-transform: translateX(200%);
+  }
 @keyframes moveToRightFadeMonth {
   to {
     opacity: 0;
-    -webkit-transform: translateX(200%);}
+    -webkit-transform: translateX(200%);
+  }
 @-webkit-keyframes moveFromBottomFadeMonth {
   from {
     opacity: 0;
-    -webkit-transform: translateY(-30%) scale(0.95);}
+    -webkit-transform: translateY(-30%) scale(0.95);
+  }
 @-moz-keyframes moveFromBottomFadeMonth {
   from {
     opacity: 0;
-    -webkit-transform: translateY(-30%);}
+    -webkit-transform: translateY(-30%);
+  }
 @keyframes moveFromBottomFadeMonth {
   from {
     opacity: 0;
-    -webkit-transform: translateY(-30%);}
+    -webkit-transform: translateY(-30%);
+  }
 @-webkit-keyframes moveFromLeftFadeMonth {
   from {
     opacity: 0;
-    -webkit-transform: translateX(-200%) scale(0.95);}
+    -webkit-transform: translateX(-200%) scale(0.95);
+  }
 @-webkit-keyframes moveFromRightFadeMonth {
   from {
     opacity: 0;
-    -webkit-transform: translateX(200%);}
-.blog-embed.calendar-event-demo to {
-    opacity: 1;
-    -webkit-transform: translateX(0%);}
+    -webkit-transform: translateX(200%);
+  }
 @-webkit-keyframes moveToRightFadeMonth {
   to {
     opacity: 1;
-    -webkit-transform: translateX(200%);}
+    -webkit-transform: translateX(200%);
+  }
 @-webkit-keyframes fadeIn {
   from {
-    opacity: 0;}
+    opacity: 0;
+  }
 @-moz-keyframes fadeIn {
   from {
-    opacity: 0;}
+    opacity: 0;
+  }
 @keyframes fadeIn {
   from {
-    opacity: 0;}
+    opacity: 0;
+  }
 @-webkit-keyframes fadeOut {
   to {
-    opacity: 0;}
+    opacity: 0;
+  }
 @-moz-keyframes fadeOut {
   to {
-    opacity: 0;}
+    opacity: 0;
+  }
 @keyframes fadeOut {
   to {
-    opacity: 0;}
+    opacity: 0;
+  }
 @-webkit-keyframes fadeOutShink {
   to {
     opacity: 0;
     padding: 0px;
-    height: 0px;}
+    height: 0px;
+  }
 @-moz-keyframes fadeOutShink {
   to {
     opacity: 0;
     padding: 0px;
-    height: 0px;}
+    height: 0px;
+  }
+}
 @keyframes fadeOutShink {
   to {
     opacity: 0;
     padding: 0px;
-    height: 0px;}
+    height: 0px;
+  }
+
+/* Blog embed: keep content visible (no flash-then-hide) */
+.blog-embed.calendar-event-demo .calendar > .month,
+.blog-embed.calendar-event-demo .calendar > .month.new,
+.blog-embed.calendar-event-demo .calendar > .month.in,
+.blog-embed.calendar-event-demo .calendar > .month.out {
+  opacity: 1 !important;
+  transform: none !important;
+  animation: none !important;
+}
+.blog-embed.calendar-event-demo .details,
+.blog-embed.calendar-event-demo .details.in,
+.blog-embed.calendar-event-demo .details.out,
+.blog-embed.calendar-event-demo .events,
+.blog-embed.calendar-event-demo .events.in,
+.blog-embed.calendar-event-demo .events.out {
+  opacity: 1 !important;
+  height: auto !important;
+  max-height: none !important;
+  animation: none !important;
+  transform: none !important;
+}
+.blog-embed.calendar-event-demo .calendar .header .month-label {
+  opacity: 1 !important;
+}

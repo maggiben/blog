@@ -17,13 +17,6 @@
     }, 1);
     this.current = moment().date(1);
     this.draw();
-    var current = this.el.querySelector('.day.today');
-    if (current) {
-      var self = this;
-      window.setTimeout(function () {
-        self.openDay(current);
-      }, 500);
-    }
   }
 
   Calendar.prototype.draw = function () {
@@ -68,29 +61,18 @@
       event.date = moment(event.date);
     });
     if (this.month) {
-      this.oldMonth = this.month;
-      this.oldMonth.className = 'month out ' + (self.next ? 'next' : 'prev');
-      this.oldMonth.addEventListener('animationend', function () {
-        if (self.oldMonth.parentNode) {
-          self.oldMonth.parentNode.removeChild(self.oldMonth);
-        }
-        self.month = createElement('div', 'month');
-        self.backFill();
-        self.currentMonth();
-        self.fowardFill();
-        self.el.appendChild(self.month);
-        window.setTimeout(function () {
-          self.month.className = 'month in ' + (self.next ? 'next' : 'prev');
-        }, 16);
+      this.el.querySelectorAll('.details').forEach(function (node) {
+        if (node.parentNode) node.parentNode.removeChild(node);
       });
-    } else {
-      this.month = createElement('div', 'month');
-      this.el.appendChild(this.month);
-      this.backFill();
-      this.currentMonth();
-      this.fowardFill();
-      this.month.className = 'month new';
+      if (this.month.parentNode) {
+        this.month.parentNode.removeChild(this.month);
+      }
     }
+    this.month = createElement('div', 'month');
+    this.el.appendChild(this.month);
+    this.backFill();
+    this.currentMonth();
+    this.fowardFill();
   };
 
   Calendar.prototype.backFill = function () {
@@ -321,11 +303,22 @@
 
   function init() {
     var el = document.querySelector('.blog-embed.calendar-event-demo .calendar');
-    if (!el || el.dataset.calendarReady) return;
-    el.dataset.calendarReady = '1';
-    new Calendar('.blog-embed.calendar-event-demo .calendar', demoEvents());
-    var embed = el.closest('.blog-embed');
-    if (embed) embed.classList.add('calendar-event-demo--ready');
+    if (!el) return;
+    if (el.dataset.calendarReady === '1' || el.dataset.calendarInitializing === '1') {
+      return;
+    }
+    el.dataset.calendarInitializing = '1';
+    try {
+      new Calendar('.blog-embed.calendar-event-demo .calendar', demoEvents());
+      el.dataset.calendarReady = '1';
+      var embed = el.closest('.blog-embed');
+      if (embed) embed.classList.add('calendar-event-demo--ready');
+    } catch (err) {
+      showError('Calendar failed to start. Try the CodePen link below.');
+      console.error(err);
+    } finally {
+      delete el.dataset.calendarInitializing;
+    }
   }
 
   function start() {
@@ -335,6 +328,9 @@
         showError('Calendar could not load Moment.js. Try the CodePen link below.');
       });
   }
+
+  if (window.__calendarEmbedBooted) return;
+  window.__calendarEmbedBooted = true;
 
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', start);

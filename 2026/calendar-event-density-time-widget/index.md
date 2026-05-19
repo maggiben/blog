@@ -30,7 +30,7 @@ The original demo mapped **malware and bot names** onto January 2017 (a threat-i
 
 ## Try it live
 
-The widget below runs **inline in this post**—same markup and scripts as the [CodePen](https://codepen.io/maggiben/pen/OPmLBW), not an iframe or a separate fullscreen page. Click any day with a visible blue circle. Use the header arrows to change months. Today’s date is highlighted; if it has events, the detail panel opens after a short delay.
+The widget below runs **inline in this post**—same markup and scripts as the [CodePen](https://codepen.io/maggiben/pen/OPmLBW), not an iframe or a separate fullscreen page. Click any day with a visible blue circle. Use the header arrows to change months. Today’s date is highlighted in blue. Click a day with a circle to expand its events.
 
 <link rel="stylesheet" href="assets/demo/styles.css" />
 
