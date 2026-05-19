@@ -1,11 +1,11 @@
 ---
 title: "MediaPipe Hands: When Your Webcam Became a Skeleton Tracker"
 subtitle: MediaPipe · Computer vision · CodePen
-description: "In 2021 I forked Google's MediaPipe Hands demo into a CodePen—real-time hand landmarks, a 3D grid, and zero backend. Here's why it still feels like magic, how the pipeline works, and the live demo brought back to the blog."
+description: "In 2021 I forked Google's MediaPipe Hands demo into a CodePen—real-time hand landmarks, a 3D grid, and zero backend. Here's why it still feels like magic and how the pipeline works."
 date: 2026-05-19
 published: true
 language: en
-coverImage: assets/cover.svg
+coverImage: assets/cover.png
 tags:
   - mediapipe
   - computer-vision
@@ -16,7 +16,7 @@ tags:
 codepen: https://codepen.io/maggiben/pen/MWvVYqy
 ---
 
-![MediaPipe Hands — hand skeleton overlay and 3D landmark grid](assets/cover.svg)
+![MediaPipe Hands — live tracking with control panel and 3D landmark grid](assets/cover.png)
 
 **MediaPipe Hands**
 
@@ -28,25 +28,23 @@ Back in November 2021 I published exactly that on CodePen: [**MediaPipe Hands**]
 
 Years later, computer vision moved on—bigger models, WASM bundles, hand landmarkers in new APIs—but the pen still does the thing that hooked me: **perception as a live UI**.
 
-## Try it in the frame below (camera required)
+## Try it live
 
-Allow webcam access when your browser prompts you. Use the control panel inside the frame—**Selfie Mode**, hand count, model complexity, confidence sliders—then wave at the camera. Chrome desktop is still the sweet spot; other browsers may work with different performance.
+Allow webcam access when prompted, then use the panel on the left—**Selfie Mode**, camera picker, hand count, model complexity, confidence sliders. Chrome desktop is what I originally targeted.
 
 <div class="blog-embed">
   <iframe
-    src="assets/demo/index.html"
-    title="MediaPipe Hands — interactive hand tracking demo"
+    src="https://codepen.io/maggiben/embed/MWvVYqy?default-tab=result"
+    title="MediaPipe Hands — CodePen by maggiben"
     loading="lazy"
-    allow="camera; microphone; autoplay; fullscreen"
+    allow="camera; microphone; autoplay"
     allowfullscreen
   ></iframe>
 </div>
 
-<p><em>If the frame stays black, use <strong>Open in new tab</strong> inside the demo or open <a href="assets/demo/index.html">assets/demo/index.html</a> directly—some browsers only grant the camera outside a nested frame.</em></p>
+<p><em>If the embed is blank or the camera does not start, <a href="https://codepen.io/maggiben/pen/MWvVYqy">open the pen on CodePen</a> in a new tab.</em></p>
 
-<p><em>Original CodePen (2021): <a href="https://codepen.io/maggiben/pen/MWvVYqy">codepen.io/maggiben/pen/MWvVYqy</a>.</em></p>
-
-**What you should see:** your video feed with 21 landmarks per hand, connectors drawn between joints, an FPS counter, and a control panel to flip selfie mode, raise `maxNumHands` to four, or trade accuracy for speed with model complexity.
+**What you should see:** your video feed with 21 landmarks per hand, connectors between joints, an FPS counter, and the 3D grid in the corner—like the capture above.
 
 ## Why this pen mattered to me
 
@@ -112,15 +110,11 @@ The pen's parent on CodePen is Google's reference; mine kept the spirit and the 
 If I refreshed the project now:
 
 - **Hand Landmarker** — MediaPipe's newer Tasks API is the maintained path; the classic `Hands` solution still works but is legacy territory.
-- **HTTPS and permissions** — embeds need `allow="camera"` (included above); some readers will still need a top-level tab.
+- **HTTPS and permissions** — embeds need `allow="camera"` (included above); some readers will still need a top-level tab on CodePen.
 - **Mobile** — thermal throttling and smaller GPUs hurt; default `modelComplexity` to Lite on narrow viewports.
 - **Privacy copy** — one line: frames stay local, nothing is uploaded. Obvious to us; not to every visitor.
 
 None of that diminishes what 2021 felt like: **research-grade tracking as a front-end afternoon**.
-
-## Source on this blog
-
-The interactive frame above loads **[assets/demo/index.html](assets/demo/index.html)**—the same MediaPipe stack as the CodePen, in plain HTML and JavaScript so it ships with the post. Fork the sliders, break confidence thresholds, or open the file in a new tab if your browser withholds the camera inside the frame.
 
 ## The lesson I still keep
 
@@ -132,4 +126,4 @@ If you build something similar, fork the pen, break the sliders, and see how fra
 
 ---
 
-*Original CodePen: [codepen.io/maggiben/pen/MWvVYqy](https://codepen.io/maggiben/pen/MWvVYqy) · Published November 2021 · Demo mirror: [assets/demo/index.html](assets/demo/index.html)*
+*CodePen: [codepen.io/maggiben/pen/MWvVYqy](https://codepen.io/maggiben/pen/MWvVYqy) · Published November 2021*
