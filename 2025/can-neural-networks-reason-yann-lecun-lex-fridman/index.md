@@ -5,7 +5,7 @@ description: "Five years ago Yann LeCun told Lex Fridman we could make neural ne
 date: 2025-02-14
 published: true
 language: en
-coverImage: assets/cover.jpg
+coverImage: assets/cover.webp
 hideCoverInPost: true
 tags:
   - ai

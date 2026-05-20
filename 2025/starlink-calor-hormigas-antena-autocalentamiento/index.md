@@ -5,7 +5,7 @@ description: "Latencia, WiFi flojo y una antena que se calienta sola: el calenta
 date: 2025-04-02
 published: true
 language: es
-coverImage: assets/cover.jpg
+coverImage: assets/cover.webp
 hideCoverInPost: true
 tags:
   - starlink
@@ -29,7 +29,7 @@ Lo único que aplaudo sin reservas: el **diseño**. La limpié, siguió andando.
 ## El video (sí, hay hormigas)
 
 <div class="blog-video">
-  <video controls playsinline preload="metadata" poster="assets/poster.jpg" width="404">
+  <video controls playsinline preload="metadata" poster="assets/poster.webp" width="404">
     <source src="assets/starlink-ants.mp4" type="video/mp4" />
   </video>
 </div>

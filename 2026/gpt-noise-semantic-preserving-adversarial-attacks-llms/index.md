@@ -5,7 +5,7 @@ description: "An open-source experiment that targets influential words in a prom
 date: 2026-01-26
 published: true
 language: en
-coverImage: assets/cover.png
+coverImage: assets/cover.webp
 tags:
   - llm
   - adversarial-ml
@@ -16,7 +16,7 @@ tags:
 repo: https://github.com/maggiben/gpt_noise
 ---
 
-![gpt_noise — semantic-preserving adversarial attacks on LLMs](assets/cover.png)
+![gpt_noise — semantic-preserving adversarial attacks on LLMs](assets/cover.webp)
 
 **gpt_noise**
 
@@ -32,7 +32,7 @@ The work is inspired by the **Adversarial Typo Attack (ATA)** line of research, 
 
 Typos are not random noise in user queries—they are **structured**, often **invisible** to spell-checkers, and they ride along with otherwise sensible prompts. Gan et al. report that on GSM8K, **Mistral-7B-Instruct** drops from **43.7%** to **38.6%** accuracy with a **single** adversarial character edit, and to **19.2%** with **eight** edits—while the sentence still reads like something a human might have typed.
 
-![GSM8K accuracy vs character edits — ATA results from literature (Mistral-7B-Instruct, Gan et al. 2024)](assets/ata-gsm8k-literature.png)
+![GSM8K accuracy vs character edits — ATA results from literature (Mistral-7B-Instruct, Gan et al. 2024)](assets/ata-gsm8k-literature.webp)
 
 *GSM8K accuracy vs adversarial character edits. Points at 0, 1, and 8 edits from [Gan et al., arXiv:2411.05345](https://arxiv.org/abs/2411.05345); intermediate values interpolated for visualization.*
 
@@ -80,7 +80,7 @@ A common mistake is to attack only long or rare words. The influence function bl
 
 On the Natalia problem, tokens like *sold*, *clips*, *half*, and *altogether* rise to the top—exactly the vocabulary a math solver leans on.
 
-![Top influential tokens on a sample GSM8K prompt (gpt_noise scoring)](assets/word-influence.png)
+![Top influential tokens on a sample GSM8K prompt (gpt_noise scoring)](assets/word-influence.webp)
 
 *Top influential tokens on a sample GSM8K prompt, using the scoring function in `influential.js`.*
 
@@ -90,7 +90,7 @@ On the Natalia problem, tokens like *sold*, *clips*, *half*, and *altogether* ri
 
 All perturbations mimic **plausible keyboard mistakes**, aligned with the error taxonomy in Gan et al.:
 
-![Attack operators implemented in typo.js](assets/attack-operators.png)
+![Attack operators implemented in typo.js](assets/attack-operators.webp)
 
 - **Keyboard proximity** — substitute a neighboring QWERTY key
 - **Double-typing** — duplicate a character (`has` → `haas`)
@@ -99,7 +99,7 @@ All perturbations mimic **plausible keyboard mistakes**, aligned with the error 
 
 `deepattack(word, depth)` expands the typo lattice recursively. At `depth: 0`, it picks among candidates with similar Levenshtein distance to the original—favoring **subtle** edits. Higher `depth` compounds transformations: stronger attacks, lower semantic fidelity.
 
-![Conceptual trade-off: more edits increase attack impact but reduce semantic fidelity](assets/tradeoff-curve.png)
+![Conceptual trade-off: more edits increase attack impact but reduce semantic fidelity](assets/tradeoff-curve.webp)
 
 *Conceptual trade-off between attack strength and semantic preservation as `edits` / `depth` increase—not measured from a full gpt_noise run.*
 

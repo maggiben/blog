@@ -5,7 +5,7 @@ description: "Explorer for S3 is a cross-platform Electron desktop app that brow
 date: 2026-03-15
 published: true
 language: en
-coverImage: assets/cover.png
+coverImage: assets/cover.webp
 tags:
   - s3
   - aws
@@ -16,7 +16,7 @@ tags:
 repo: https://github.com/maggiben/explorer-for-s3
 ---
 
-![Explorer for S3 — bucket browser with sidebar, breadcrumbs, and upload progress](assets/cover.png)
+![Explorer for S3 — bucket browser with sidebar, breadcrumbs, and upload progress](assets/cover.webp)
 
 **Explorer for S3**
 

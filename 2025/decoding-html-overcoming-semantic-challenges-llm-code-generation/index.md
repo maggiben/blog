@@ -5,7 +5,7 @@ description: "Why state-of-the-art LLMs lag on HTML compared to Python or JavaSc
 date: 2025-03-01
 published: true
 language: en
-coverImage: assets/cover.jpg
+coverImage: assets/cover.webp
 tags:
   - llm
   - html
@@ -16,7 +16,7 @@ tags:
 canonical: https://www.linkedin.com/pulse/decoding-html-overcoming-semantic-challenges-llm-code-benjamin-maggi-ftnuf/
 ---
 
-![Decoding HTML: Overcoming Semantic Challenges in LLM Code Generation](assets/cover.jpg)
+![Decoding HTML: Overcoming Semantic Challenges in LLM Code Generation](assets/cover.webp)
 
 *DALL-E*
 
@@ -30,7 +30,7 @@ Building on my earlier piece, [How to Train an AI to Use Your Own Design System]
 
 The [McEval](https://arxiv.org/abs/2311.16788) benchmark covers 40 languages. Even GPT-4 reaches only about **32% pass@1** on HTML tasks, versus **76%** on Python in the same evaluation. GPT-3.5 lands around **18–20%** on HTML—well below its scores on JavaScript or Java.
 
-![McEval HTML performance compared to other languages](assets/mceval-html-performance.png)
+![McEval HTML performance compared to other languages](assets/mceval-html-performance.webp)
 
 *McEval HTML performance compared to other languages*
 

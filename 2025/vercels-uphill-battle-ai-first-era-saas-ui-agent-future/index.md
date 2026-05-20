@@ -6,7 +6,7 @@ date: 2025-02-11
 updated: 2026-05-17
 published: true
 language: en
-coverImage: assets/cover.jpg
+coverImage: assets/cover.webp
 tags:
   - vercel
   - nextjs

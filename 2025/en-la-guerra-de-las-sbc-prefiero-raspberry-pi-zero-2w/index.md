@@ -5,7 +5,7 @@ description: "Por qué elijo la Pi Zero 2 W pese a specs modestos, y qué me gus
 date: 2025-04-24
 published: true
 language: es
-coverImage: assets/cover.jpg
+coverImage: assets/cover.webp
 tags:
   - raspberry-pi
   - sbc
@@ -15,7 +15,7 @@ tags:
 canonical: https://www.linkedin.com/posts/maggiben_en-la-guerra-de-las-sbc-yo-prefiero-a-la-activity-7321184372487794691-AHTY
 ---
 
-![Placas de desarrollo SBC](assets/cover.jpg)
+![Placas de desarrollo SBC](assets/cover.webp)
 
 *Small SBC*
 

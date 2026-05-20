@@ -5,7 +5,7 @@ description: "Dejar de emular arm64 en amd64 y ejecutar builds en una Raspberry 
 date: 2025-05-09
 published: true
 language: es
-coverImage: assets/cover.jpg
+coverImage: assets/cover.webp
 tags:
   - gitlab
   - ci-cd
@@ -16,7 +16,7 @@ tags:
 canonical: https://www.linkedin.com/posts/maggiben_use-una-raspberry-pi-para-bajar-los-tiempos-activity-7326638941367922690-oPUC
 ---
 
-![Pipelines de GitLab con jobs en runners nativos arm64 y amd64](assets/cover.jpg)
+![Pipelines de GitLab con jobs en runners nativos arm64 y amd64](assets/cover.webp)
 
 *GitLab Pipelines*
 

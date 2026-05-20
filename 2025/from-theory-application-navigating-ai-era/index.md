@@ -5,7 +5,7 @@ description: "AI has moved from lab breakthroughs to everyday deployment. A map 
 date: 2025-02-07
 published: true
 language: en
-coverImage: assets/cover.jpg
+coverImage: assets/cover.webp
 tags:
   - artificial-intelligence
   - deep-learning

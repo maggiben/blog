@@ -5,7 +5,7 @@ description: "A D3 hexbin scatterplot bins thousands of points into honeycomb ce
 date: 2026-05-19
 published: true
 language: en
-coverImage: assets/cover.png
+coverImage: assets/cover.webp
 tags:
   - d3
   - data-visualization
@@ -17,7 +17,7 @@ tags:
 codepen: https://codepen.io/maggiben/pen/AgjzOZ
 ---
 
-![Hex scatterplot — honeycomb density by day and hour, warm yellow core fading to blue at the edges](assets/cover.png)
+![Hex scatterplot — honeycomb density by day and hour, warm yellow core fading to blue at the edges](assets/cover.webp)
 
 **Hex scatterplot**
 

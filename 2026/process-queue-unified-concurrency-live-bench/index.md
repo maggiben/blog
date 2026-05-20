@@ -5,7 +5,7 @@ description: "I built process-queue to merge promise concurrency limiting with q
 date: 2026-05-18
 published: true
 language: en
-coverImage: assets/cover.png
+coverImage: assets/cover.webp
 tags:
   - typescript
   - concurrency

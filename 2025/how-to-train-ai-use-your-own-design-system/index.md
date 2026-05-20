@@ -16,12 +16,6 @@ tags:
 canonical: https://www.linkedin.com/pulse/how-train-ai-use-your-own-design-system-benjamin-maggi-kykef/
 ---
 
-![How to Train an AI to Use Your Own Design System](assets/cover.jpg)
-
-*DALL-E*
-
----
-
 Large language models are excellent at generic React, Vue, or HTML—but they do not know **your** tokens, **your** component APIs, or **your** naming conventions. Out of the box, they invent props, miswire variants, and ship UI that looks plausible until you try to paste it into a real codebase.
 
 You can fix that without waiting for your design tool vendor to ship an AI feature. **Fine-tune a small open model on examples from your design system**, then run it locally or behind your own Hugging Face endpoint. The model learns your patterns the same way a junior developer would: by reading many correct usages.
@@ -44,7 +38,7 @@ If you have already hit walls with HTML generation from base models, my follow-u
 
 Most teams already document components in **Storybook** (or a similar catalog). That catalog is your ground truth: variants, props, and usage notes that humans trust.
 
-![A typical Storybook design system](assets/storybook.png)
+![A typical Storybook design system](assets/storybook.webp)
 
 *Storybook*
 
@@ -87,7 +81,7 @@ Quality beats quantity. Ten excellent, copy-paste-ready examples outperform a hu
 - **Variants** your team actually uses (`primary`, `ghost`, `destructive`, …)  
 - Edge cases: disabled, loading, empty states, accessibility attributes  
 
-![Training data structure for design-system fine-tuning](assets/training-data.png)
+![Training data structure for design-system fine-tuning](assets/training-data.webp)
 
 *Training data*
 
@@ -97,7 +91,7 @@ Quality beats quantity. Ten excellent, copy-paste-ready examples outperform a hu
 2. Run the early cells through **Step 7**, entering your Hugging Face and W&B API keys when asked.  
 3. Set `huggingface_user` to **your** Hugging Face username so the upload lands in your namespace.  
 
-![Google Colab notebook configuration](assets/colab-notebook.png)
+![Google Colab notebook configuration](assets/colab-notebook.webp)
 
 *Google Colab notebook*
 
@@ -107,7 +101,7 @@ The notebook handles tokenization, train/validation split, and the fine-tuning l
 
 Start training at **Step 7**. Connect W&B when prompted—you want visibility while the run is live, not only after it finishes.
 
-![Weights & Biases training dashboard](assets/wandb-metrics.png)
+![Weights & Biases training dashboard](assets/wandb-metrics.webp)
 
 *Weights & Biases*
 
@@ -136,7 +130,7 @@ Once uploaded, your model has a stable URL, revision history, and optional gated
 3. Set the **system prompt** to match the style you used in training—same voice, same rules (“use only `@acme/ui` imports”, “TypeScript”, “no inline styles”, etc.).  
 4. Generate components interactively before wiring the model into an IDE plugin or internal tool.  
 
-![LM Studio running a custom fine-tuned model](assets/lm-studio.png)
+![LM Studio running a custom fine-tuned model](assets/lm-studio.webp)
 
 *LM Studio*
 

@@ -5,7 +5,7 @@ description: "From the Curta 'math grenade' to TI-59 programmables and glowing g
 date: 2026-05-19
 published: true
 language: en
-coverImage: assets/cover.png
+coverImage: assets/cover.webp
 tags:
   - calculators
   - vintage
@@ -14,7 +14,7 @@ tags:
   - collecting
 ---
 
-![Vintage calculator collection—mechanical Curta, TI programmables, Casio VFDs, and dozens of 1970s–80s pocket models](assets/cover.png)
+![Vintage calculator collection—mechanical Curta, TI programmables, Casio VFDs, and dozens of 1970s–80s pocket models](assets/cover.webp)
 
 **Calculators**
 

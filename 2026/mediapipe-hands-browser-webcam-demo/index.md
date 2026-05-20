@@ -5,7 +5,7 @@ description: "A browser demo that tracks up to four hands from the webcam—2D s
 date: 2026-05-19
 published: true
 language: en
-coverImage: assets/cover.png
+coverImage: assets/cover.webp
 tags:
   - mediapipe
   - computer-vision
@@ -17,7 +17,7 @@ tags:
 codepen: https://codepen.io/maggiben/pen/MWvVYqy
 ---
 
-![MediaPipe Hands — webcam feed with green and red hand skeletons and a 3D landmark grid in the corner](assets/cover.png)
+![MediaPipe Hands — webcam feed with green and red hand skeletons and a 3D landmark grid in the corner](assets/cover.webp)
 
 **MediaPipe Hands**
 

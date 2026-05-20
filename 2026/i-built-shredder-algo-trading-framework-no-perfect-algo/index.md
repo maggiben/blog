@@ -5,7 +5,7 @@ description: "Shredder is my open-source trading framework for researching strat
 date: 2026-03-27
 published: true
 language: en
-coverImage: assets/cover.png
+coverImage: assets/cover.webp
 tags:
   - trading
   - algorithmic-trading

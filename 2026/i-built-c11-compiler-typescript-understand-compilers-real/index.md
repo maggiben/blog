@@ -5,7 +5,7 @@ description: "NodeC is a learning project—a C11-oriented compiler written in T
 date: 2026-04-26
 published: true
 language: en
-coverImage: assets/cover.jpg
+coverImage: assets/cover.webp
 tags:
   - compilers
   - typescript
@@ -16,7 +16,7 @@ canonical: https://www.linkedin.com/pulse/i-built-c11-compiler-typescript-unders
 repo: https://github.com/maggiben/nodec
 ---
 
-![I Built a C11 Compiler in TypeScript to Understand Compilers for Real](assets/cover.jpg)
+![I Built a C11 Compiler in TypeScript to Understand Compilers for Real](assets/cover.webp)
 
 **NodeC**
 
@@ -121,6 +121,6 @@ If you're curious about compilers, I highly recommend building a small one. You 
 
 Example running the Mandelbrot set:
 
-![Mandelbrot ASCII output from NodeC](assets/mandelbrot-example.png)
+![Mandelbrot ASCII output from NodeC](assets/mandelbrot-example.webp)
 
 If you're interested in the experiment, check out the repo: [github.com/maggiben/nodec](https://github.com/maggiben/nodec)

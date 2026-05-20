@@ -5,7 +5,7 @@ description: "Doce tesis sobre la diferencia entre amplificar potencia y amplifi
 date: 2026-01-28
 published: true
 language: es
-coverImage: assets/cover.png
+coverImage: assets/cover.webp
 tags:
   - filosofía
   - inteligencia-artificial
@@ -15,7 +15,7 @@ tags:
 canonical: https://www.linkedin.com/pulse/tesis-sobre-la-amplificaci%C3%B3n-inteligencia-y-el-error-benjamin-maggi-gz74f/
 ---
 
-![Tesis sobre la amplificación, la inteligencia y el error contemporáneo](assets/cover.png)
+![Tesis sobre la amplificación, la inteligencia y el error contemporáneo](assets/cover.webp)
 
 *Hombre de Vitruvio*
 

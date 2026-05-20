@@ -5,7 +5,7 @@ description: "Armé un ERP sencillo para el almacén La Esquina—punto de venta
 date: 2026-04-02
 published: true
 language: es
-coverImage: assets/materiales-y-fachada.png
+coverImage: assets/materiales-y-fachada.webp
 tags:
   - erp
   - retail
@@ -54,7 +54,7 @@ Ahí aparece [**Abasto**](https://github.com/maggiben/abasto)—así lo bauticé
 
 La caja no compite con Instagram. Compite con la fila del mediodía.
 
-![Punto de venta — escanear, carrito y atajos de teclado](assets/pos-pantalla.png)
+![Punto de venta — escanear, carrito y atajos de teclado](assets/pos-pantalla.webp)
 
 La pantalla de **POS** está pensada para manos ocupadas:
 
@@ -68,7 +68,7 @@ Productos reales del negocio—leche La Serenísima, café Bonafide, lo que sea 
 
 Detrás del mostrador, alguien tiene que mirar el negocio con calma.
 
-![Panel de administración — ventas, inventario y tendencia](assets/admin-overview.png)
+![Panel de administración — ventas, inventario y tendencia](assets/admin-overview.webp)
 
 El **overview** no presume ser consultoría McKinsey. Responde preguntas concretas:
 
@@ -86,7 +86,7 @@ Filtros de **7 / 30 / 90 días**, mes actual, anterior, año—porque un almacé
 
 Un almacén serio no tiene “unos cientos” de SKUs. Tiene **muchos**.
 
-![Gestión de productos — importación CSV y grilla](assets/products-catalog.png)
+![Gestión de productos — importación CSV y grilla](assets/products-catalog.webp)
 
 La grilla de **productos** muestra la escala: decenas de miles de filas importadas desde catálogo mayorista (CSV), con marca, categoría, código de barras, precio, IVA, stock y estado activo. Herramientas que sí se usan:
 

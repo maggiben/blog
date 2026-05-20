@@ -5,7 +5,7 @@ description: "A gallery of seven CodePen UI experiments from 2013—3D CSS slide
 date: 2026-05-19
 published: true
 language: en
-coverImage: assets/cover.png
+coverImage: assets/cover.webp
 tags:
   - ui
   - d3
@@ -18,7 +18,7 @@ tags:
 codepen: https://codepen.io/maggiben
 ---
 
-![Snap.svg physics experiment — SNAP.SVG spelled in yellow particles on a dot grid, warped by cursor repulsion](assets/cover.png)
+![Snap.svg physics experiment — SNAP.SVG spelled in yellow particles on a dot grid, warped by cursor repulsion](assets/cover.webp)
 
 **UI experiments · 2013**
 

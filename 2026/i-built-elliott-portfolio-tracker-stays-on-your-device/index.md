@@ -5,7 +5,7 @@ description: "Elliott is a privacy-first portfolio tracker for stocks, crypto, a
 date: 2026-04-16
 published: true
 language: en
-coverImage: assets/cover.png
+coverImage: assets/cover.webp
 tags:
   - portfolio
   - typescript
@@ -16,7 +16,7 @@ tags:
 repo: https://github.com/maggiben/elliott
 ---
 
-![Elliott dashboard — net value, holdings, allocation, and heatmap](assets/cover.png)
+![Elliott dashboard — net value, holdings, allocation, and heatmap](assets/cover.webp)
 
 **Elliott**
 

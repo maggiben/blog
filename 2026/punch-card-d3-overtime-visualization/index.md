@@ -5,7 +5,7 @@ description: "A D3 punch card plots activity by day and hour—orange circles sc
 date: 2026-05-19
 published: true
 language: en
-coverImage: assets/cover.jpg
+coverImage: assets/cover.webp
 tags:
   - d3
   - data-visualization
@@ -16,7 +16,7 @@ tags:
 codepen: https://codepen.io/maggiben/pen/jOWoPx
 ---
 
-![Overtime punch card — days of the week by hour, orange circles sized by intensity](assets/cover.jpg)
+![Overtime punch card — days of the week by hour, orange circles sized by intensity](assets/cover.webp)
 
 **Punch card**
 

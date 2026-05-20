@@ -5,7 +5,7 @@ description: "From Lisp machines and perceptrons to ChatGPT—what the golden er
 date: 2026-05-19
 published: true
 language: en
-coverImage: assets/cover.png
+coverImage: assets/cover.webp
 tags:
   - artificial-intelligence
   - symbolic-ai
@@ -15,7 +15,7 @@ tags:
   - neuro-symbolic
 ---
 
-![After the Golden Age — Lisp-era symbolic AI meets modern neural networks](assets/cover.png)
+![After the Golden Age — Lisp-era symbolic AI meets modern neural networks](assets/cover.webp)
 
 **After the Golden Age**
 

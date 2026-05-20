@@ -5,7 +5,7 @@ description: "A work-in-progress nixie clock—multiplexed digits, camera flicke
 date: 2026-05-19
 published: true
 language: en
-coverImage: assets/pcb-six-tubes.png
+coverImage: assets/pcb-six-tubes.webp
 hideCoverInPost: true
 tags:
   - nixie
@@ -27,7 +27,7 @@ This is a **nixie clock experiment**: tubes wired, multiplexing doing its time-s
 
 ## Bench phase: breadboard chaos
 
-![Breadboard bring-up — ESP32, jumper-wire spaghetti, one nixie tube glowing orange with the digit 8](assets/breadboard-prototype.png)
+![Breadboard bring-up — ESP32, jumper-wire spaghetti, one nixie tube glowing orange with the digit 8](assets/breadboard-prototype.webp)
 
 <p><em>First light on the bench: ESP32, power module, and enough jumper wires to embarrass a schematic.</em></p>
 
@@ -35,7 +35,7 @@ Every nixie project starts somewhere undignified. One tube. A 7-segment display 
 
 ## Six tubes on a board that says 2021
 
-![Six nixie tubes on a custom black PCB labeled Benjamin Maggi 2021 V.1](assets/pcb-six-tubes.png)
+![Six nixie tubes on a custom black PCB labeled Benjamin Maggi 2021 V.1](assets/pcb-six-tubes.webp)
 
 <p><em>Custom PCB, six sockets, high-voltage warning silkscreen—the clock stopped being a thought experiment.</em></p>
 
@@ -44,7 +44,7 @@ The breadboard gave way to a proper board: **six tubes** in a row, cathodes visi
 ## Watch the digits (ignore the camera)
 
 <div class="blog-video">
-  <video controls playsinline preload="metadata" poster="assets/cover.jpg" width="720">
+  <video controls playsinline preload="metadata" poster="assets/cover.webp" width="720">
     <source src="assets/nixie-demo.mp4" type="video/mp4" />
   </video>
 </div>

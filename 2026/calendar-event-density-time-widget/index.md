@@ -5,7 +5,7 @@ description: "A flip-calendar month grid where blue circles scale with how busy 
 date: 2026-05-19
 published: true
 language: en
-coverImage: assets/cover.png
+coverImage: assets/cover.webp
 tags:
   - calendar
   - javascript
@@ -16,7 +16,7 @@ tags:
 codepen: https://codepen.io/maggiben/pen/OPmLBW
 ---
 
-![Flip-calendar widget — April 2026 month grid with binder rings and minimal typography](assets/cover.png)
+![Flip-calendar widget — April 2026 month grid with binder rings and minimal typography](assets/cover.webp)
 
 **Event-density calendar**
 

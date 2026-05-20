@@ -5,7 +5,7 @@ description: "Why I left a bean-to-cup espresso machine for pour-over: fines, fl
 date: 2026-05-19
 published: true
 language: en
-coverImage: assets/cover.png
+coverImage: assets/cover.webp
 tags:
   - coffee
   - pour-over
@@ -17,7 +17,7 @@ tags:
   - bean-to-cup
 ---
 
-![Pour-over V60 on a digital scale—timer at 4:10, weight at 320g, wet grounds in the filter](assets/cover.png)
+![Pour-over V60 on a digital scale—timer at 4:10, weight at 320g, wet grounds in the filter](assets/cover.webp)
 
 **Pour over · V60 · Ceremony**
 
@@ -38,7 +38,7 @@ I bought into the dream hard: fresh beans go in, the machine **grinds, tamps, pu
 This is the machine I used every day—grinding, tamping, pulling—until I swapped it for a V60.
 
 <div class="blog-video">
-<video controls playsinline preload="metadata" poster="assets/bean-to-cup-poster.jpg" src="assets/bean-to-cup.mp4"></video>
+<video controls playsinline preload="metadata" poster="assets/bean-to-cup-poster.webp" src="assets/bean-to-cup.mp4"></video>
 </div>
 
 The problem wasn’t that it failed loudly. It failed **almost** well enough to keep you hooked. Some mornings the espresso was passable. Some afternoons it was thin and sour. I could never quite trust it—and trust is everything when coffee is supposed to be the calm before the storm of your day.

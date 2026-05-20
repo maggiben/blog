@@ -5,7 +5,7 @@ description: "ng-peity brings Peity-style inline SVG charts to Angular 19+ with 
 date: 2026-05-19
 published: true
 language: en
-coverImage: assets/cover.png
+coverImage: assets/cover.webp
 tags:
   - angular
   - typescript
@@ -16,7 +16,7 @@ tags:
 repo: https://github.com/maggiben/ng-peity
 ---
 
-![ng-peity demo — pie, donut, bar, and line mini charts](assets/cover.png)
+![ng-peity demo — pie, donut, bar, and line mini charts](assets/cover.webp)
 
 **ng-peity**
 
@@ -70,7 +70,7 @@ The original AngularJS [Plunker](http://embed.plnkr.co/ITWOx4CJnVpVaDmpHewY/prev
 
 The modern demo does the same with signals:
 
-![Bar chart card — updates every second](assets/bar-live.png)
+![Bar chart card — updates every second](assets/bar-live.webp)
 
 ```typescript
 private readonly intervalId = window.setInterval(() => {
@@ -114,7 +114,7 @@ That code still lives under [`legacy/`](https://github.com/maggiben/ng-peity/tre
 
 The new package keeps the old element names as aliases:
 
-![Legacy inline-pie-chart, inline-bar-chart, inline-line-chart selectors](assets/legacy-selectors.png)
+![Legacy inline-pie-chart, inline-bar-chart, inline-line-chart selectors](assets/legacy-selectors.webp)
 
 - `inline-pie-chart` → `ng-peity-pie`
 - `inline-donut-chart` → `ng-peity-donut`

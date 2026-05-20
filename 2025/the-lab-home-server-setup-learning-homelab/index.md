@@ -5,7 +5,7 @@ description: "A walkthrough of my Proxmox homelab—AdGuard, NPM, K3s, GitLab, G
 date: 2025-05-22
 published: true
 language: en
-coverImage: assets/cover.jpg
+coverImage: assets/cover.webp
 tags:
   - homelab
   - proxmox
@@ -16,7 +16,7 @@ tags:
 canonical: https://www.linkedin.com/posts/maggiben_the-lab-proxmox-adguard-nginx-proxy-manager-activity-7331369904568176640-jRTT
 ---
 
-![The lab — home server and homelab stack](assets/cover.jpg)
+![The lab — home server and homelab stack](assets/cover.webp)
 
 **The lab**
 

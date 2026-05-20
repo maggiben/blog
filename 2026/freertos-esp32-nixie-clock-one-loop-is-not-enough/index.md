@@ -5,7 +5,7 @@ description: "Why I moved a nixie clock from a blocking Arduino loop to FreeRTOS
 date: 2026-05-19
 published: true
 language: en
-coverImage: assets/cover.png
+coverImage: assets/cover.webp
 tags:
   - freertos
   - esp32
@@ -18,7 +18,7 @@ canonical: https://www.linkedin.com/posts/maggiben_introduction-to-rtos-part-1-w
 repo: https://github.com/maggiben/nixie.os
 ---
 
-![FreeRTOS logo](assets/cover.png)
+![FreeRTOS logo](assets/cover.webp)
 
 **FreeRTOS on ESP32**
 
