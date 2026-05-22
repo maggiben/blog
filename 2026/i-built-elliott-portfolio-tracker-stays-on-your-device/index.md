@@ -1,7 +1,7 @@
 ---
 title: "I Built Elliott: A Portfolio Tracker That Stays on Your Device"
 subtitle: Elliott
-description: "Elliott is a privacy-first portfolio tracker for stocks, crypto, and fixed income—built with Next.js, Jotai, and IndexedDB, with no backend holding your positions."
+description: "Elliott is a privacy-first portfolio tracker for stocks, crypto, and fixed income—live at elliottportfolio.trade. Next.js, Jotai, IndexedDB; no backend holding your positions."
 date: 2026-04-16
 published: true
 language: en
@@ -28,7 +28,24 @@ Stocks in one app. Crypto in another. A term deposit I tracked in a spreadsheet 
 
 Each tool was fine on its own. None of them gave me a single, honest picture of what I actually owned—and I was never fully comfortable signing up for another service whose business model is "trust us with your entire net worth."
 
-So I built **Elliott**: a portfolio tracker that runs in the browser, keeps your positions on **your device**, and only talks to **public** market data so the numbers can update.
+So I built **Elliott**: a portfolio tracker that runs in the browser, keeps your positions on **your device**, and only talks to **public** market data so the numbers can update. It is live at **[elliottportfolio.trade](https://www.elliottportfolio.trade/)**—add a position, pick a book currency, and your book stays in the browser.
+
+## Try Elliott live
+
+No install required for a first look. The app runs entirely in the tab; positions land in **IndexedDB** on your machine, not on a server I operate.
+
+<div class="blog-embed">
+  <iframe
+    src="https://www.elliottportfolio.trade/"
+    title="Elliott — portfolio tracker on Vercel"
+    loading="lazy"
+    allowfullscreen
+  ></iframe>
+</div>
+
+<p><em>Embed blank or sluggish? <a href="https://www.elliottportfolio.trade/">Open Elliott in a new tab</a>.</em></p>
+
+Add a stock, a crypto line, or a fixed-income row you define yourself—then watch net value, allocation, and the holdings heatmap populate. Optional API keys (TwelveData, etc.) are yours to configure in `.env.local` if you self-host; the public deployment uses the same client-only architecture described below.
 
 ## What Elliott is (and what it is not)
 
@@ -99,7 +116,9 @@ It also has benefits. No signup funnel. No vendor lock-in on your position list.
 
 ## Try it yourself
 
-Elliott is open in the repo (private flag in `package.json` today—adjust the license if you ship it wider):
+**Live:** [elliottportfolio.trade](https://www.elliottportfolio.trade/)
+
+**Local** (fork, audit, or run with your own API keys):
 
 ```bash
 git clone https://github.com/maggiben/elliott.git
@@ -113,4 +132,4 @@ Open [http://localhost:3000](http://localhost:3000), add a position, and watch t
 
 If you have been juggling spreadsheets and half a dozen apps for the same problem, I hope Elliott gives you the same calm I was after: **one view, your data, public prices only.**
 
-Repo: [github.com/maggiben/elliott](https://github.com/maggiben/elliott)
+Live app: [elliottportfolio.trade](https://www.elliottportfolio.trade/) · Repo: [github.com/maggiben/elliott](https://github.com/maggiben/elliott)
