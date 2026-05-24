@@ -1,62 +1,57 @@
-/* Digital Wellbeing — horizontal screenshot gallery */
-.blog-screenshot-gallery {
-  margin: 1rem 0 1.5rem;
-}
-
-.blog-screenshot-gallery__label {
-  margin: 1rem 0 0.35rem;
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  opacity: 0.65;
-}
-
-.blog-screenshot-gallery__label:first-child {
-  margin-top: 0;
-}
-
-.blog-screenshot-strip {
+/* One horizontal row — scroll sideways (← →) */
+.blog-screenshot-scroll {
   display: flex !important;
-  flex-flow: row nowrap !important;
-  gap: 0.75rem !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  align-items: flex-start !important;
+  gap: 1rem !important;
+  width: 100% !important;
+  max-width: 100% !important;
   overflow-x: auto !important;
   overflow-y: hidden !important;
-  margin: 0 0 0.5rem !important;
-  padding: 0.25rem 0.25rem 0.75rem !important;
+  margin: 1rem 0 0.5rem !important;
+  padding: 0.5rem 0.5rem 1rem !important;
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
 }
 
-.blog-screenshot-strip__card {
+.blog-screenshot-scroll__card {
   flex: 0 0 auto !important;
   scroll-snap-align: start;
   margin: 0 !important;
-  width: 142px !important;
+  width: auto !important;
   max-width: none !important;
 }
 
-.blog-screenshot-strip__card img {
+.blog-screenshot-scroll__card img {
   display: block !important;
   height: 360px !important;
   width: auto !important;
   max-width: none !important;
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
   background: #111;
 }
 
-.blog-screenshot-strip__card figcaption {
-  margin: 0.4rem 0 0;
-  font-size: 11px;
-  line-height: 1.35;
-  opacity: 0.9;
+.blog-screenshot-scroll__card figcaption {
+  margin: 0.5rem 0 0;
+  font-size: 12px;
+  line-height: 1.3;
+  text-align: center;
+  white-space: nowrap;
 }
 
-/* Override common article/prose img rules */
-article .blog-screenshot-strip__card img,
-.prose .blog-screenshot-strip__card img,
-.post-content .blog-screenshot-strip__card img {
+.blog-screenshot-scroll-hint {
+  margin: 0 0 1.5rem;
+  font-size: 13px;
+  text-align: center;
+  opacity: 0.6;
+  letter-spacing: 0.2em;
+}
+
+article .blog-screenshot-scroll__card img,
+.prose .blog-screenshot-scroll__card img,
+.post-content .blog-screenshot-scroll__card img {
   height: 360px !important;
   width: auto !important;
   max-width: none !important;

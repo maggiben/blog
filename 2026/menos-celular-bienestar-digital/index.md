@@ -58,80 +58,64 @@ No es una curva perfecta. Hay semanas en **1 h 30 m**, otras en **43 m**, y alg�
 <link rel="stylesheet" href="assets/styles.css" />
 
 <style>
-  .blog-screenshot-strip{display:flex!important;flex-flow:row nowrap!important;gap:12px!important;overflow-x:auto!important;overflow-y:hidden!important;margin:12px 0 20px!important;padding:4px 4px 12px!important;-webkit-overflow-scrolling:touch;scroll-snap-type:x mandatory}
-  .blog-screenshot-strip__card{flex:0 0 auto!important;scroll-snap-align:start;margin:0!important;width:142px!important;max-width:none!important}
-  .blog-screenshot-strip__card img{display:block!important;height:360px!important;width:auto!important;max-width:none!important;border-radius:10px;border:1px solid rgba(255,255,255,.12)}
-  .blog-screenshot-strip__card figcaption{margin:6px 0 0;font-size:12px;line-height:1.35;opacity:.9}
+  .blog-screenshot-scroll{display:flex!important;flex-flow:row nowrap!important;gap:16px!important;width:100%!important;max-width:100%!important;overflow-x:auto!important;overflow-y:hidden!important;margin:1rem 0 .5rem!important;padding:8px 8px 16px!important;-webkit-overflow-scrolling:touch;scroll-snap-type:x mandatory}
+  .blog-screenshot-scroll__card{flex:0 0 auto!important;scroll-snap-align:start;margin:0!important;max-width:none!important}
+  .blog-screenshot-scroll__card img{display:block!important;height:360px!important;width:auto!important;max-width:none!important;border-radius:8px;border:1px solid rgba(255,255,255,.15)}
+  .blog-screenshot-scroll__card figcaption{margin:8px 0 0;font-size:12px;text-align:center;white-space:nowrap}
 </style>
 
-<p><em>Deslizá horizontalmente en cada fila →</em></p>
-
-<div class="blog-screenshot-gallery">
-
-<p class="blog-screenshot-gallery__label" style="margin:0 0 6px;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.04em;opacity:.65;">Noviembre–diciembre 2025</p>
-
-<div class="blog-screenshot-strip" style="display:flex;flex-flow:row nowrap;gap:12px;overflow-x:auto;overflow-y:hidden;margin:0 0 20px;padding:4px 4px 12px;-webkit-overflow-scrolling:touch;">
-  <figure class="blog-screenshot-strip__card" style="flex:0 0 auto;margin:0;width:142px;">
-    <img src="assets/semana-47-nov-2025-2h24m.webp" alt="Semana 47 — 2 h 24 m" width="399" height="1024" loading="lazy" style="display:block;height:360px;width:auto;max-width:none;border-radius:10px;border:1px solid rgba(255,255,255,.12);" />
-    <figcaption><strong>S47</strong> — 2 h 24 m</figcaption>
+<div class="blog-screenshot-scroll" style="display:flex;flex-flow:row nowrap;align-items:flex-start;gap:16px;width:100%;max-width:100%;overflow-x:auto;overflow-y:hidden;margin:1rem 0 .5rem;padding:8px 8px 16px;-webkit-overflow-scrolling:touch;scroll-snap-type:x mandatory;">
+  <figure class="blog-screenshot-scroll__card" style="flex:0 0 auto;margin:0;">
+    <img src="assets/semana-47-nov-2025-2h24m.webp" alt="Semana 47 — 2 h 24 m" width="399" height="1024" loading="lazy" style="display:block!important;height:360px!important;width:auto!important;max-width:none!important;border-radius:8px;" />
+    <figcaption>S47 · 2 h 24 m</figcaption>
   </figure>
-  <figure class="blog-screenshot-strip__card" style="flex:0 0 auto;margin:0;width:142px;">
-    <img src="assets/semana-48-1h26m.webp" alt="Semana 48 — 1 h 26 m" width="399" height="1024" loading="lazy" style="display:block;height:360px;width:auto;max-width:none;border-radius:10px;border:1px solid rgba(255,255,255,.12);" />
-    <figcaption><strong>S48</strong> — ~1 h 26 m</figcaption>
+  <figure class="blog-screenshot-scroll__card" style="flex:0 0 auto;margin:0;">
+    <img src="assets/semana-48-1h26m.webp" alt="Semana 48 — 1 h 26 m" width="399" height="1024" loading="lazy" style="display:block!important;height:360px!important;width:auto!important;max-width:none!important;border-radius:8px;" />
+    <figcaption>S48 · 1 h 26 m</figcaption>
   </figure>
-  <figure class="blog-screenshot-strip__card" style="flex:0 0 auto;margin:0;width:142px;">
-    <img src="assets/semana-49-1h06m.webp" alt="Semana 49 — 1 h 6 m" width="399" height="1024" loading="lazy" style="display:block;height:360px;width:auto;max-width:none;border-radius:10px;border:1px solid rgba(255,255,255,.12);" />
-    <figcaption><strong>S49</strong> — ~1 h 6 m</figcaption>
+  <figure class="blog-screenshot-scroll__card" style="flex:0 0 auto;margin:0;">
+    <img src="assets/semana-49-1h06m.webp" alt="Semana 49 — 1 h 6 m" width="399" height="1024" loading="lazy" style="display:block!important;height:360px!important;width:auto!important;max-width:none!important;border-radius:8px;" />
+    <figcaption>S49 · 1 h 6 m</figcaption>
   </figure>
-</div>
-
-<p class="blog-screenshot-gallery__label" style="margin:16px 0 6px;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.04em;opacity:.65;">Febrero–abril 2026</p>
-
-<div class="blog-screenshot-strip" style="display:flex;flex-flow:row nowrap;gap:12px;overflow-x:auto;overflow-y:hidden;margin:0 0 20px;padding:4px 4px 12px;-webkit-overflow-scrolling:touch;">
-  <figure class="blog-screenshot-strip__card" style="flex:0 0 auto;margin:0;width:142px;">
-    <img src="assets/semana-09-feb-38m.webp" alt="Semana 9 — 38 m" width="399" height="1024" loading="lazy" style="display:block;height:360px;width:auto;max-width:none;border-radius:10px;border:1px solid rgba(255,255,255,.12);" />
-    <figcaption><strong>S9</strong> — 38 m</figcaption>
+  <figure class="blog-screenshot-scroll__card" style="flex:0 0 auto;margin:0;">
+    <img src="assets/semana-09-feb-38m.webp" alt="Semana 9 — 38 m" width="399" height="1024" loading="lazy" style="display:block!important;height:360px!important;width:auto!important;max-width:none!important;border-radius:8px;" />
+    <figcaption>S9 · 38 m</figcaption>
   </figure>
-  <figure class="blog-screenshot-strip__card" style="flex:0 0 auto;margin:0;width:142px;">
-    <img src="assets/semana-14-1h33m.webp" alt="Semana 14 — 1 h 33 m" width="399" height="1024" loading="lazy" style="display:block;height:360px;width:auto;max-width:none;border-radius:10px;border:1px solid rgba(255,255,255,.12);" />
-    <figcaption><strong>S14</strong> — ~1 h 33 m</figcaption>
+  <figure class="blog-screenshot-scroll__card" style="flex:0 0 auto;margin:0;">
+    <img src="assets/semana-14-1h33m.webp" alt="Semana 14 — 1 h 33 m" width="399" height="1024" loading="lazy" style="display:block!important;height:360px!important;width:auto!important;max-width:none!important;border-radius:8px;" />
+    <figcaption>S14 · 1 h 33 m</figcaption>
   </figure>
-  <figure class="blog-screenshot-strip__card" style="flex:0 0 auto;margin:0;width:142px;">
-    <img src="assets/semana-15-1h20m.webp" alt="Semana 15 — 1 h 20 m" width="399" height="1024" loading="lazy" style="display:block;height:360px;width:auto;max-width:none;border-radius:10px;border:1px solid rgba(255,255,255,.12);" />
-    <figcaption><strong>S15</strong> — ~1 h 20 m</figcaption>
+  <figure class="blog-screenshot-scroll__card" style="flex:0 0 auto;margin:0;">
+    <img src="assets/semana-15-1h20m.webp" alt="Semana 15 — 1 h 20 m" width="399" height="1024" loading="lazy" style="display:block!important;height:360px!important;width:auto!important;max-width:none!important;border-radius:8px;" />
+    <figcaption>S15 · 1 h 20 m</figcaption>
   </figure>
-  <figure class="blog-screenshot-strip__card" style="flex:0 0 auto;margin:0;width:142px;">
-    <img src="assets/semana-16-1h02m-7-dias.webp" alt="Semana 16 — 1 h 2 m" width="399" height="1024" loading="lazy" style="display:block;height:360px;width:auto;max-width:none;border-radius:10px;border:1px solid rgba(255,255,255,.12);" />
-    <figcaption><strong>S16</strong> — ~1 h 2 m, 7/7</figcaption>
+  <figure class="blog-screenshot-scroll__card" style="flex:0 0 auto;margin:0;">
+    <img src="assets/semana-16-1h02m-7-dias.webp" alt="Semana 16 — 1 h 2 m" width="399" height="1024" loading="lazy" style="display:block!important;height:360px!important;width:auto!important;max-width:none!important;border-radius:8px;" />
+    <figcaption>S16 · 1 h 2 m</figcaption>
   </figure>
-  <figure class="blog-screenshot-strip__card" style="flex:0 0 auto;margin:0;width:142px;">
-    <img src="assets/semana-17-1h28m.webp" alt="Semana 17 — 1 h 28 m" width="399" height="1024" loading="lazy" style="display:block;height:360px;width:auto;max-width:none;border-radius:10px;border:1px solid rgba(255,255,255,.12);" />
-    <figcaption><strong>S17</strong> — ~1 h 28 m</figcaption>
+  <figure class="blog-screenshot-scroll__card" style="flex:0 0 auto;margin:0;">
+    <img src="assets/semana-17-1h28m.webp" alt="Semana 17 — 1 h 28 m" width="399" height="1024" loading="lazy" style="display:block!important;height:360px!important;width:auto!important;max-width:none!important;border-radius:8px;" />
+    <figcaption>S17 · 1 h 28 m</figcaption>
   </figure>
-</div>
-
-<p class="blog-screenshot-gallery__label" style="margin:16px 0 6px;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.04em;opacity:.65;">Mayo 2026</p>
-
-<div class="blog-screenshot-strip" style="display:flex;flex-flow:row nowrap;gap:12px;overflow-x:auto;overflow-y:hidden;margin:0 0 12px;padding:4px 4px 12px;-webkit-overflow-scrolling:touch;">
-  <figure class="blog-screenshot-strip__card" style="flex:0 0 auto;margin:0;width:142px;">
-    <img src="assets/semana-18-43m-7-dias.webp" alt="Semana 18 — 43 m" width="399" height="1024" loading="lazy" style="display:block;height:360px;width:auto;max-width:none;border-radius:10px;border:1px solid rgba(255,255,255,.12);" />
-    <figcaption><strong>S18</strong> — 43 m, 7/7</figcaption>
+  <figure class="blog-screenshot-scroll__card" style="flex:0 0 auto;margin:0;">
+    <img src="assets/semana-18-43m-7-dias.webp" alt="Semana 18 — 43 m" width="399" height="1024" loading="lazy" style="display:block!important;height:360px!important;width:auto!important;max-width:none!important;border-radius:8px;" />
+    <figcaption>S18 · 43 m</figcaption>
   </figure>
-  <figure class="blog-screenshot-strip__card" style="flex:0 0 auto;margin:0;width:142px;">
-    <img src="assets/semana-19-1h27m.webp" alt="Semana 19 — 1 h 27 m" width="399" height="1024" loading="lazy" style="display:block;height:360px;width:auto;max-width:none;border-radius:10px;border:1px solid rgba(255,255,255,.12);" />
-    <figcaption><strong>S19</strong> — ~1 h 27 m</figcaption>
+  <figure class="blog-screenshot-scroll__card" style="flex:0 0 auto;margin:0;">
+    <img src="assets/semana-19-1h27m.webp" alt="Semana 19 — 1 h 27 m" width="399" height="1024" loading="lazy" style="display:block!important;height:360px!important;width:auto!important;max-width:none!important;border-radius:8px;" />
+    <figcaption>S19 · 1 h 27 m</figcaption>
   </figure>
-  <figure class="blog-screenshot-strip__card" style="flex:0 0 auto;margin:0;width:142px;">
-    <img src="assets/semana-20-1h06m-7-dias.webp" alt="Semana 20 — 1 h 6 m" width="399" height="1024" loading="lazy" style="display:block;height:360px;width:auto;max-width:none;border-radius:10px;border:1px solid rgba(255,255,255,.12);" />
-    <figcaption><strong>S20</strong> — ~1 h 6 m, 7/7</figcaption>
+  <figure class="blog-screenshot-scroll__card" style="flex:0 0 auto;margin:0;">
+    <img src="assets/semana-20-1h06m-7-dias.webp" alt="Semana 20 — 1 h 6 m" width="399" height="1024" loading="lazy" style="display:block!important;height:360px!important;width:auto!important;max-width:none!important;border-radius:8px;" />
+    <figcaption>S20 · 1 h 6 m</figcaption>
   </figure>
-  <figure class="blog-screenshot-strip__card" style="flex:0 0 auto;margin:0;width:142px;">
-    <img src="assets/semana-21-43m-7-dias.webp" alt="Semana 21 — 43 m" width="399" height="1024" loading="lazy" style="display:block;height:360px;width:auto;max-width:none;border-radius:10px;border:1px solid rgba(255,255,255,.12);" />
-    <figcaption><strong>S21</strong> — 43 m, 7/7</figcaption>
+  <figure class="blog-screenshot-scroll__card" style="flex:0 0 auto;margin:0;">
+    <img src="assets/semana-21-43m-7-dias.webp" alt="Semana 21 — 43 m" width="399" height="1024" loading="lazy" style="display:block!important;height:360px!important;width:auto!important;max-width:none!important;border-radius:8px;" />
+    <figcaption>S21 · 43 m</figcaption>
   </figure>
 </div>
 
-</div>
+<p class="blog-screenshot-scroll-hint" style="margin:0 0 1.5rem;text-align:center;font-size:13px;opacity:.6;letter-spacing:.2em;">← →</p>
 
 Lo que más me gusta de estas pantallas no es solo el número: es la frase de abajo—*“pasaste X horas más sin el teléfono que usándolo”*—que te recuerda que el día es largo y que el scroll no es el default.
 
