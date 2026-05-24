@@ -1,0 +1,18 @@
+/* Threat Globe — full-screen WebGL embed */
+.blog-embed.blog-embed--threat-globe {
+  max-width: 1280px;
+  margin: 1.5rem auto;
+  padding: 0;
+  background: #0a0c10;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 4px;
+  overflow: hidden;
+}
+.blog-embed.blog-embed--threat-globe iframe {
+  display: block;
+  width: 100%;
+  min-height: 640px;
+  aspect-ratio: 16 / 10;
+  border: 0;
+  background: #0a0c10;
+}
