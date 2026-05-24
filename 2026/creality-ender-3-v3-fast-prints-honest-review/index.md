@@ -72,6 +72,8 @@ In practice, it **still leaves a lot to be desired**. It has caught obvious disa
 
 The single best accessory purchase alongside this printer was Creality’s **filament dryer** (heater box for spools).
 
+![Creality SpacePi filament dryer with Hyper Series grey filament—display showing 65°C and 20% humidity](assets/spacepi-filament-dryer.webp)
+
 If you live anywhere humidity is not a joke, it is close to a **must-have**:
 
 - Fresh PLA stops hissing and popping mid-print
