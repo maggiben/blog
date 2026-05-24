@@ -55,59 +55,72 @@ No me creas a mí: mirá lo que va guardando **Digital Wellbeing** en el Samsung
 
 No es una curva perfecta. Hay semanas en **1 h 30 m**, otras en **43 m**, y algún miércoles rebelde que se va a **2 h** o más. Pero la tendencia es clara: de “muchas horas sin darme cuenta” a un rango que puedo defender sin autoengaño.
 
+<link rel="stylesheet" href="assets/styles.css" />
+
+<p><em>Deslizá horizontalmente para ver cada semana.</em></p>
+
 ### Noviembre–diciembre 2025
 
-![Semana 47 — promedio 2 h 24 m, meta 6 de 7 días](assets/semana-47-nov-2025-2h24m.webp)
-
-<p><em>Semana 47 (16–22 nov): ya estaba bajando respecto al pico de 4+ h, pero todavía había días que se iban a 3–4 h.</em></p>
-
-![Semana 48 — promedio 1 h 26 m](assets/semana-48-1h26m.webp)
-
-<p><em>Semana 48: ~1 h 26 m de promedio; un martes se escapó, el resto más controlado.</em></p>
-
-![Semana 49 — promedio 1 h 6 m](assets/semana-49-1h06m.webp)
-
-<p><em>Semana 49: ~1 h 6 m; seis de siete días bajo la meta.</em></p>
+<div class="blog-screenshot-strip" aria-label="Reportes noviembre–diciembre 2025">
+  <figure class="blog-screenshot-strip__item">
+    <img src="assets/semana-47-nov-2025-2h24m.webp" alt="Semana 47 — promedio 2 h 24 m" width="399" height="1024" loading="lazy" />
+    <figcaption><strong>Semana 47</strong> — 2 h 24 m. Ya bajaba respecto al pico de 4+ h; algunos días seguían en 3–4 h.</figcaption>
+  </figure>
+  <figure class="blog-screenshot-strip__item">
+    <img src="assets/semana-48-1h26m.webp" alt="Semana 48 — promedio 1 h 26 m" width="399" height="1024" loading="lazy" />
+    <figcaption><strong>Semana 48</strong> — ~1 h 26 m; un martes se escapó, el resto más controlado.</figcaption>
+  </figure>
+  <figure class="blog-screenshot-strip__item">
+    <img src="assets/semana-49-1h06m.webp" alt="Semana 49 — promedio 1 h 6 m" width="399" height="1024" loading="lazy" />
+    <figcaption><strong>Semana 49</strong> — ~1 h 6 m; seis de siete días bajo la meta.</figcaption>
+  </figure>
+</div>
 
 ### Febrero–abril 2026
 
-![Semana 9 — promedio 38 m](assets/semana-09-feb-38m.webp)
-
-<p><em>Semana 9 (feb): 38 m de promedio—una de las primeras en las que el número me sorprendió para bien.</em></p>
-
-![Semana 14 — promedio 1 h 33 m](assets/semana-14-1h33m.webp)
-
-<p><em>Semana 14: ~1 h 33 m; un martes alto, seis días en verde.</em></p>
-
-![Semana 15 — promedio 1 h 20 m](assets/semana-15-1h20m.webp)
-
-<p><em>Semana 15: ~1 h 20 m.</em></p>
-
-![Semana 16 — promedio 1 h 2 m, meta 7 días](assets/semana-16-1h02m-7-dias.webp)
-
-<p><em>Semana 16: ~1 h 2 m y **meta cumplida los 7 días**.</em></p>
-
-![Semana 17 — promedio 1 h 28 m](assets/semana-17-1h28m.webp)
-
-<p><em>Semana 17: ~1 h 28 m; miércoles y viernes se pasaron—honestidad de datos incluida.</em></p>
+<div class="blog-screenshot-strip" aria-label="Reportes febrero–abril 2026">
+  <figure class="blog-screenshot-strip__item">
+    <img src="assets/semana-09-feb-38m.webp" alt="Semana 9 — promedio 38 m" width="399" height="1024" loading="lazy" />
+    <figcaption><strong>Semana 9 (feb)</strong> — 38 m; una de las primeras que me sorprendió para bien.</figcaption>
+  </figure>
+  <figure class="blog-screenshot-strip__item">
+    <img src="assets/semana-14-1h33m.webp" alt="Semana 14 — promedio 1 h 33 m" width="399" height="1024" loading="lazy" />
+    <figcaption><strong>Semana 14</strong> — ~1 h 33 m; un martes alto, seis días en verde.</figcaption>
+  </figure>
+  <figure class="blog-screenshot-strip__item">
+    <img src="assets/semana-15-1h20m.webp" alt="Semana 15 — promedio 1 h 20 m" width="399" height="1024" loading="lazy" />
+    <figcaption><strong>Semana 15</strong> — ~1 h 20 m.</figcaption>
+  </figure>
+  <figure class="blog-screenshot-strip__item">
+    <img src="assets/semana-16-1h02m-7-dias.webp" alt="Semana 16 — promedio 1 h 2 m, meta 7 días" width="399" height="1024" loading="lazy" />
+    <figcaption><strong>Semana 16</strong> — ~1 h 2 m; meta cumplida los 7 días.</figcaption>
+  </figure>
+  <figure class="blog-screenshot-strip__item">
+    <img src="assets/semana-17-1h28m.webp" alt="Semana 17 — promedio 1 h 28 m" width="399" height="1024" loading="lazy" />
+    <figcaption><strong>Semana 17</strong> — ~1 h 28 m; miércoles y viernes se pasaron.</figcaption>
+  </figure>
+</div>
 
 ### Mayo 2026 (lo más reciente)
 
-![Semana 18 — promedio 43 m, meta 7 días](assets/semana-18-43m-7-dias.webp)
-
-<p><em>Semana 18: **43 m** de promedio, siete de siete. Las barras verdes quedan por debajo del promedio mensual gris—se nota el cambio de hábito.</em></p>
-
-![Semana 19 — promedio 1 h 27 m](assets/semana-19-1h27m.webp)
-
-<p><em>Semana 19: ~1 h 27 m; miércoles y viernes en naranja, cinco días en meta.</em></p>
-
-![Semana 20 — promedio 1 h 6 m, meta 7 días](assets/semana-20-1h06m-7-dias.webp)
-
-<p><em>Semana 20: ~1 h 6 m, otra semana completa en verde.</em></p>
-
-![Semana 21 — promedio 43 m, meta 7 días](assets/semana-21-43m-7-dias.webp)
-
-<p><em>Semana 21 (17–23 may): otra vez **43 m** y **7 días** cumpliendo la meta—la captura de portada de este post.</em></p>
+<div class="blog-screenshot-strip" aria-label="Reportes mayo 2026">
+  <figure class="blog-screenshot-strip__item">
+    <img src="assets/semana-18-43m-7-dias.webp" alt="Semana 18 — promedio 43 m, meta 7 días" width="399" height="1024" loading="lazy" />
+    <figcaption><strong>Semana 18</strong> — 43 m, siete de siete; barras verdes bajo el promedio mensual gris.</figcaption>
+  </figure>
+  <figure class="blog-screenshot-strip__item">
+    <img src="assets/semana-19-1h27m.webp" alt="Semana 19 — promedio 1 h 27 m" width="399" height="1024" loading="lazy" />
+    <figcaption><strong>Semana 19</strong> — ~1 h 27 m; miércoles y viernes en naranja.</figcaption>
+  </figure>
+  <figure class="blog-screenshot-strip__item">
+    <img src="assets/semana-20-1h06m-7-dias.webp" alt="Semana 20 — promedio 1 h 6 m, meta 7 días" width="399" height="1024" loading="lazy" />
+    <figcaption><strong>Semana 20</strong> — ~1 h 6 m; otra semana completa en verde.</figcaption>
+  </figure>
+  <figure class="blog-screenshot-strip__item">
+    <img src="assets/semana-21-43m-7-dias.webp" alt="Semana 21 — promedio 43 m, meta 7 días" width="399" height="1024" loading="lazy" />
+    <figcaption><strong>Semana 21 (17–23 may)</strong> — 43 m y 7 días en meta.</figcaption>
+  </figure>
+</div>
 
 Lo que más me gusta de estas pantallas no es solo el número: es la frase de abajo—*“pasaste X horas más sin el teléfono que usándolo”*—que te recuerda que el día es largo y que el scroll no es el default.
 
