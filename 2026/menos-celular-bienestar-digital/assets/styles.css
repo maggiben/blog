@@ -1,39 +1,34 @@
-/* Screenshot gallery iframe (Digital Wellbeing) */
-.blog-embed.blog-embed--screenshots {
-  max-width: 100%;
-  margin: 1.25rem 0;
-  padding: 0;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 10px;
-  overflow: visible;
-  background: #0d1117;
+/* Digital Wellbeing — horizontal screenshot gallery */
+.blog-screenshot-gallery {
+  margin: 1rem 0 1.5rem;
 }
 
-.blog-embed.blog-embed--screenshots iframe {
-  display: block;
-  width: 100%;
-  min-height: 420px;
-  height: 420px;
-  border: 0;
-  background: #0d1117;
-  overflow: hidden;
+.blog-screenshot-gallery__label {
+  margin: 1rem 0 0.35rem;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  opacity: 0.65;
 }
 
-/* Fallback if gallery HTML is inlined (older deploys) */
+.blog-screenshot-gallery__label:first-child {
+  margin-top: 0;
+}
+
 .blog-screenshot-strip {
   display: flex !important;
-  flex-direction: row !important;
-  flex-wrap: nowrap !important;
+  flex-flow: row nowrap !important;
   gap: 0.75rem !important;
   overflow-x: auto !important;
   overflow-y: hidden !important;
-  margin: 0.75rem 0 1.25rem !important;
-  padding: 0.25rem 0 0.75rem !important;
+  margin: 0 0 0.5rem !important;
+  padding: 0.25rem 0.25rem 0.75rem !important;
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
 }
 
-.blog-screenshot-strip__item {
+.blog-screenshot-strip__card {
   flex: 0 0 auto !important;
   scroll-snap-align: start;
   margin: 0 !important;
@@ -41,7 +36,7 @@
   max-width: none !important;
 }
 
-.blog-screenshot-strip__item img {
+.blog-screenshot-strip__card img {
   display: block !important;
   height: 360px !important;
   width: auto !important;
@@ -51,9 +46,18 @@
   background: #111;
 }
 
-.blog-screenshot-strip__item figcaption {
-  margin-top: 0.4rem;
-  font-size: 0.75rem;
+.blog-screenshot-strip__card figcaption {
+  margin: 0.4rem 0 0;
+  font-size: 11px;
   line-height: 1.35;
-  opacity: 0.85;
+  opacity: 0.9;
+}
+
+/* Override common article/prose img rules */
+article .blog-screenshot-strip__card img,
+.prose .blog-screenshot-strip__card img,
+.post-content .blog-screenshot-strip__card img {
+  height: 360px !important;
+  width: auto !important;
+  max-width: none !important;
 }
