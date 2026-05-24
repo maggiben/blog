@@ -57,12 +57,13 @@ No es una curva perfecta. Hay semanas en **1 h 30 m**, otras en **43 m**, y algÃ
 
 <link rel="stylesheet" href="assets/styles.css" />
 
-<div class="blog-embed blog-embed--screenshots" style="max-width:100%;margin:1.25rem 0;border:1px solid rgba(255,255,255,0.12);border-radius:10px;overflow:hidden;background:#0d1117;">
+<div class="blog-embed blog-embed--screenshots" style="max-width:100%;margin:1.25rem 0;border:1px solid rgba(255,255,255,0.12);border-radius:10px;overflow:visible;background:#0d1117;">
   <iframe
     src="assets/screenshot-gallery.html"
     title="Reportes semanales Digital Wellbeing â€” deslizar horizontalmente"
     loading="lazy"
-    style="display:block;width:100%;height:1320px;border:0;background:#0d1117;"
+    scrolling="no"
+    style="display:block;width:100%;min-height:420px;height:420px;border:0;background:#0d1117;overflow:hidden;"
   ></iframe>
 </div>
 

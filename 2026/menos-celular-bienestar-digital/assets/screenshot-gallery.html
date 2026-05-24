@@ -62,6 +62,7 @@
       opacity: 0.9;
     }
     .card strong { font-weight: 600; }
+    html, body { overflow: hidden; }
   </style>
 </head>
 <body>
@@ -126,5 +127,28 @@
       <figcaption><strong>S21</strong> — 43 m; 7/7.</figcaption>
     </figure>
   </div>
+  <script>
+    (function () {
+      function resizeFrame() {
+        var frame = window.frameElement;
+        if (!frame) return;
+        var h = Math.ceil(document.documentElement.scrollHeight);
+        frame.style.height = h + 'px';
+      }
+      function schedule() {
+        requestAnimationFrame(resizeFrame);
+      }
+      window.addEventListener('load', schedule);
+      window.addEventListener('resize', schedule);
+      document.querySelectorAll('.card img').forEach(function (img) {
+        if (img.complete) schedule();
+        else img.addEventListener('load', schedule);
+      });
+      if (typeof ResizeObserver !== 'undefined') {
+        new ResizeObserver(schedule).observe(document.body);
+      }
+      schedule();
+    })();
+  </script>
 </body>
 </html>
