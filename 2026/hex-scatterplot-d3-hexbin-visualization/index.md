@@ -29,25 +29,26 @@ Every marker fights its neighbor. Overplotting hides structure. You squint, togg
 
 **Hex binning** is the elegant fix: snap the plane into a honeycomb grid, count what lands in each cell, and paint the hexagons by that count. You keep the **spatial honesty** of a scatter—where things pile up still matters—but you trade per-point ink for **readable density**. I built one years ago in pure **D3** on [CodePen](https://codepen.io/maggiben/pen/AgjzOZ): three thousand synthetic points, **d3.hexbin**, a blue-to-coral scale, and axes that read like a week-by-hour grid. It is still one of the most satisfying small demos in my notebook.
 
-## Try it live
+## Try it live — CodePen embed
 
-The demo runs from a **first-party copy** in [assets/demo/](assets/demo/)—this site’s CSP only allows `frame-src 'self'`, so CodePen embeds are blocked.
+The iframe keeps the pen’s styles isolated from this site’s theme. Pan your eyes across the hive: cool blues where only a few points fell, warm reds where the bin filled up.
 
 <link rel="stylesheet" href="assets/demo/styles.css" />
 
-<div class="blog-embed blog-embed--demo">
+<div class="blog-embed blog-embed--codepen">
   <iframe
     height="590"
     style="width: 100%;"
     scrolling="no"
     title="HEX scatterplot"
-    src="assets/demo/index.html"
+    src="https://codepen.io/maggiben/embed/AgjzOZ?default-tab=result"
     frameborder="no"
     loading="lazy"
+    allowtransparency="true"
   ></iframe>
 </div>
 
-<p><em>Blank embed? <a href="assets/demo/index.html" target="_blank" rel="noopener noreferrer">Open the demo in a new tab</a> or try the <a href="https://codepen.io/maggiben/pen/AgjzOZ" target="_blank" rel="noopener noreferrer">CodePen fork</a>.</em></p>
+<p><em>Blank iframe? <a href="https://codepen.io/maggiben/pen/AgjzOZ" target="_blank" rel="noopener noreferrer">Open the pen on CodePen</a>.</em></p>
 
 The data here is **synthetic**: `d3.random.normal` draws *x* and *y* in pixel space so the cloud blooms around the center of the plot. The hour and day axes are **scaffolding**—labels and grid lines that echo the punch-card charts I was building at the time—not a literal mapping from timestamp to position. Swap in real `(hour, weekday)` pairs and the same hex layer becomes a **temporal density map** without changing the core idea.
 

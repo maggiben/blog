@@ -1,20 +1,14 @@
-/* Pipes screensaver — blog embed + demo page */
-.blog-embed.blog-embed--pipes,
+/* CodePen iframe — Pipes screensaver demo */
 .blog-embed.blog-embed--codepen {
   max-width: 960px;
   margin: 1.5rem auto;
   padding: 0;
-  background: #000;
+  background: transparent;
   border: 0;
-  border-radius: 4px;
-  overflow: hidden;
 }
-
-.blog-embed.blog-embed--pipes iframe,
 .blog-embed.blog-embed--codepen iframe {
   display: block;
   width: 100%;
-  min-height: 480px;
   border: 0;
-  background: #000;
+  background: transparent;
 }

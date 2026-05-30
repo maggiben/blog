@@ -28,25 +28,26 @@ Not “how much this quarter,” but **which hours on which days** light up. Fac
 
 I built one years ago on [CodePen](https://codepen.io/maggiben/pen/jOWoPx): an “Overtime” panel in green and brown, **D3** scales, and orange circles whose **radius tracks intensity** in each day–hour cell. Hover a dot and you get the raw count. It is still one of the fastest ways I know to **feel** a work week without reading a table.
 
-## Try it live
+## Try it live — CodePen embed
 
-The demo runs from a **first-party copy** in [assets/demo/](assets/demo/)—this site’s CSP only allows `frame-src 'self'`, so CodePen embeds are blocked.
+The iframe keeps the pen’s own styles isolated from this site’s theme. Move across the grid and watch tooltips report the value behind each circle.
 
 <link rel="stylesheet" href="assets/demo/styles.css" />
 
-<div class="blog-embed blog-embed--demo">
+<div class="blog-embed blog-embed--codepen">
   <iframe
     height="644"
     style="width: 100%;"
     scrolling="no"
     title="PunchCard"
-    src="assets/demo/index.html"
+    src="https://codepen.io/maggiben/embed/jOWoPx?default-tab=result"
     frameborder="no"
     loading="lazy"
+    allowtransparency="true"
   ></iframe>
 </div>
 
-<p><em>Blank embed? <a href="assets/demo/index.html" target="_blank" rel="noopener noreferrer">Open the demo in a new tab</a> or try the <a href="https://codepen.io/maggiben/pen/jOWoPx" target="_blank" rel="noopener noreferrer">CodePen fork</a>.</em></p>
+<p><em>Blank iframe? <a href="https://codepen.io/maggiben/pen/jOWoPx" target="_blank" rel="noopener noreferrer">Open the pen on CodePen</a>.</em></p>
 
 The sample data is synthetic—same weekday rhythm repeated with a lighter weekend—but the **shape** is what you see in real logs: quiet nights, a morning ramp, a fat afternoon block, then tapering off.
 

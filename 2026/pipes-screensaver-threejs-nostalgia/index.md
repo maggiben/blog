@@ -38,22 +38,19 @@ Full viewport. Black background. One pipe at a time, growing segment by segment 
 
 <link rel="stylesheet" href="assets/demo/styles.css" />
 
-<div class="blog-embed blog-embed--pipes">
+<div class="blog-embed blog-embed--codepen">
   <iframe
     height="480"
-    style="width: 100%;"
     scrolling="no"
-    title="3D Pipes — screensaver recreation"
-    src="assets/demo/index.html"
+    title="Pipes — 3D screensaver recreation"
+    src="https://codepen.io/maggiben/embed/NPbXeoX?default-tab=result"
     frameborder="no"
     loading="lazy"
-    allowfullscreen
+    allowtransparency="true"
   ></iframe>
 </div>
 
-<p><em>Blank embed or WebGL blocked? <a href="assets/demo/index.html" target="_blank" rel="noopener noreferrer">Open the demo in a new tab</a> or try the <a href="https://codepen.io/maggiben/pen/NPbXeoX" target="_blank" rel="noopener noreferrer">CodePen fork</a>.</em></p>
-
-This page hosts a **blog-side copy** in [assets/demo/](assets/demo/) with the same logic as the [CodePen](https://codepen.io/maggiben/pen/NPbXeoX)—first-party embed so WebGL is not blocked by third-party iframe policies. The pen remains the forkable source.
+<p><em>Click inside the embed so the canvas can render. If WebGL is blocked, <a href="https://codepen.io/maggiben/pen/NPbXeoX">open the pen on CodePen</a>.</em></p>
 
 Wait thirty seconds. Watch a joint become a **Utah teapot** instead of a sphere. That two-and-a-half percent chance is deliberate—it is the wink the Windows version gave anyone who dug into **Settings** and enabled teapots at joints.
 
@@ -165,4 +162,4 @@ If you remember the Display Properties dialog, open the embed and wait for a tea
 
 ---
 
-_Cover: Windows Screen Saver settings with 3D Pipes selected. Demo: [assets/demo/](assets/demo/) · [CodePen](https://codepen.io/maggiben/pen/NPbXeoX). Related: [Rings — WebGL playground](../rings-webgl-threejs-experiment/)._
+_Cover: Windows Screen Saver settings with 3D Pipes selected. Demo: [CodePen](https://codepen.io/maggiben/pen/NPbXeoX). Related: [Rings — WebGL playground](../rings-webgl-threejs-experiment/)._
