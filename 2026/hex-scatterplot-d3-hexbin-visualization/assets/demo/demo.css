@@ -1,0 +1,39 @@
+html,
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #1a1a1a;
+}
+
+body {
+  background-image: radial-gradient(circle at center, #3a3a3a 0%, #1a1a1a 70%);
+}
+
+#chart {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  min-height: 560px;
+}
+
+#chart svg {
+  display: block;
+  margin: 0 auto;
+}
+
+.hex-cell {
+  stroke: rgba(255, 255, 255, 0.15);
+  stroke-width: 0.5;
+}
+
+.axis text {
+  fill: #ccc;
+  font: 11px sans-serif;
+}
+
+.axis line,
+.axis path {
+  stroke: #666;
+}

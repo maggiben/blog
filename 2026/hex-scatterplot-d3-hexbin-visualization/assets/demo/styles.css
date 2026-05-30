@@ -1,14 +1,18 @@
-/* CodePen iframe — hex scatterplot (~960px wide) */
-.blog-embed.blog-embed--codepen {
+/* Blog embed — first-party demo iframe */
+.blog-embed.blog-embed--demo {
   max-width: 960px;
   margin: 1.5rem auto;
   padding: 0;
   background: transparent;
   border: 0;
+  border-radius: 4px;
+  overflow: hidden;
 }
-.blog-embed.blog-embed--codepen iframe {
+
+.blog-embed.blog-embed--demo iframe {
   display: block;
   width: 100%;
+  min-height: 590px;
   border: 0;
   background: transparent;
 }
