@@ -28,7 +28,7 @@ There was a time when **personalizing your computer** meant opening Display Prop
 
 Flying toasters. Starfield. Mystify. **3D Pipes**—cyan tubes crawling through black space like plumbing in a fever dream. You picked one, set the wait timer, maybe hit **Preview** and watched your monitor pretend it was a showroom floor. That was not decoration. That was **identity**.
 
-Today the screensaver still exists, but mostly as a **default**: a lock screen, a dim photo, a corporate policy. Some people still play with them—Matrix rain on a second monitor, `cmatrix` in a terminal, a nostalgic `.scr` copied from an old XP install. The culture around them has thinned. The old ritual—*which saver are you?*—has largely passed.
+Today the screensaver still exists, but mostly as a **default**: a lock screen, a dim photo, a corporate policy. Some people still play with them—Matrix rain on a second monitor, `cmatrix` in a terminal, a nostalgic `.scr` copied from an old XP install. The culture around them has thinned. The old ritual—_which saver are you?_—has largely passed.
 
 I missed the pipes enough to rebuild them. Not as a `.scr`, but as a **browser demo** with [Three.js](https://threejs.org/) and a small React shell on [CodePen](https://codepen.io/maggiben/pen/NPbXeoX). Same hypnotic grid logic. Same metallic joints. And yes: **teapots**, because the original had an easter egg and nostalgia without the teapot is incomplete.
 
@@ -39,15 +39,11 @@ Full viewport. Black background. One pipe at a time, growing segment by segment 
 <link rel="stylesheet" href="assets/demo/styles.css" />
 
 <div class="blog-embed blog-embed--codepen">
-  <iframe
-    height="480"
-    scrolling="no"
-    title="Pipes — 3D screensaver recreation"
-    src="https://codepen.io/maggiben/embed/NPbXeoX?default-tab=result"
-    frameborder="no"
-    loading="lazy"
-    allowtransparency="true"
-  ></iframe>
+<iframe height="300" style="width: 100%;" scrolling="no" title="Pipes" src="https://codepen.io/jkantner/embed/GgNWLMz?default-tab=" frameborder="no" loading="lazy" allowtransparency="true">
+  See the Pen <a href="https://codepen.io/jkantner/pen/GgNWLMz">
+  Pipes</a> by Jon Kantner (<a href="https://codepen.io/jkantner">@jkantner</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
 </div>
 
 <p><em>Click inside the embed so the canvas can render. If WebGL is blocked, <a href="https://codepen.io/maggiben/pen/NPbXeoX">open the pen on CodePen</a>.</em></p>
@@ -60,16 +56,16 @@ Screensavers were born from **hardware**, not aesthetics. CRT phosphors could **
 
 Then they became something else entirely.
 
-| Era | What changed | What it felt like |
-|-----|--------------|-------------------|
-| **1980s–90s** | Burn-in protection, then After Dark and third-party `.scr` culture | Your desk had *personality*; savers were shareware and jokes |
-| **Windows 95–XP** | Built-in OpenGL and Direct3D demos shipped with the OS | **3D Pipes** in Display Properties = you cared about graphics |
-| **Flat LCD** | Burn-in largely gone; panels always on | Savers become optional, then invisible |
-| **Today** | Lock screen, sleep, phone always-on displays | Motion is **security** or **ambient**, rarely self-expression |
+| Era               | What changed                                                       | What it felt like                                             |
+| ----------------- | ------------------------------------------------------------------ | ------------------------------------------------------------- |
+| **1980s–90s**     | Burn-in protection, then After Dark and third-party `.scr` culture | Your desk had _personality_; savers were shareware and jokes  |
+| **Windows 95–XP** | Built-in OpenGL and Direct3D demos shipped with the OS             | **3D Pipes** in Display Properties = you cared about graphics |
+| **Flat LCD**      | Burn-in largely gone; panels always on                             | Savers become optional, then invisible                        |
+| **Today**         | Lock screen, sleep, phone always-on displays                       | Motion is **security** or **ambient**, rarely self-expression |
 
-The cover image above is the ritual frozen in amber: **Display Properties → Screen Saver → 3D Pipes → Wait: 5 minutes**. Dropdown full of names—*After Dark*, *Autumn*, *Dangerous Creatures*—each one a tiny statement. Nobody talks about their screensaver at lunch anymore. But mention **3D Pipes** to someone who ran Windows NT or 95, and they know exactly which tubes you mean.
+The cover image above is the ritual frozen in amber: **Display Properties → Screen Saver → 3D Pipes → Wait: 5 minutes**. Dropdown full of names—_After Dark_, _Autumn_, _Dangerous Creatures_—each one a tiny statement. Nobody talks about their screensaver at lunch anymore. But mention **3D Pipes** to someone who ran Windows NT or 95, and they know exactly which tubes you mean.
 
-Raymond Chen [told the origin story](https://devblogs.microsoft.com/oldnewthing/20240611-00/?p=109881) on *The Old New Thing*: the Windows OpenGL team had shipped hardware-accelerated OpenGL in NT 3.5, but **nothing in the product showed users it existed**. A team screensaver contest produced 3D Text, 3D Maze, 3D Flying Objects, and 3D Pipes. Marketing saw them and said, in effect: *skip the vote—we are shipping all of them*. Low risk, high visibility. If a saver crashed, support could say *do not use that one*—this was before auto-update culture.
+Raymond Chen [told the origin story](https://devblogs.microsoft.com/oldnewthing/20240611-00/?p=109881) on _The Old New Thing_: the Windows OpenGL team had shipped hardware-accelerated OpenGL in NT 3.5, but **nothing in the product showed users it existed**. A team screensaver contest produced 3D Text, 3D Maze, 3D Flying Objects, and 3D Pipes. Marketing saw them and said, in effect: _skip the vote—we are shipping all of them_. Low risk, high visibility. If a saver crashed, support could say _do not use that one_—this was before auto-update culture.
 
 That is how a **demo became folklore**.
 
@@ -109,13 +105,13 @@ const getPosKey = (v: THREE.Vector3) =>
 
 **Geometry** is primitive but faithful:
 
-| Piece | Three.js | Role |
-|-------|----------|------|
-| Pipe segment | `CylinderGeometry` scaled on Z | Grows incrementally each frame (`scale.z = distanceTraveled`) |
-| Joint | `SphereGeometry` | Corner connector |
-| End cap | Larger sphere | Start/end of a run |
-| Teapot | `TeapotGeometry` | Easter egg at joints |
-| Reset | Full-screen black plane with rising opacity | Fade instead of checkerboard wipe |
+| Piece        | Three.js                                    | Role                                                          |
+| ------------ | ------------------------------------------- | ------------------------------------------------------------- |
+| Pipe segment | `CylinderGeometry` scaled on Z              | Grows incrementally each frame (`scale.z = distanceTraveled`) |
+| Joint        | `SphereGeometry`                            | Corner connector                                              |
+| End cap      | Larger sphere                               | Start/end of a run                                            |
+| Teapot       | `TeapotGeometry`                            | Easter egg at joints                                          |
+| Reset        | Full-screen black plane with rising opacity | Fade instead of checkerboard wipe                             |
 
 **Materials** use `MeshPhongMaterial` with modest shininess—close enough to the metallic pipes you remember on a CRT. **Lighting** is a simple ambient + directional pair; no image-based lighting, no PBR. This is a saver, not a Pixar still.
 
@@ -131,14 +127,14 @@ No UI. No orbit controls. You watch. That restraint is the point.
 
 ## Old stack vs new stack
 
-| | **Windows `sspipes.scr`** | **This CodePen** |
-|--|---------------------------|------------------|
-| Runtime | Native `.scr`, OpenGL / Direct3D | Browser, WebGL via Three.js |
-| Grid | Internal occupancy map | `Set` of string keys on a 20³-style lattice |
-| Primitives | GLU cylinders/spheres | `CylinderGeometry`, `SphereGeometry`, `TeapotGeometry` |
-| Reset | Checkerboard or fade | Alpha fade on a camera-facing plane |
-| Customization | Display Properties, teapot toggle | Fork the pen, tweak `TEAPOT_CHANCE` |
-| Purpose | Show off OS 3D + save CRTs | Nostalgia + learn WebGL in a tab |
+|               | **Windows `sspipes.scr`**         | **This CodePen**                                       |
+| ------------- | --------------------------------- | ------------------------------------------------------ |
+| Runtime       | Native `.scr`, OpenGL / Direct3D  | Browser, WebGL via Three.js                            |
+| Grid          | Internal occupancy map            | `Set` of string keys on a 20³-style lattice            |
+| Primitives    | GLU cylinders/spheres             | `CylinderGeometry`, `SphereGeometry`, `TeapotGeometry` |
+| Reset         | Checkerboard or fade              | Alpha fade on a camera-facing plane                    |
+| Customization | Display Properties, teapot toggle | Fork the pen, tweak `TEAPOT_CHANCE`                    |
+| Purpose       | Show off OS 3D + save CRTs        | Nostalgia + learn WebGL in a tab                       |
 
 Three.js does not make the algorithm easier—it makes the **delivery** easier. One URL, no `.scr` signing, no copying binaries from XP. The hard part is still the grid, the turns, and the grow-until-stuck rhythm.
 
@@ -146,7 +142,7 @@ Three.js does not make the algorithm easier—it makes the **delivery** easier. 
 
 Because some demos are **time capsules**. 3D Pipes advertised OpenGL in an era when that mattered. It also happened to be beautiful—industrial, pointless, meditative. The same qualities that made it a good saver make it a good **creative coding exercise**: finite state, clear rules, immediate visual payoff.
 
-Screensavers as culture may not come back. Always-on displays and sleep modes won that war. But the **impulse** behind them—*make idle time beautiful*—shows up elsewhere: ambient mode on a TV, generative art in a terminal tab, a WebGL pen left running while the coffee brews.
+Screensavers as culture may not come back. Always-on displays and sleep modes won that war. But the **impulse** behind them—_make idle time beautiful_—shows up elsewhere: ambient mode on a TV, generative art in a terminal tab, a WebGL pen left running while the coffee brews.
 
 I run this one sometimes on a second monitor. Not because the pixels need saving. Because the pipes still know how to fill a room with quiet motion.
 
@@ -162,4 +158,4 @@ If you remember the Display Properties dialog, open the embed and wait for a tea
 
 ---
 
-*Cover: Windows Screen Saver settings with 3D Pipes selected. Demo: [CodePen](https://codepen.io/maggiben/pen/NPbXeoX). Related: [Rings — WebGL playground](../rings-webgl-threejs-experiment/).*
+_Cover: Windows Screen Saver settings with 3D Pipes selected. Demo: [CodePen](https://codepen.io/maggiben/pen/NPbXeoX). Related: [Rings — WebGL playground](../rings-webgl-threejs-experiment/)._
